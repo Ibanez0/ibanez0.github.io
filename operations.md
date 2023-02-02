@@ -6,37 +6,35 @@ permalink: /operations/
 
 Modélisme ferroviaire et simulation
 
-**[RETOUR A LA PAGE PRINCIPALE](main.html)**
-
 Présentation
 ============
 
 Je suis particulièrement intéressé par l'exploitation des réseaux modèles, surtout d'un point de vue ludique. À l'aide d'Internet, je souhaite échanger des idées avec des modélistes intéressés par le même sujet. Ces quelques pages tentent d'expliquer mon point de vue à ce jour. Je construis actuellement un [réseau](reseau.html) qui devrait me permettre de mettre en pratique les idées exposées ci-dessous. Ce réseau est encore loin d'être achevé, mais il me permet dejà en l'état de valider plusieurs idées et de progresser sur ce sujet.  
  
 
-*   [Mon projet : un jeu interactif](#presentation)
+[Mon projet : un jeu interactif](#presentation)
 
 *   Le but du jeu
 *   Les contraintes d'exploitation
 *   Les scores
 
-*   [Les définitions préalables](#definitions)
+[Les définitions préalables](#definitions)
 
 *   Les sites et bâtiments
 *   Les trains
 
-*   [Le rôle des joueurs](#roles)
+[Le rôle des joueurs](#roles)
 
 *   Le conducteur
 *   Le chef de gare ou de zone
 *   Le chef du centre de triage caché (coulisse)
 
-*   [Le scénario](#scenario)
+[Le scénario](#scenario)
 
 *   Le trafic
 *   La simulation du trafic minimal
 
-*   [La conception du réseau pour le jeu](#conception)
+[La conception du réseau pour le jeu](#conception)
 
 *   Voie unique ou double voie ?
 *   Boucle de retournement / topographie du réseau ?
@@ -47,19 +45,19 @@ Je suis particulièrement intéressé par l'exploitation des réseaux modèles, 
 *   Thème ?
 *   Organisation du jeu ?
 
-*   [La commande du réseau](#commande)
-*   [La supervision et le logiciel de jeu](#supervision)
+[La commande du réseau](#commande)
+
+[La supervision et le logiciel de jeu](#supervision)
 
 *   Le programme de supervision
 *   Le programme de génération de scénario
 
-*   [Les documents pour la simulation](#documents)
+[Les documents pour la simulation](#documents)
 
 *   Tableau horaire
 *   Liste de répartition des wagons (scénario 1)
 
-Mon projet : un jeu interactif
-==============================
+# Mon projet : un jeu interactif
 
 La construction d'un réseau entièrement automatique, où l'observateur regarde le mouvement des trains sans rien faire peut constituer un certain défi technique, mais apporte selon moi peu d'intérêt à son constructeur une fois mis au point (à part peut-être la programmation de nouveaux itinéraires).
 
@@ -233,42 +231,42 @@ Il est également possible, dans le cas d'un réseau en boucle, de faire tourner
 La conception du réseau pour le jeu
 ===================================
 
-La réalisation d'un réseau où l'on veut simuler des opérations réalistes nécessite une conception attentive de son plan de voies, pour permettre la mise en �uvre des concepts clés d'exploitation.
+La réalisation d'un réseau où l'on veut simuler des opérations réalistes nécessite une conception attentive de son plan de voies, pour permettre la mise en 'uvre des concepts clés d'exploitation.
 
 Voici par exemple quelques questions d'importance :
 
 ### Voie unique ou double voie ?
 
-Une voie double permet de faire circuler plus de trains simultanément ce qui peut occuper plus d�opérateurs. Elle permet par exemple de faire tourner un train en boucle simulant alors un trafic permanent dans lequel un opérateur doit insérer son train sans rien perturber. Elle permet aussi des circulations plus complexes.
+Une voie double permet de faire circuler plus de trains simultanément ce qui peut occuper plus d'opérateurs. Elle permet par exemple de faire tourner un train en boucle simulant alors un trafic permanent dans lequel un opérateur doit insérer son train sans rien perturber. Elle permet aussi des circulations plus complexes.
 
 ### Boucle de retournement / topographie du réseau ?
 
 Trois exemples :
 
-1) Un réseau en forme d�os dans un schéma en double voie (sans boucle de retournement) facilite l�aller et le retour continu des trains par les gares de passage : on a plus de trafic en ligne et une gestion plutôt simple, il faut respecter l�espacement. Pour certains wagons, il faut modifier leur chargement (les vider ou les remplir) pour simuler l�activité.
+1) Un réseau en forme d'os dans un schéma en double voie (sans boucle de retournement) facilite l'aller et le retour continu des trains par les gares de passage : on a plus de trafic en ligne et une gestion plutôt simple, il faut respecter l'espacement. Pour certains wagons, il faut modifier leur chargement (les vider ou les remplir) pour simuler l'activité.
 
-2) Un réseau en forme d�os en voie unique impose deux boucles de retournement : on a moins de trafic en ligne et une exploitation compliquée par la gestion de l�occupation de la voie (sans compter les problèmes électriques).
+2) Un réseau en forme d'os en voie unique impose deux boucles de retournement : on a moins de trafic en ligne et une exploitation compliquée par la gestion de l'occupation de la voie (sans compter les problèmes électriques).
 
-3) Un réseau circulaire, même assez grand autour d�une pièce, ne permet pas de gérer facilement l�aller retour des trains (ils passent naturellement toujours dans le même sens dans les gares) : il est alors utile d�avoir une coulisse permettant de retourner les trains avec une 0-5-0 (main de cinq doigts) ou une autre machine mais cela prend du temps, ça casse la fluidité du trafic et ça rend disproportionnées les durées de triage relativement aux durées des parcours.
+3) Un réseau circulaire, même assez grand autour d'une pièce, ne permet pas de gérer facilement l'aller retour des trains (ils passent naturellement toujours dans le même sens dans les gares) : il est alors utile d'avoir une coulisse permettant de retourner les trains avec une 0-5-0 (main de cinq doigts) ou une autre machine mais cela prend du temps, ça casse la fluidité du trafic et ça rend disproportionnées les durées de triage relativement aux durées des parcours.
 
 ### Zones cachées (accessibilité) ?
 
-Il faut éviter les zones inaccessibles pour pouvoir intervenir partout sur le réseau, en cas de déraillement, en cas d�encrassement des voies nécessitant des intervention manuelles.
+Il faut éviter les zones inaccessibles pour pouvoir intervenir partout sur le réseau, en cas de déraillement, en cas d'encrassement des voies nécessitant des intervention manuelles.
 
 ### Pont tournant ou triangle de voies ?
 
-En l�absence d�un dispositif pour retourner les trains dans le cas de certaines topologies (ex : réseau circulaire) il faut accepter que les trains ne puissent pas effectuer des allers-retours.  
+En l'absence d'un dispositif pour retourner les trains dans le cas de certaines topologies (ex : réseau circulaire) il faut accepter que les trains ne puissent pas effectuer des allers-retours.  
 Par ailleurs, un pont tournant nécessite moins d'espace qu'un triangle de voies
 
 ### Préparation des trains avant ou pendant (coulisse) ?
 
-Le garage des trains en attente dans une gare cachée inaccessible interdit de les retourner et d�en modifier la composition. C�est une des raisons qui justifie une coulisse séparée du réseau mais ouverte pour qu�un opérateur puisse y intervenir (avec une 0-5-0 !).
+Le garage des trains en attente dans une gare cachée inaccessible interdit de les retourner et d'en modifier la composition. C'est une des raisons qui justifie une coulisse séparée du réseau mais ouverte pour qu'un opérateur puisse y intervenir (avec une 0-5-0 !).
 
 ### Allongement artificiel des durées
 
-Nos réseaux étant le plus souvent assez comprimés, les distances entre les gares sont très courtes (quelques mètres). En jouant sur le facteur d�accélération du temps, à l'aide d'une [horloge accélérée](horloge.html), on simule des [tableaux horaires](operations.html#timetable) réalistes (avec un facteur 12, 5 minutes réelles sont considérées comme 1 heure simulée et 1 mètre réel représente 1 kilomètre simulé), mais il n�empêche que les durées réelles des trajets, celles qui permettent aux opérateurs de préparer les tâches suivantes, sont courtes : 10 mètres réels de voie représentent 10 kilomètres parcourus approximativement en 30 secondes réelles à une vitesse simulée de 60 kilomètres / heure. Ca ne laisse pas beaucoup de temps pour basculer les aiguilles, dégager les voies, se préparer aux mouvements suivants, le tout sans se tromper !
+Nos réseaux étant le plus souvent assez comprimés, les distances entre les gares sont très courtes (quelques mètres). En jouant sur le facteur d'accélération du temps, à l'aide d'une [horloge accélérée](horloge.html), on simule des [tableaux horaires](operations.html#timetable) réalistes (avec un facteur 12, 5 minutes réelles sont considérées comme 1 heure simulée et 1 mètre réel représente 1 kilomètre simulé), mais il n'empêche que les durées réelles des trajets, celles qui permettent aux opérateurs de préparer les tâches suivantes, sont courtes : 10 mètres réels de voie représentent 10 kilomètres parcourus approximativement en 30 secondes réelles à une vitesse simulée de 60 kilomètres / heure. Ca ne laisse pas beaucoup de temps pour basculer les aiguilles, dégager les voies, se préparer aux mouvements suivants, le tout sans se tromper !
 
-L�utilisation d�une spirale permet de franchir des dénivelés importants et permet d�allonger la durée d�un trajet entre deux points : cela laisse un peu de temps aux opérateurs.
+L'utilisation d'une spirale permet de franchir des dénivelés importants et permet d'allonger la durée d'un trajet entre deux points : cela laisse un peu de temps aux opérateurs.
 
 ### Thème ?
 
@@ -324,7 +322,7 @@ Pendant une séance de jeu, l'exploitation des zones électriques nécessite pre
 
 Il n'y a pas de zone électrique, donc pas d'exploitation associée.
 
-Sur un réseau assez petit, il est impossible de faire se suivre deux trains : cela nécessite alors un vrai bloc système ou une commande sélective par exemple. Il est impossible de gérer à la main la vitesse des trains en même temps que l'affectation des commandes aux zones électriques (en particulier quand les zones sont courtes), sans compter les autres actions à mener (commande des aiguilles, préparation des man�uvres, etc.).
+Sur un réseau assez petit, il est impossible de faire se suivre deux trains : cela nécessite alors un vrai bloc système ou une commande sélective par exemple. Il est impossible de gérer à la main la vitesse des trains en même temps que l'affectation des commandes aux zones électriques (en particulier quand les zones sont courtes), sans compter les autres actions à mener (commande des aiguilles, préparation des man'uvres, etc.).
 
 Il est facile de se faire suivre plusieurs trains, chacun ayant sa commande de vitesse.
 
@@ -334,7 +332,7 @@ L'accouplement est possible n'importe où, ensuite la conduite des deux machines
 
 Du point de vue de l'exploitation, la solution de commande classique limite les possibilités et complique le jeu pour les opérateurs.
 
-Au titre des avantages, le prix d'une commande traditionnelle reste faible, en tout cas il est encore assez inférieur à celui d'une commande digitale. En outre, les locomotives n'ont pas besoin d'être modifiées (par exemple, être équipées de décodeurs). L'utilisation de l'éclairage constant reste tout de même un problème car il n'est pas si facile que ça à mettre en �uvre.
+Au titre des avantages, le prix d'une commande traditionnelle reste faible, en tout cas il est encore assez inférieur à celui d'une commande digitale. En outre, les locomotives n'ont pas besoin d'être modifiées (par exemple, être équipées de décodeurs). L'utilisation de l'éclairage constant reste tout de même un problème car il n'est pas si facile que ça à mettre en 'uvre.
 
 Les commandes de conduite sélective ont pour moi l'inconvénient de ne pas être fondées sur une norme standardisée reconnue par les constructeurs. Leur prix reste assez élevé.
 
@@ -350,19 +348,19 @@ Le programme de supervision
 
 ### Les fonctions du programme de supervision
 
-Le mode de fonctionnement recherché nécessite principalement l�entrée de signaux provenant soit du réseau vers l�ordinateur, soit du clavier.
+Le mode de fonctionnement recherché nécessite principalement l'entrée de signaux provenant soit du réseau vers l'ordinateur, soit du clavier.
 
 Le programme de supervision est chargé de :
 
-*   afficher l�heure accélérée ;
+*   afficher l'heure accélérée ;
 *   afficher la gare courante ;
 *   contrôler le chemin emprunté par les trains ;
 *   contrôler le respect des consignes de vitesse ;
-*   contrôler le respect du tableau des horaires (arrêts aux stations prévues, heures d�arrivée, heures de départ) ;
+*   contrôler le respect du tableau des horaires (arrêts aux stations prévues, heures d'arrivée, heures de départ) ;
 *   simuler la consommation des locomotives et contrôler le réapprovisionnement (bouton ou clavier), le cas échéant, il est nécessaire de dépêcher sur place une autre locomotive, ce qui perturbe le trafic ;
 *   commander les signaux et contrôler le respect des signaux ;
-*   commander l�éclairage du réseau (jour, nuit) ;
-*   commander la coupure d�alimentation de certaines sections pour simuler des pannes de carburant ou des avaries du matériel ;
+*   commander l'éclairage du réseau (jour, nuit) ;
+*   commander la coupure d'alimentation de certaines sections pour simuler des pannes de carburant ou des avaries du matériel ;
 *   calculer le score ;
 *   etc.
 
@@ -371,21 +369,21 @@ Le programme de supervision est chargé de :
 **La solution matérielle permettant de réaliser un programme de supervision avec les fonctions décrites précédemment consiste en :**
 
 *   un ordinateur PC avec un port parallèle et un port série (ex : mon vieux 8086) ;
-*   un boîtier d�interface que je compte réaliser moi-même (ex : modèle avec 4 entrées et 8 sorties à brancher sur le port parallèle du PC, je recommande à ce propos un boîtier du commerce (ex : modèle ORD102 prêt à l'emploi de la société **[ELECTROME](http://www.electrome.fr/)** avec 8 entrées isolées et 8 sorties sur relais à brancher sur le port série du PC, environ 230 Euros TTC) ;
+*   un boîtier d'interface que je compte réaliser moi-même (ex : modèle avec 4 entrées et 8 sorties à brancher sur le port parallèle du PC, je recommande à ce propos un boîtier du commerce (ex : modèle ORD102 prêt à l'emploi de la société **[ELECTROME](http://www.electrome.fr/)** avec 8 entrées isolées et 8 sorties sur relais à brancher sur le port série du PC, environ 230 Euros TTC) ;
 *   quelques contacts ILS disposés aux endroits stratégiques du réseau et en entrée/sortie de la gare (remarque : une seule locomotive peut alors être facilement contrôlée) ;
-*   l�allumage et l�extinction progressive de la lumière, en douceur, peut être réalisée par un module électronique (ex : kit K2657 de Velleman-kit environ 25 Euros TTC).
+*   l'allumage et l'extinction progressive de la lumière, en douceur, peut être réalisée par un module électronique (ex : kit K2657 de Velleman-kit environ 25 Euros TTC).
 
 **Quelques précisions :**
 
-Cette solution de supervision offre l�avantage d�être indépendante du système d�alimentation qui peut être classique ou numérique : actuellement, j'utilise soit deux commandes classiques, soit une commande **[MRC](http://www.modelrec.com/)** 2000 (voir **[LOCO REVUE](http://www.locorevue.com/)** n°620 12/98, voir également le Hors-Série Electronique paru en 12/98 pour une étude comparative de plusieurs systèmes d�alimentation numériques).
+Cette solution de supervision offre l'avantage d'être indépendante du système d'alimentation qui peut être classique ou numérique : actuellement, j'utilise soit deux commandes classiques, soit une commande **[MRC](http://www.modelrec.com/)** 2000 (voir **[LOCO REVUE](http://www.locorevue.com/)** n°620 12/98, voir également le Hors-Série Electronique paru en 12/98 pour une étude comparative de plusieurs systèmes d'alimentation numériques).
 
-Pour moi, cette solution offre l�avantage de me permettre d�utiliser mon vieux 8086 en MS DOS 3.2 alors que l�adoption d�un système numérique m�obligerait à utiliser au moins un 486 (toutefois, le boîtier ORD102 peut également être connecté à mon PENTIUM). Évidemment, avec un vieux PC, je ne peux pas réaliser un programme Windows et je suis obligé de réaliser une interface en mode monochrome.
+Pour moi, cette solution offre l'avantage de me permettre d'utiliser mon vieux 8086 en MS DOS 3.2 alors que l'adoption d'un système numérique m'obligerait à utiliser au moins un 486 (toutefois, le boîtier ORD102 peut également être connecté à mon PENTIUM). Évidemment, avec un vieux PC, je ne peux pas réaliser un programme Windows et je suis obligé de réaliser une interface en mode monochrome.
 
-Dans mon cas, il faut noter que le réseau est constitué d�une voie unique de longueur assez limitée (12 mètres en boucle) et d�une gare unique. Je souhaite pourtant réaliser des scénarios passant par plusieurs gares. J�ai donc adopté le principe que l�unique gare réelle peut représenter plusieurs gares fictives. Tout scénario passant virtuellement par plusieurs gares boucle par l�unique gare réelle existante sur le réseau. Pour aider les joueurs, l�ordinateur affiche alors le nom de la gare courante, les joueurs ne doivent pas tenir compte du nom inscrit sur le bâtiment de la gare réelle (là encore, l�ordinateur apporte une aide).
+Dans mon cas, il faut noter que le réseau est constitué d'une voie unique de longueur assez limitée (12 mètres en boucle) et d'une gare unique. Je souhaite pourtant réaliser des scénarios passant par plusieurs gares. J'ai donc adopté le principe que l'unique gare réelle peut représenter plusieurs gares fictives. Tout scénario passant virtuellement par plusieurs gares boucle par l'unique gare réelle existante sur le réseau. Pour aider les joueurs, l'ordinateur affiche alors le nom de la gare courante, les joueurs ne doivent pas tenir compte du nom inscrit sur le bâtiment de la gare réelle (là encore, l'ordinateur apporte une aide).
 
-Les contacts ILS ne permettant de distinguer de manière simple qu�une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (voir [note 1](#note1)). Toutefois, le système reste évolutif car il faut noter que l�utilisation d�un système de reconnaissance de type code à barre (voir **[LOCO REVUE](http://www.locorevue.com/)** n°604 06/97 et n°605 07-08/97) à la place des ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
+Les contacts ILS ne permettant de distinguer de manière simple qu'une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (voir [note 1](#note1)). Toutefois, le système reste évolutif car il faut noter que l'utilisation d'un système de reconnaissance de type code à barre (voir **[LOCO REVUE](http://www.locorevue.com/)** n°604 06/97 et n°605 07-08/97) à la place des ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
 
-(note 1) : Cette contrainte n�enlève pas d�intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare.
+(note 1) : Cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare.
 
 Le programme de génération de scénario
 --------------------------------------
@@ -399,15 +397,15 @@ Lors de mes premières recherches en 1996, je ne trouvais quasiment pas de logic
 
 Je voulais un programme indépendant de la commande des trains, assez général et paramétrable pour s'adapter à différentes situations de jeu. J'étais conforté dans cette idée par la lecture de plusieurs articles présentant des réseaux réalisés par des américains qui organisaient des séances de jeu à grande échelle.
 
-En 1997, j'ai effectivement réalisé un prototype de programme de génération pour me permettre de générer des scénarios pour mon plan de voies. J'ai réalisé ce programme en une dizaine de jours en langage lisp sur mon vieux PC. Ce programme génère deux tableaux : la liste des véhicules avec leurs mouvements horodatés, et la liste chronologique des mouvements. La première liste donne sur une unique page A4 les mêmes informations que les fameux _way bills_ des réseaux américains (feuille de route de chaque wagon). Mes conclusions sur cette expérience sont à ce jour les suivantes : à moins d�être un club organisant fréquemment de nouveaux scénarios dans des conditions changeantes (ex : plan de voies modifiable selon l�agencement de modules), il est plus rapide de calculer ses scénarios avec un outil de saisie tel qu�un traitement de texte ou mieux un tableur que de paramétrer un programme. Le plan de voies du réseau contraignant fortement les possibilités pour les scénarios, dans un premier temps il faut déterminer les types de scénarios possibles et ensuite faire varier les paramètres indépendants du plan de voies (ex : type de trafic, horaires, règles, etc.).
+En 1997, j'ai effectivement réalisé un prototype de programme de génération pour me permettre de générer des scénarios pour mon plan de voies. J'ai réalisé ce programme en une dizaine de jours en langage lisp sur mon vieux PC. Ce programme génère deux tableaux : la liste des véhicules avec leurs mouvements horodatés, et la liste chronologique des mouvements. La première liste donne sur une unique page A4 les mêmes informations que les fameux _way bills_ des réseaux américains (feuille de route de chaque wagon). Mes conclusions sur cette expérience sont à ce jour les suivantes : à moins d'être un club organisant fréquemment de nouveaux scénarios dans des conditions changeantes (ex : plan de voies modifiable selon l'agencement de modules), il est plus rapide de calculer ses scénarios avec un outil de saisie tel qu'un traitement de texte ou mieux un tableur que de paramétrer un programme. Le plan de voies du réseau contraignant fortement les possibilités pour les scénarios, dans un premier temps il faut déterminer les types de scénarios possibles et ensuite faire varier les paramètres indépendants du plan de voies (ex : type de trafic, horaires, règles, etc.).
 
-Maintenant, **j�utilise un tableur pour mettre en forme un [tableau horaire général (_timetable_)](#timetable) et des [listes de répartition des wagons (_switch list_)](#switchlist) pour chaque scénario.**
+Maintenant, **j'utilise un tableur pour mettre en forme un [tableau horaire général (_timetable_)](#timetable) et des [listes de répartition des wagons (_switch list_)](#switchlist) pour chaque scénario.**
 
-L�intelligence nécessaire pour construire des scénarios pertinents et intéressants avec de nombreux paramètres possibles est difficile à mettre dans un programme de calcul automatique. La réalisation d�un programme personnalisé n�est pas rentable si le nombre de scénarios à réaliser est potentiellement faible. L�utilisation d�un programme existant apporterait un plus à condition qu�il soit suffisamment générique pour s�adapter aux nombreux cas possibles et donc ainsi aux cas qui nous préoccupent. Finalement, l�utilisation d�un tableur constitue peut-être un bon compromis en permettant de réaliser certains calculs (somme des durées, longueurs, poids, calcul de moyennes, etc.) qui facilitent le travail du concepteur et en permettant une mise en page totalement personnalisée.
+L'intelligence nécessaire pour construire des scénarios pertinents et intéressants avec de nombreux paramètres possibles est difficile à mettre dans un programme de calcul automatique. La réalisation d'un programme personnalisé n'est pas rentable si le nombre de scénarios à réaliser est potentiellement faible. L'utilisation d'un programme existant apporterait un plus à condition qu'il soit suffisamment générique pour s'adapter aux nombreux cas possibles et donc ainsi aux cas qui nous préoccupent. Finalement, l'utilisation d'un tableur constitue peut-être un bon compromis en permettant de réaliser certains calculs (somme des durées, longueurs, poids, calcul de moyennes, etc.) qui facilitent le travail du concepteur et en permettant une mise en page totalement personnalisée.
 
 **Références :**
 
-Pendant le temps que j�ai passé à expérimenter tout ceci (1996-1998), sont apparus plusieurs programmes vendus par des éditeurs spécialisés ou parfois gratuits (freewares). Le lecteur intéressé pourra consulter le Hors-Série Electronique paru en 12/98 chez **[LOCO REVUE](http://www.locorevue.com/)**, numéro accompagné d�un cédérom contenant quelques programmes de ce type en version de démonstration et les adresses de plusieurs éditeurs.
+Pendant le temps que j'ai passé à expérimenter tout ceci (1996-1998), sont apparus plusieurs programmes vendus par des éditeurs spécialisés ou parfois gratuits (freewares). Le lecteur intéressé pourra consulter le Hors-Série Electronique paru en 12/98 chez **[LOCO REVUE](http://www.locorevue.com/)**, numéro accompagné d'un cédérom contenant quelques programmes de ce type en version de démonstration et les adresses de plusieurs éditeurs.
 
 Les documents pour la simulation
 ================================
@@ -434,7 +432,7 @@ Dans les semaines et les mois à venir, je vais essayer d'autres horaires avec p
 Liste de répartition des wagons (scénario 1)
 --------------------------------------------
 
-![Liste de r�partition des wagons / Switchlist (10 Ko)](../images/switchlist.gif)
+![Liste de r'partition des wagons / Switchlist (10 Ko)](../images/switchlist.gif)
 
 Pour un même tableau horaire, il est possible de réaliser plusieurs scénarios en fonction des wagons et des mouvements concernés. J'ai commencé modestement, avec un scénario simple n'incluant que quelques wagons. De plus, ce sont des couverts ou des citernes, donc la gestion de leur chargement n'est pas à faire dans ce scénario.
 
@@ -444,8 +442,4 @@ J'utilise une désignation des wagons qui permet de les repérer facilement par 
 
 Pour ce formulaire, je me suis inspiré du formulaire de type _Switchlist_ présenté par Jack Burgess pour son [Yosemite Valley Railroad](http://www.yosemitevalleyrr.com), ainsi que des informations des formulaires proposés par le logiciel Ship It! Car Cards Version 1.0 from Albion Software. Je l'ai réalisé avec un tableur standard.
 
-Dans les semaines et les mois à venir, je vais essayer d'autres scénarios en y ajoutant des mouvements à réaliser dans les gares. Avec mon nouveau système Digital, Je vais essayer de faire évoluer simultanément un train dans chaque sens, ou un train collecteur avec un train régulier.  
-
-* * *
-
-**[RETOUR A LA PAGE PRINCIPALE](main.html)**
+Dans les semaines et les mois à venir, je vais essayer d'autres scénarios en y ajoutant des mouvements à réaliser dans les gares. Avec mon nouveau système Digital, Je vais essayer de faire évoluer simultanément un train dans chaque sens, ou un train collecteur avec un train régulier.
