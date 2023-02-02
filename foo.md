@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Yab
-permalink: /yab/
+title: Example
+permalink: /example/
 ---
 # Hello World
 
