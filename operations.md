@@ -306,31 +306,19 @@ J'ai examiné principalement trois types de systèmes :
    
  
 
-**Commande classique**
+| **Commande classique** | **Commande digitale** |
 
-**Commande digitale**
+| Il faut assembler des systèmes disparates parfois incompatibles, exemple : la commande Mark II est incompatible avec le générateur 50 khz car tout composant électrique (bobine de découplage) intercalé dans le câblage perturbe le fonctionnement de l'asservissement de cette commande. | Une seule centrale "équivaut" à plusieurs transformateurs classiques déjà sophistiqués (avec des décodeurs à simulation d'inertie et asservissement) et intègre de plus la fonction d'éclairage constant. Il faut installer un décodeur dans chaque locomotive. |
 
-Il faut assembler des systèmes disparates parfois incompatibles, exemple : la commande Mark II est incompatible avec le générateur 50 khz car tout composant électrique (bobine de découplage) intercalé dans le câblage perturbe le fonctionnement de l'asservissement de cette commande.
+| Le câblage devient rapidement complexe avec tous les problèmes associés (de nombreux modélistes ont déjà exprimé les difficultés rencontrées et les solutions possibles). | Le câblage est réduit au minimum par conception du système digital. |
 
-Une seule centrale "équivaut" à plusieurs transformateurs classiques déjà sophistiqués (avec des décodeurs à simulation d'inertie et asservissement) et intègre de plus la fonction d'éclairage constant. Il faut installer un décodeur dans chaque locomotive.
+| Pendant une séance de jeu, l'exploitation des zones électriques nécessite presque un opérateur dédié si on veut éviter les courts-circuits ou les mauvaises surprises. Par exemple, pris dans l'action, il n'est pas rare de voir un train s'arrêter brutalement en changeant de zone électrique à cause d'une mauvaise affectation de la commande de l'opérateur.| Il n'y a pas de zone électrique, donc pas d'exploitation associée. |
 
-Le câblage devient rapidement complexe avec tous les problèmes associés (de nombreux modélistes ont déjà exprimé les difficultés rencontrées et les solutions possibles).
+| Sur un réseau assez petit, il est impossible de faire se suivre deux trains : cela nécessite alors un vrai bloc système ou une commande sélective par exemple. Il est impossible de gérer à la main la vitesse des trains en même temps que l'affectation des commandes aux zones électriques (en particulier quand les zones sont courtes), sans compter les autres actions à mener (commande des aiguilles, préparation des man'uvres, etc.). | Il est facile de se faire suivre plusieurs trains, chacun ayant sa commande de vitesse. |
 
-Le câblage est réduit au minimum par conception du système digital.
+| Il est impossible de venir accoupler une machine avec une autre à l'arrêt (sauf si l'accouplement vient à être effectué à un endroit où il existe une frontière entre deux zones électriques). | L'accouplement est possible n'importe où, ensuite la conduite des deux machines nécessite de les commander en parallèle (pousser les deux curseurs en même temps) ou d'affecter le même code numérique aux deux machines.|
 
-Pendant une séance de jeu, l'exploitation des zones électriques nécessite presque un opérateur dédié si on veut éviter les courts-circuits ou les mauvaises surprises. Par exemple, pris dans l'action, il n'est pas rare de voir un train s'arrêter brutalement en changeant de zone électrique à cause d'une mauvaise affectation de la commande de l'opérateur.
-
-Il n'y a pas de zone électrique, donc pas d'exploitation associée.
-
-Sur un réseau assez petit, il est impossible de faire se suivre deux trains : cela nécessite alors un vrai bloc système ou une commande sélective par exemple. Il est impossible de gérer à la main la vitesse des trains en même temps que l'affectation des commandes aux zones électriques (en particulier quand les zones sont courtes), sans compter les autres actions à mener (commande des aiguilles, préparation des man'uvres, etc.).
-
-Il est facile de se faire suivre plusieurs trains, chacun ayant sa commande de vitesse.
-
-Il est impossible de venir accoupler une machine avec une autre à l'arrêt (sauf si l'accouplement vient à être effectué à un endroit où il existe une frontière entre deux zones électriques).
-
-L'accouplement est possible n'importe où, ensuite la conduite des deux machines nécessite de les commander en parallèle (pousser les deux curseurs en même temps) ou d'affecter le même code numérique aux deux machines.
-
-Du point de vue de l'exploitation, la solution de commande classique limite les possibilités et complique le jeu pour les opérateurs.
+Du point de vue de l'exploitation, la solution de commande classique limite les possibilités et complique le jeu pour les opérateurs. 
 
 Au titre des avantages, le prix d'une commande traditionnelle reste faible, en tout cas il est encore assez inférieur à celui d'une commande digitale. En outre, les locomotives n'ont pas besoin d'être modifiées (par exemple, être équipées de décodeurs). L'utilisation de l'éclairage constant reste tout de même un problème car il n'est pas si facile que ça à mettre en 'uvre.
 
