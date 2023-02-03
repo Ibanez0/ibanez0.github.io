@@ -18,7 +18,7 @@ Je suis particulièrement intéressé par l'exploitation des réseaux modèles, 
 *   Les contraintes d'exploitation
 *   Les scores
 
-[Les définitions préalables](#definitions)
+[Les définitions préalables](#les-définitions-préalables)
 
 *   Les sites et bâtiments
 *   Les trains
@@ -57,7 +57,6 @@ Je suis particulièrement intéressé par l'exploitation des réseaux modèles, 
 *   Tableau horaire
 *   Liste de répartition des wagons (scénario 1)
 
-{: presentation}
 
 Mon projet : un jeu interactif
 ==============================
