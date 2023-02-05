@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Simulation
+# title: Simulation
 permalink: /operations/
 ---
 
