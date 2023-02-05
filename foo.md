@@ -3,11 +3,6 @@ layout: page
 title: Example
 permalink: /example/
 ---
-# Hello World
-
-This is a test using markdown.
-
-Newline
 
 # Markdown Cheat Sheet
 
