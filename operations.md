@@ -57,7 +57,7 @@ Je suis particulièrement intéressé par l'exploitation des réseaux modèles, 
 *   Liste de répartition des wagons (scénario 1)
 
 
-Mon projet : un jeu interactif
+Mon projet : un jeu interactif {#presentation}
 ==============================
 
 La construction d'un réseau entièrement automatique, où l'observateur regarde le mouvement des trains sans rien faire peut constituer un certain défi technique, mais apporte selon moi peu d'intérêt à son constructeur une fois mis au point (à part peut-être la programmation de nouveaux itinéraires).
