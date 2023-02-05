@@ -4,7 +4,7 @@ title: Simulation
 permalink: /operations/
 ---
 
-# Présentation
+## Présentation
 
 Modélisme ferroviaire et simulation.
 
@@ -57,8 +57,7 @@ Je suis particulièrement intéressé par l'exploitation des réseaux modèles, 
 *   Liste de répartition des wagons (scénario 1)
 
 
-Mon projet : un jeu interactif {#presentation}
-==============================
+## Mon projet : un jeu interactif {#presentation}
 
 La construction d'un réseau entièrement automatique, où l'observateur regarde le mouvement des trains sans rien faire peut constituer un certain défi technique, mais apporte selon moi peu d'intérêt à son constructeur une fois mis au point (à part peut-être la programmation de nouveaux itinéraires).
 
@@ -66,16 +65,14 @@ En revanche, une exploitation à plusieurs joueurs, responsables de conduire leu
 
 Associé à un système de supervision, mon réseau pourrait être considéré comme un jeu interactif, je m'explique : comme pour un réseau entièrement automatique, un ordinateur serait utilisé, non pas pour piloter les trains mais plutôt pour superviser les actions des joueurs et calculer une sorte de score relativement à chaque joueur.
 
-Le but du jeu
--------------
+### Le but du jeu
 
 L'ensemble des joueurs doit dérouler un scénario sur une durée donnée en temps accéléré. Le trafic doit être écoulé en respectant les horaires établis :
 
 *   les trains de voyageurs doivent circuler en respectant les départs et arrivées en gare ;
 *   les wagons de marchandise doivent être livrés à temps sur leur lieu de destination.
 
-Les contraintes d'exploitation
-------------------------------
+### Les contraintes d'exploitation
 
 Les contraintes qui doivent être respectées par les joueurs sont :
 
@@ -91,13 +88,11 @@ Les contraintes qui doivent être respectées par les joueurs sont :
 
 \*\* L'idée du contrôle des consommations m'est venue du fameux livre **[En train avec John Allen de Linn H. Westcott (traduit en français par Jacques Le Plat)](http://users.skynet.be/pro-rail/_private/sor/frsormain11.htm)**, édité par **[Pro Rail International](http://users.skynet.be/pro-rail/index.html)** (le Gorre & Daphetid Railroad).
 
-Les scores
-----------
+### Les scores
 
 Un ordinateur, connecté au réseau par le biais de capteurs, surveille les actions des joueurs à l'aide d'un logiciel particulier. Il vérifie que les contraintes d'exploitation sont respectées et attribue un score à chaque joueur. Les joueurs qui ne respectent pas toutes les contraintes obtiennent un score plus faible.
 
-Les définitions préalables
-==========================
+## Les définitions préalables
 
 Il est très difficile de reproduire complètement un réseau ferroviaire réel, étant donné l'échelle de réduction (ex : H0=1/87) et la place maximum généralement disponible.
 
@@ -116,8 +111,7 @@ Cette coulisse correspond à la gare cachée de certains réseaux modèles, qui 
 
 L'idée de coulisse active m'est venue d'un article intitulé "Flexible operation with a fiddle yard" by John Ozanich dans Model Railroad Planning 1995, un magazine annuel publié par **[Kalmbach Publishing Co.](http://www.kalmbach.com/)** (USA).
 
-Les sites et bâtiments
-----------------------
+### Les sites et bâtiments
 
 Différentes sortes de sites et bâtiments apportent un intérêt pour l'exploitation. Ces sites sont à l'origine des flux de voyageurs et de marchandises, donc à l'origine du trafic que l'on cherche à reproduire :
 
@@ -132,8 +126,7 @@ D'autres sites permettent de simuler les contraintes d'organisation de la socié
 *   les centres de triage ;
 *   etc.
 
-Les trains
-----------
+### Les trains
 
 Les trains dits "**réguliers**" relient les gares et sont du type :
 
@@ -145,8 +138,7 @@ Les trains dits "**collecteurs**" collectent puis rassemblent à la gare la plus
 
 L'idée des trains collecteurs m'est venue du fameux livre "En train avec John Allen" de Linn H. Westcott (traduit en français par Jacques Le Plat), édité par **[Pro Rail International](http://users.skynet.be/pro-rail/index.html)** (le Gorre & Daphetid Railroad).
 
-Le rôle des joueurs
-===================
+## Le rôle des joueurs
 
 Un rôle est attribué à chaque joueur :
 
@@ -154,8 +146,7 @@ Un rôle est attribué à chaque joueur :
 *   chef de gare ou de zone ;
 *   chef du centre de triage caché (coulisse).
 
-Le conducteur
--------------
+### Le conducteur
 
 Un conducteur est responsable d'un train de voyageurs ou de marchandises.
 
@@ -171,8 +162,7 @@ Les tâches d'un conducteur sont les suivantes :
 *   laisser sa machine au dépôt (cf. procédure) ;
 *   coordonner ses actions avec celles des autres joueurs.
 
-Le chef de gare ou de zone
---------------------------
+### Le chef de gare ou de zone
 
 Le chef de gare ou de zone est responsable de tout ce qui se passe dans sa gare ou sa zone. Ses tâches sont les suivantes :
 
@@ -182,8 +172,7 @@ Le chef de gare ou de zone est responsable de tout ce qui se passe dans sa gare 
 *   gérer les locotracteurs dédiés à la répartition des wagons ;
 *   gérer la halle à marchandises.
 
-Le chef du centre de triage caché (coulisse)
---------------------------------------------
+### Le chef du centre de triage caché (coulisse)
 
 Les tâches du responsable de la coulisse sont les suivantes :
 
@@ -193,13 +182,11 @@ Les tâches du responsable de la coulisse sont les suivantes :
 *   expédier les trains (application des horaires) ;
 *   gérer le trafic automatique.
 
-Le scénario
-===========
+## Le scénario
 
 Le scénario définit les **mouvements** des trains nécessaires à l'écoulement du trafic par le réseau de la société ferroviaire.
 
-Le trafic
----------
+### Le trafic
 
 Nous considérons que le trafic est engendré par :
 
@@ -218,8 +205,7 @@ Pour mon réseau, je souhaite que le trafic se décompose ainsi :
 *   trafic majoritaire : marchandises légères soumises au triage ;
 *   trafic minoritaire : voyageurs à horaires fixes.
 
-La simulation du trafic minimal
--------------------------------
+### La simulation du trafic minimal
 
 Lorsque peu de joueurs sont présents, voire dans le cas extrême d'un seul joueur, il est intéressant de simuler un trafic minimal. Il peut être simulé par un ordinateur de commande qui assure alors les mouvements à la manière d'un joueur, ou même de plusieurs.
 
@@ -229,8 +215,7 @@ Il est possible d'exploiter cette idée avec peu de moyens : le simple aller-ret
 
 Il est également possible, dans le cas d'un réseau en boucle, de faire tourner en permanence un autorail à vitesse réduite, pour simuler un trafic voyageurs minimal à horaires régulier (cette idée m'est venue d'un article intitulé "Continuous running on a point-to-point railroad" dans Model Railroad Planning 1996, un magazine annuel publié par **[Kalmbach Publishing Co.](http://www.kalmbach.com/)** - USA).
 
-La conception du réseau pour le jeu
-===================================
+## La conception du réseau pour le jeu
 
 La réalisation d'un réseau où l'on veut simuler des opérations réalistes nécessite une conception attentive de son plan de voies, pour permettre la mise en oeuvre des concepts clés d'exploitation.
 
@@ -280,8 +265,7 @@ Le choix du thème a un impact très important sur les possibilités de jeu. Par
 *   nombre de circulations simultanées ?
 *   formalisation du jeu : quels formulaires, quel système de numérotation des véhicules, gestion des wagons ouverts pleins ou vides ?
 
-La commande du réseau
-=====================
+## La commande du réseau
 
 De quoi a t-on besoin pour exploiter son réseau dans de bonnes conditions de jeu ?
 
@@ -323,15 +307,13 @@ Les commandes de conduite sélective ont pour moi l'inconvénient de ne pas êtr
 
 Au contraire, la plupart des commandes digitales sont désormais basées sur le standard DCC de la **[NMRA](http://www.nmra.org/)** ce qui constitue un gage de pérennité et de diminution des prix de par le jeu de la concurrence.
 
-La supervision et le logiciel de jeu
-====================================
+## La supervision et le logiciel de jeu
 
 Le système de supervision impose l'utilisation d'un ordinateur et d'un logiciel. Il serait probablement possible de réaliser un système entièrement électronique mais il ne serait pas évolutif.
 
-Le programme de supervision
----------------------------
+### Le programme de supervision
 
-### Les fonctions du programme de supervision
+#### Les fonctions du programme de supervision
 
 Le mode de fonctionnement recherché nécessite principalement l'entrée de signaux provenant soit du réseau vers l'ordinateur, soit du clavier.
 
@@ -349,7 +331,7 @@ Le programme de supervision est chargé de :
 *   calculer le score ;
 *   etc.
 
-### Le matériel électronique et informatique
+#### Le matériel électronique et informatique
 
 **La solution matérielle permettant de réaliser un programme de supervision avec les fonctions décrites précédemment consiste en :**
 
@@ -370,8 +352,7 @@ Les contacts ILS ne permettant de distinguer de manière simple qu'une seule loc
 
 (note 1) : Cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare.
 
-Le programme de génération de scénario
---------------------------------------
+### Le programme de génération de scénario
 
 Lors de mes premières recherches en 1996, je ne trouvais quasiment pas de logiciel pour générer des scénarios de jeu qui soient indépendants de produits spécifiques tels que, par exemple, les commandes numériques avec interface ordinateur. Ayant les compétences nécessaires, j'ai donc décidé de réaliser mon propre programme pour me faciliter la mise au point de scénarios de jeu, selon des paramètres tels que :
 
@@ -392,11 +373,9 @@ L'intelligence nécessaire pour construire des scénarios pertinents et intéres
 
 Pendant le temps que j'ai passé à expérimenter tout ceci (1996-1998), sont apparus plusieurs programmes vendus par des éditeurs spécialisés ou parfois gratuits (freewares). Le lecteur intéressé pourra consulter le Hors-Série Electronique paru en 12/98 chez **[LOCO REVUE](http://www.locorevue.com/)**, numéro accompagné d'un cédérom contenant quelques programmes de ce type en version de démonstration et les adresses de plusieurs éditeurs.
 
-Les documents pour la simulation
-================================
+## Les documents pour la simulation
 
-Tableau horaire
----------------
+### Tableau horaire
 
 Pour commencer mes essais, j'ai conçu cette première version d'un tableau horaire simple, relatif au trafic de convois de marchandises. J'ai ajusté les horaires après les premiers essais sur mon réseau.
 
@@ -414,8 +393,7 @@ Autre point important, on ressent une certaine dilatation du temps pour tous les
 
 Dans les semaines et les mois à venir, je vais essayer d'autres horaires avec plus de variété dans les types de relations.
 
-Liste de répartition des wagons (scénario 1)
---------------------------------------------
+### Liste de répartition des wagons (scénario 1)
 
 ![Liste de r'partition des wagons / Switchlist (10 Ko)](../images/switchlist.gif)
 
