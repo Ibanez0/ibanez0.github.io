@@ -4,12 +4,17 @@ title: Règles
 permalink: /reglement/
 ---
 
+<center>
+
 Règlement standard de la ligne _zéro_  
 
 ![](../images/logo4.gif)
 
-Règles d'exploitation (version 1.0)  
+Règles d'exploitation (version 1.0)
+
 **DIRECTION REGIONALE DE L'EXPLOITATION**
+
+</center>
 
 Introduction
 ------------
