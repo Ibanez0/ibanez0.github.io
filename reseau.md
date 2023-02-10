@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Reseau
+title: Réseau
 permalink: /reseau/
 ---
 
 Un réseau pour la simulation 
-
 ![](../images/logo4.gif)
 
 Le réseau "la ligne _zéro_"
@@ -43,7 +42,7 @@ Les idées clés de ma méthodologie pour ce réseau sont les suivantes :
 *   réaliser puis améliorer chaque module en plusieurs étapes, par versions successives ;
 *   réaliser rapidement une version simple du réseau, permettant de tester puis de valider le concept de jeu.
 
-### La mise en �uvre de l'exploitation
+### La mise en oeuvre de l'exploitation
 
 Pour mon réseau, j'ai défini les critères suivants :
 
@@ -84,8 +83,7 @@ J'ai commencé par utiliser deux commandes traditionnelles : une commande Mark I
 ![](../images/synoptique_multiplexeur.jpg)Mon réseau est découpé en trois zones électriques. Un répartiteur permet d'affecter une zone à une commande : il est constitué d'un pupitre muni en façade de commutateurs rotatifs positionnés par rapport au synoptique du réseau (à tout moment, chaque zone ne peut être commandée que par une seule commande).  
  
 
-###   
-Commande digitale
+### Commande digitale
 
 Ensuite, j'ai acquis une centrale digitale MRC 2000 de **Model Rectifier Corporation**, ainsi que des décodeurs **ARNOLD** et **LENZ**.
 
@@ -95,8 +93,7 @@ J'ai réalisé moi-même un boîtier avec un transformateur d'alimentation pour 
 
 La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas utiliser mon ordinateur pour piloter un train automatiquement.
 
-###   
-Supervision
+### Supervision
 
 J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans la version actuelle, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
  
@@ -128,8 +125,6 @@ Plusieurs scénarios différents peuvent être exécutés par le programme. Au d
 *   **Respect des horaires** : pour chaque gare prévue au scénario, une avance ou un retard sur l'horaire retire autant de points que le nombre de minutes d'avance ou de retard. Le fait d'être en avance sur l'horaire est ici considéré comme perturbateur pour le trafic, comme le fait d'être en retard.
 *   **Vitesse maximum autorisée** : le dépassement de la vitesse maximum autorisée sur la ligne retire 5 points à chaque contrôle de la vitesse du train, c'est-à-dire en entrée et en sortie de gare. Ainsi, le fait de "trainer" au début du scénario et "accélérer" ensuite pour rattraper son retard peut être une stratégie pénalisante si cela entraîne le dépassement de la vitesse maximum.
 *   **Carburant** : enfin, il ne faut pas tomber en panne sèche !
-  
- 
 
 Cet algorithme de calcul du score constitue un premier essai, il devra être amélioré. Déjà, le jeu est intéressant car la valeur courante du score permet d'ajuster le comportement du conducteur dans le but de ne pas avoir de pénalité trop importante, en tout cas supérieure au gain obtenu à chaque passage en gare. A titre indicatif, avec mon [scénario n°1](operations.html#timetable), le meilleur score que j'ai obtenu est de 118.
 
