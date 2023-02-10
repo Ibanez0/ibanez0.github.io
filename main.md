@@ -4,20 +4,14 @@
 
 layout: home
 ---
-Home page.
 
 Modélisme ferroviaire et simulation
 ===================================
 
 Modifié le 28/03/2022 - Copyright © 1998 Michel Raulet
 
-* * *
-
-
 Ce site se consacre aux règles, méthodes et outils papiers ou informatiques pour l'exploitation ludique d'un réseau ferroviaire miniature
 
-
-* * *
 
 **[Mon projet](operations.html#presentation)**  
 [jeu, opérations, scores](operations.html#presentation)
@@ -66,10 +60,10 @@ Ma passion principale est le [modélisme ferroviaire](operations.html). J'ai con
 
 **Consultez ces pages qui exposent quelques idées sur un concept de jeu interactif avec un réseau ferroviaire miniature.**
 
-[![Logo (4 Ko)](../images/logo5.gif)](reseau.html)
+[![Logo (4 Ko)](../images/logo4.gif)](/reseau)
 
-*   03/2022 - Mise à jour des hyperliens et quelques corrections
-*   12/2016 - Mise à jour des hyperliens
+*   '03/2022' - Mise à jour des hyperliens et quelques corrections
+*   '12/2016' - Mise à jour des hyperliens
 *   10/2011 - Mise à jour des hyperliens
 *   06/2002 - [Version télédéchargeable de l'horloge accélérée version 1.04](outillage.html) - format ZIP, applet Java
 *   12/2001 - [Calculateur de vitesse à l'échelle version 1.0](calculvitesse.html) - Convertisseur d'échelle version 3.0
