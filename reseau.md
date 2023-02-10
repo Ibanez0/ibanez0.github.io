@@ -82,6 +82,7 @@ La commande de mon réseau
 J'ai commencé par utiliser deux commandes traditionnelles : une commande Mark II de GAUGEMASTER (modèle avec asservissement de vitesse) qui assure son office pour un prix raisonnable, une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
 
 ![](../images/synoptique_multiplexeur.jpg)
+
 Mon réseau est découpé en trois zones électriques. Un répartiteur permet d'affecter une zone à une commande : il est constitué d'un pupitre muni en façade de commutateurs rotatifs positionnés par rapport au synoptique du réseau (à tout moment, chaque zone ne peut être commandée que par une seule commande).  
  
 
@@ -90,6 +91,7 @@ Mon réseau est découpé en trois zones électriques. Un répartiteur permet d'
 Ensuite, j'ai acquis une centrale digitale MRC 2000 de **Model Rectifier Corporation**, ainsi que des décodeurs **ARNOLD** et **LENZ**.
 
 ![Commande MRC 2000](../photos/mrc20001.jpg)
+
 J'ai choisi la commande [MRC 2000](http://www.modelrec.com/) principalement pour son rapport qualité/prix. J'ai acheté le pupitre avec 3 commandes, j'achèterai plus tard la commande mobile de type "walk-around". Pour le moment, j'utilise des décodeurs ARNOLD 81210 et les nouveaux décodeurs [LENZ LE103 XF](http://www.lenz.com).
 
 J'ai réalisé moi-même un boîtier avec un transformateur d'alimentation pour la commande MRC (boîtier bleu sur l'image). La connexion de la commande MRC est très simple : deux fils en entrée pour l'alimentation 15V et deux fils en sortie reliés aux rails. Dans le cas de la commande digitale, le répartiteur électrique présenté ci-dessus devient inutile car le sectionnement électrique du réseau n'est pas nécessaire quand on utilise une commande digitale.
@@ -104,6 +106,7 @@ J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port
 #### Programme de supervision
 
 ![Copie d'écran du programme de supervision](../photos/victor1.jpg)
+
 Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :
 *   la gare virtuelle courante
 *   l'heure de passage et l'écart entre le tableau horaire et l'heure de passage constatée
