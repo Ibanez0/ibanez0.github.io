@@ -59,7 +59,7 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 [MRC2000](mrc2000.html), [conseils](decodeurs.html), [67000](dcc67000.html), [66000](dcc66000.html), [63000](dcc63000.html)
 
 **Introduction :**  
-Ma passion principale est le [modélisme ferroviaire](operations.html). J'ai construit dans mon sous-sol un **[réseau](reseau.html)** étagère sur le thème d'une ligne située en banlieue Parisienne dans les années 1960.
+Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit dans mon sous-sol un **[réseau](/reseau)** étagère sur le thème d'une ligne située en banlieue Parisienne dans les années 1960.
 
 **Consultez ces pages qui exposent quelques idées sur un concept de jeu interactif avec un réseau ferroviaire miniature.**
 
@@ -67,22 +67,22 @@ Ma passion principale est le [modélisme ferroviaire](operations.html). J'ai con
 
 *   `03/2022` - Mise à jour des hyperliens et quelques corrections
 *   `12/2016` - Mise à jour des hyperliens
-*   10/2011 - Mise à jour des hyperliens
-*   06/2002 - [Version télédéchargeable de l'horloge accélérée version 1.04](outillage.html) - format ZIP, applet Java
-*   12/2001 - [Calculateur de vitesse à l'échelle version 1.0](calculvitesse.html) - Convertisseur d'échelle version 3.0
-*   02/2001 - Déménagement en préparation, donc déplacement du réseau !
-*   11/2000 - Moteur de recherche en ligne
-*   10/2000 - [Horloge accélérée version 1.0 pour les simulations](horloge.html)
-*   09/2000 - Ce site est présenté dans [LOCO REVUE](http://www.locorevue.com) de septembre 2000
-*   07/2000 - [Convertisseur d'échelle version 2.0](convertisseur.html)
-*   05/2000 - Ce site est présenté dans [RMF](http://www.rmf-magazine.com) de mai 2000
-*   04/2000 - Ce site est classé 4ème au [3ème concours de cybermodélisme organisé par RMF](http://www.rmf-magazine.com)
-*   03/2000 - [Montage d'un décodeur NMRA dans une 63000 ROCO](dcc63000.html)
-*   03/2000 - [Montage d'un décodeur NMRA dans une 66000 JOUEF](dcc66000.html)
-*   02/2000 - [Calcul du score des joueurs dans la nouvelle version du programme de supervision](reseau.html#supervision)
-*   11/1999 - [Montage d'un décodeur NMRA dans une 67000 LIMA](dcc67000.html)
-*   10/1999 - [Quelques précisions utiles concernant la commande MRC 2000](mrc2000.html)
-*   09/1999 - [Premier retour d'expérience sur la manière de choisir et installer ses décodeurs](decodeurs.html)
+*   `10/2011` - Mise à jour des hyperliens
+*   `06/2002` - [Version télédéchargeable de l'horloge accélérée version 1.04](outillage.html) - format ZIP, applet Java
+*   `12/2001` - [Calculateur de vitesse à l'échelle version 1.0](calculvitesse.html) - Convertisseur d'échelle version 3.0
+*   `02/2001` - Déménagement en préparation, donc déplacement du réseau !
+*   `11/2000` - Moteur de recherche en ligne
+*   `10/2000` - [Horloge accélérée version 1.0 pour les simulations](horloge.html)
+*   `09/2000` - Ce site est présenté dans [LOCO REVUE](http://www.locorevue.com) de septembre 2000
+*   `07/2000` - [Convertisseur d'échelle version 2.0](convertisseur.html)
+*   `05/2000` - Ce site est présenté dans [RMF](http://www.rmf-magazine.com) de mai 2000
+*   `04/2000` - Ce site est classé 4ème au [3ème concours de cybermodélisme organisé par RMF](http://www.rmf-magazine.com)
+*   `03/2000` - [Montage d'un décodeur NMRA dans une 63000 ROCO](dcc63000.html)
+*   `03/2000` - [Montage d'un décodeur NMRA dans une 66000 JOUEF](dcc66000.html)
+*   `02/2000` - [Calcul du score des joueurs dans la nouvelle version du programme de supervision](reseau.html#supervision)
+*   `11/1999` - [Montage d'un décodeur NMRA dans une 67000 LIMA](dcc67000.html)
+*   `10/1999` - [Quelques précisions utiles concernant la commande MRC 2000](mrc2000.html)
+*   `09/1999` - [Premier retour d'expérience sur la manière de choisir et installer ses décodeurs](decodeurs.html)
 
 * * *
 
