@@ -1,0 +1,135 @@
+---
+layout: page
+title: Reseau
+permalink: /reseau/
+---
+
+Un réseau pour la simulation 
+
+![](../images/logo4.gif)
+
+Le réseau "la ligne _zéro_"
+
+Présentation
+------------
+
+Mon **réseau imaginaire** représente une ligne SNCF reliant la capitale aux villes de la banlieue dans la partie SUD-EST dans les années 1960-1970, d'une longueur approximative de 150 kilomètres.
+
+Mon réseau traverse quelques départements et une seule gare est effectivement reproduite, mais...  
+La partie reproduite est une ligne à voie unique. Il aurait été plus crédible que ce soit une ligne double mais pour des raisons financières, d'espace et de temps, j'ai préféré me limiter pour le moment à une voie unique.  
+Il n'y a pas de caténaire, donc pas de locomotive électrique.  
+Le matériel de traction est principalement Diesel français, mais il arrive parfois que l'on voit passer des locomotives à vapeur.  
+Il existe un trafic de [trains réguliers](operations.html#trains_reguliers) de voyageurs et un trafic de marchandises légères. La ligne est jalonnée d'embranchements particuliers vers de petites industries ou des entreprôts.  
+Il existe à chaque extrémité une gare importante et au milieu de la ligne deux gares assez importantes pour y justifier un arrêt prolongé des trains, ainsi que la récupération des wagons ramassés par les [trains collecteurs](operations.html#trains_collecteurs). Les autres gares sont plutôt des gares de passage possédant toutefois des voies de garage et des voies d'évitement.
+
+Le thème que j'ai choisi se caractérise donc ainsi :
+
+*   ligne secondaire en voie unique (réseau imaginaire) ;
+*   milieu urbain : Paris, banlieue (je suis parisien d'origine) ;
+*   1 gare de passage réelle (gare voyageurs et marchandises) ;
+*   2 Embranchements Particuliers ;
+*   environnement extérieur : banlieue Est ;
+*   1 coulisse (3 voies de triage extérieures).
+
+![](../images/plan.gif)  
+Plan du réseau : 4,60 mètres x 2,60 mètres
+
+### La méthodologie de réalisation
+
+Les idées clés de ma méthodologie pour ce réseau sont les suivantes :
+
+*   construction modulaire (modules non normalisés) ;
+*   possibilité de réaliser des extensions futures ;
+*   réaliser puis améliorer chaque module en plusieurs étapes, par versions successives ;
+*   réaliser rapidement une version simple du réseau, permettant de tester puis de valider le concept de jeu.
+
+### La mise en �uvre de l'exploitation
+
+Pour mon réseau, j'ai défini les critères suivants :
+
+*   nombre d'opérateurs : 1 ou 2 ou 3 ;
+*   rôles : conducteurs et/ou chef de la gare et/ou chef de la coulisse ;
+*   contrôle manuel des aiguilles (câblage simplifié) ;
+*   contrôle manuel des cantons (et signaux associés) ;
+*   horloge accélérée (facteur 6 ou 12) ;
+*   nombre de circulations simultanées sur la voie unique : 2 ;
+*   système de numérotation des trains et wagons ;
+*   gestion des wagons ouverts pleins ou vides.
+
+### L'infrastructure
+
+L'infrastructure de mon réseau est décrite par les caractéristiques suivantes :
+
+*   réseau étagère en boucle de 4,60 m x 2,60 m ;
+*   largeur des modules : 60 cm ;
+*   hauteur des voies : entre 1 m 20 et 1 m 30 ;
+*   écartement : voie normale H0 ;
+*   dépôt : charbon/fuel, réparation/entretien, remise locos ;
+*   construction modulaire (déménagement, photos en extérieur) ;
+*   rayon de courbure mini : 55 cm ;
+*   câblage simplifié au maximum ;
+*   rails PECO code 75 ou 100, aiguilles electrofrog ;
+*   fond de décor démontable ;
+*   retournement des trains sans pont tournant ;
+*   longueur des voies de garage et à quai : 1,20 m ;
+*   pas de voie et de bâtiment entre les zones de triage et les opérateurs.
+
+La commande de mon réseau
+-------------------------
+
+### Commande traditionnelle
+
+J'ai commencé par utiliser deux commandes traditionnelles : une commande Mark II de GAUGEMASTER (modèle avec asservissement de vitesse) qui assure son office pour un prix raisonnable, une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
+
+![](../images/synoptique_multiplexeur.jpg)Mon réseau est découpé en trois zones électriques. Un répartiteur permet d'affecter une zone à une commande : il est constitué d'un pupitre muni en façade de commutateurs rotatifs positionnés par rapport au synoptique du réseau (à tout moment, chaque zone ne peut être commandée que par une seule commande).  
+ 
+
+###   
+Commande digitale
+
+Ensuite, j'ai acquis une centrale digitale MRC 2000 de **Model Rectifier Corporation**, ainsi que des décodeurs **ARNOLD** et **LENZ**.
+
+![Commande MRC 2000](../photos/mrc20001.jpg)J'ai choisi la commande [MRC 2000](http://www.modelrec.com/) principalement pour son rapport qualité/prix. J'ai acheté le pupitre avec 3 commandes, j'achèterai plus tard la commande mobile de type "walk-around". Pour le moment, j'utilise des décodeurs ARNOLD 81210 et les nouveaux décodeurs [LENZ LE103 XF](http://www.lenz.com).
+
+J'ai réalisé moi-même un boîtier avec un transformateur d'alimentation pour la commande MRC (boîtier bleu sur l'image). La connexion de la commande MRC est très simple : deux fils en entrée pour l'alimentation 15V et deux fils en sortie reliés aux rails. Dans le cas de la commande digitale, le répartiteur électrique présenté ci-dessus devient inutile car le sectionnement électrique du réseau n'est pas nécessaire quand on utilise une commande digitale.
+
+La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas utiliser mon ordinateur pour piloter un train automatiquement.
+
+###   
+Supervision
+
+J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans la version actuelle, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
+ 
+
+#### Programme de supervision
+
+![Copie d'�cran du programme de supervision](../photos/victor1.jpg) Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :*   la gare virtuelle courante
+*   l'heure de passage et l'écart entre le tableau horaire et l'heure de passage constatée
+*   la vitesse moyenne
+*   la distance parcourue depuis la gare de départ du scénario
+*   la quantité de carburant restante
+*   le **SCORE** courant (en points déjà obtenus)
+  
+La commande du programme de supervision s'effectue principalement à l'aide des touches de fonction du clavier, aucune saisie manuelle n'est nécessaire pendant le jeu :
+
+*   F1 : **Pause**, permet éventuellement de stopper momentanément l'horloge accélérée
+*   F2 : **Raz**, permet de recommencer le scénario courant au départ
+*   F3 : **Sauvegarde**, un historique peut être sauvegardé sur disque à tout moment et imprimé par la suite
+*   F4 : **Fuel**, permet de simuler un ravitaillement en ajoutant du carburant
+
+#### Scénarios
+
+Plusieurs scénarios différents peuvent être exécutés par le programme. Au début d'une scéance de jeu, le scénario est chargé par le programme de supervision. Ce scénario liste toutes les gares à traverser, le sens du parcours (Est,Ouest), les horaires de passage, la distance entre chaque gare, la vitesse maximale autorisée sur tout le parcours, la quantité de carburant au départ et la quantité de carburant chargée à chaque ravitaillement (simulé par une touche fonction du programme).
+
+#### Calcul du score
+
+*   **Passage en gare** : pour chaque gare prévue au scénario, l'entrée rapporte 5 points et la sortie rapporte 5 points. Le fait de ne pas conduire le train jusqu'à sa destination finale est ainsi pénalisant.
+*   **Respect des horaires** : pour chaque gare prévue au scénario, une avance ou un retard sur l'horaire retire autant de points que le nombre de minutes d'avance ou de retard. Le fait d'être en avance sur l'horaire est ici considéré comme perturbateur pour le trafic, comme le fait d'être en retard.
+*   **Vitesse maximum autorisée** : le dépassement de la vitesse maximum autorisée sur la ligne retire 5 points à chaque contrôle de la vitesse du train, c'est-à-dire en entrée et en sortie de gare. Ainsi, le fait de "trainer" au début du scénario et "accélérer" ensuite pour rattraper son retard peut être une stratégie pénalisante si cela entraîne le dépassement de la vitesse maximum.
+*   **Carburant** : enfin, il ne faut pas tomber en panne sèche !
+  
+ 
+
+Cet algorithme de calcul du score constitue un premier essai, il devra être amélioré. Déjà, le jeu est intéressant car la valeur courante du score permet d'ajuster le comportement du conducteur dans le but de ne pas avoir de pénalité trop importante, en tout cas supérieure au gain obtenu à chaque passage en gare. A titre indicatif, avec mon [scénario n°1](operations.html#timetable), le meilleur score que j'ai obtenu est de 118.
+
+J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  

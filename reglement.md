@@ -4,10 +4,6 @@ title: Règles
 permalink: /reglement/
 ---
 
-Modélisme ferroviaire et simulation - Règlement standard
-
-Règles opérationnelles et simulation
-
 Règlement standard de la ligne _zéro_  
 ![](../images/logo4.gif)
 
