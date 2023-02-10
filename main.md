@@ -5,7 +5,7 @@
 layout: home
 ---
 
-Hello
+Bonjour
 
 
 Modélisme ferroviaire et simulation
@@ -16,8 +16,8 @@ Modifié le 28/03/2022 - Copyright © 1998 Michel Raulet
 Ce site se consacre aux règles, méthodes et outils papiers ou informatiques pour l'exploitation ludique d'un réseau ferroviaire miniature
 
 
-**[Mon projet](operations.html#presentation)**  
-[jeu, opérations, scores](operations.html#presentation)
+**[Mon projet](/operations#presentation)**  
+[jeu, opérations, scores](/operations#presentation)
 
 **[Définitions](operations.html#definitions)**  
 [sites, bâtiments, trains](operations.html#definitions)
