@@ -5,6 +5,8 @@
 layout: home
 ---
 
+Hello
+
 Modélisme ferroviaire et simulation
 ===================================
 
@@ -46,8 +48,8 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 **[Réseau](reseau.html)**  
 [thème](reseau.html), [commande](reseau.html#commande), [supervision](reseau.html#supervision)
 
-**[Photos](vignettes.html)**  
-[chronologie](photos.html), [vignettes](vignettes.html)
+**[Photos](/photos)**  
+[chronologie](/photos), [vignettes](/photos)
 
 **[Outillage](outillage.html)**  
 [convertisseur d'échelle en ligne](convertisseur.html), [horloge accélérée (applet)](horloge.html), [calculateur de vitesse à l'échelle](calculvitesse.html)
@@ -62,8 +64,8 @@ Ma passion principale est le [modélisme ferroviaire](operations.html). J'ai con
 
 [![Logo (4 Ko)](../images/logo4.gif)](/reseau)
 
-*   '03/2022' - Mise à jour des hyperliens et quelques corrections
-*   '12/2016' - Mise à jour des hyperliens
+*   `03/2022` - Mise à jour des hyperliens et quelques corrections
+*   `12/2016` - Mise à jour des hyperliens
 *   10/2011 - Mise à jour des hyperliens
 *   06/2002 - [Version télédéchargeable de l'horloge accélérée version 1.04](outillage.html) - format ZIP, applet Java
 *   12/2001 - [Calculateur de vitesse à l'échelle version 1.0](calculvitesse.html) - Convertisseur d'échelle version 3.0
