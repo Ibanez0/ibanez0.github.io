@@ -103,7 +103,8 @@ J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port
 
 #### Programme de supervision
 
-![Copie d'�cran du programme de supervision](../photos/victor1.jpg) Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :*   la gare virtuelle courante
+![Copie d'�cran du programme de supervision](../photos/victor1.jpg) Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :
+*   la gare virtuelle courante
 *   l'heure de passage et l'écart entre le tableau horaire et l'heure de passage constatée
 *   la vitesse moyenne
 *   la distance parcourue depuis la gare de départ du scénario
