@@ -5,7 +5,7 @@
 layout: home
 ---
 
-Bonjour
+Hello World!
 
 
 Modélisme ferroviaire et simulation
@@ -19,35 +19,35 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 **[Mon projet](/operations#presentation)**  
 [jeu, opérations, scores](/operations#presentation)
 
-**[Définitions](operations.html#definitions)**  
-[sites, bâtiments, trains](operations.html#definitions)
+**[Définitions](/operations#definitions)**  
+[sites, bâtiments, trains](/operations#definitions)
 
-**[Rôles](operations.html#roles)**  
-[conducteur](operations.html#conducteur), [chef de gare](operations.html#chef_gare), [triage](operations.html#chef_triage)
+**[Rôles](/operations#roles)**  
+[conducteur](/operations#conducteur), [chef de gare](/operations#chef_gare), [triage](/operations#chef_triage)
 
-**[Scénario](operations.html#scenario)**  
-[trafic, voyageurs, marchandises](operations.html#scenario)
+**[Scénario](/operations#scenario)**  
+[trafic, voyageurs, marchandises](/operations#scenario)
 
-**[Conception](operations.html#conception)**  
-[forme du réseau, choix](operations.html#conception)
+**[Conception](/operations#conception)**  
+[forme du réseau, choix](/operations#conception)
 
-**[Pilotage](operations.html#commande)**  
-[commande traditionnelle, digitale](operations.html#commande)
+**[Pilotage](/operations#commande)**  
+[commande traditionnelle, digitale](/operations#commande)
 
-**[Génération](operations.html#prog_generation)**  
-[programme de génération des scénarios](operations.html#prog_generation)
+**[Génération](/operations#prog_generation)**  
+[programme de génération des scénarios](/operations#prog_generation)
 
-**[Supervision](operations.html#prog_supervision)**  
-[programme de supervision du jeu](operations.html#prog_supervision)
+**[Supervision](/operations#prog_supervision)**  
+[programme de supervision du jeu](/operations#prog_supervision)
 
-**[Documents](operations.html#documents)**  
-[tableau horaire](operations.html#timetable), [répartition des wagons](operations.html#switchlist)
+**[Documents](/operations#documents)**  
+[tableau horaire](/operations#timetable), [répartition des wagons](/operations#switchlist)
 
 **[Règlement](reglement.html)**  
 [règles générales, instructions techniques](reglement.html)
 
-**[Réseau](reseau.html)**  
-[thème](reseau.html), [commande](reseau.html#commande), [supervision](reseau.html#supervision)
+**[Réseau](/reseau)**  
+[thème](/reseau), [commande](/reseau#commande), [supervision](/reseau#supervision)
 
 **[Photos](/photos)**  
 [chronologie](/photos), [vignettes](/photos)
@@ -56,7 +56,7 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 [convertisseur d'échelle en ligne](convertisseur.html), [horloge accélérée (applet)](horloge.html), [calculateur de vitesse à l'échelle](calculvitesse.html)
 
 **[Commande digitale](mrc2000.html)**  
-[MRC2000](mrc2000.html), [conseils](decodeurs.html), [67000](dcc67000.html), [66000](dcc66000.html), [63000](dcc63000.html)
+[MRC2000](/mrc2000), [conseils](/decodeurs), [67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)
 
 **Introduction :**  
 Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit dans mon sous-sol un **[réseau](/reseau)** étagère sur le thème d'une ligne située en banlieue Parisienne dans les années 1960.
@@ -68,7 +68,7 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 *   `03/2022` - Mise à jour des hyperliens et quelques corrections
 *   `12/2016` - Mise à jour des hyperliens
 *   `10/2011` - Mise à jour des hyperliens
-*   `06/2002` - [Version télédéchargeable de l'horloge accélérée version 1.04](outillage.html) - format ZIP, applet Java
+*   `06/2002` - [Version télédéchargeable de l'horloge accélérée version 1.04](outillage.html) - ZIP, applet Java
 *   `12/2001` - [Calculateur de vitesse à l'échelle version 1.0](calculvitesse.html) - Convertisseur d'échelle version 3.0
 *   `02/2001` - Déménagement en préparation, donc déplacement du réseau !
 *   `11/2000` - Moteur de recherche en ligne
@@ -77,12 +77,12 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 *   `07/2000` - [Convertisseur d'échelle version 2.0](convertisseur.html)
 *   `05/2000` - Ce site est présenté dans [RMF](http://www.rmf-magazine.com) de mai 2000
 *   `04/2000` - Ce site est classé 4ème au [3ème concours de cybermodélisme organisé par RMF](http://www.rmf-magazine.com)
-*   `03/2000` - [Montage d'un décodeur NMRA dans une 63000 ROCO](dcc63000.html)
-*   `03/2000` - [Montage d'un décodeur NMRA dans une 66000 JOUEF](dcc66000.html)
-*   `02/2000` - [Calcul du score des joueurs dans la nouvelle version du programme de supervision](reseau.html#supervision)
-*   `11/1999` - [Montage d'un décodeur NMRA dans une 67000 LIMA](dcc67000.html)
-*   `10/1999` - [Quelques précisions utiles concernant la commande MRC 2000](mrc2000.html)
-*   `09/1999` - [Premier retour d'expérience sur la manière de choisir et installer ses décodeurs](decodeurs.html)
+*   `03/2000` - [Montage d'un décodeur NMRA dans une 63000 ROCO](/dcc63000)
+*   `03/2000` - [Montage d'un décodeur NMRA dans une 66000 JOUEF](/dcc66000)
+*   `02/2000` - [Calcul du score des joueurs dans la nouvelle version du programme de supervision](/reseau#supervision)
+*   `11/1999` - [Montage d'un décodeur NMRA dans une 67000 LIMA](/dcc67000)
+*   `10/1999` - [Quelques précisions utiles concernant la commande MRC 2000](/mrc2000)
+*   `09/1999` - [Premier retour d'expérience sur la manière de choisir et installer ses décodeurs](/decodeurs)
 
 * * *
 
