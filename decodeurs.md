@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Conseils pour le montage des decodeurs DCC
+title: Montage des decodeurs DCC
 permalink: /decodeurs/
 ---
 

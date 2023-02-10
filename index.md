@@ -55,7 +55,7 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 **[Outillage](outillage.html)**  
 [convertisseur d'échelle en ligne](convertisseur.html), [horloge accélérée (applet)](horloge.html), [calculateur de vitesse à l'échelle](calculvitesse.html)
 
-**[Commande digitale](mrc2000.html)**  
+**[Commande digitale](/mrc2000)**  
 [MRC2000](/mrc2000), [conseils](/decodeurs), [67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)
 
 **Introduction :**  
