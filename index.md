@@ -16,34 +16,34 @@ Modifié le 28/03/2022 - Copyright © 1998 Michel Raulet
 Ce site se consacre aux règles, méthodes et outils papiers ou informatiques pour l'exploitation ludique d'un réseau ferroviaire miniature
 
 
-**[Mon projet](/operations#presentation)**  
-[jeu, opérations, scores](/operations#presentation)
+**[Mon projet](/operations/#presentation)**  
+[jeu, opérations, scores](/operations/#presentation)
 
-**[Définitions](/operations#definitions)**  
-[sites, bâtiments, trains](/operations#definitions)
+**[Définitions](/operations/#definitions)**  
+[sites, bâtiments, trains](/operations/#definitions)
 
 **[Rôles](/operations/#roles)**  
-[conducteur](/operations#conducteur), [chef de gare](/operations#chef_gare), [triage](/operations#chef_triage)
+[conducteur](/operations/#conducteur), [chef de gare](/operations/#chef_gare), [triage](/operations/#chef_triage)
 
-**[Scénario](/operations#scenario)**  
-[trafic, voyageurs, marchandises](/operations#scenario)
+**[Scénario](/operations/#scenario)**  
+[trafic, voyageurs, marchandises](/operations/#scenario)
 
-**[Conception](/operations#conception)**  
-[forme du réseau, choix](/operations#conception)
+**[Conception](/operations/#conception)**  
+[forme du réseau, choix](/operations/#conception)
 
-**[Pilotage](/operations#commande)**  
-[commande traditionnelle, digitale](/operations#commande)
+**[Pilotage](/operations/#commande)**  
+[commande traditionnelle, digitale](/operations/#commande)
 
-**[Génération](/operations#prog_generation)**  
-[programme de génération des scénarios](/operations#prog_generation)
+**[Génération](/operations/#prog_generation)**  
+[programme de génération des scénarios](/operations/#prog_generation)
 
-**[Supervision](/operations#prog_supervision)**  
-[programme de supervision du jeu](/operations#prog_supervision)
+**[Supervision](/operations/#prog_supervision)**  
+[programme de supervision du jeu](/operations/#prog_supervision)
 
-**[Documents](/operations#documents)**  
-[tableau horaire](/operations#timetable), [répartition des wagons](/operations#switchlist)
+**[Documents](/operations/#documents)**  
+[tableau horaire](/operations/#timetable), [répartition des wagons](/operations/#switchlist)
 
-**[Règlement](reglement.html)**  
+**[Règlement](reglement)**  
 [règles générales, instructions techniques](reglement.html)
 
 **[Réseau](/reseau)**  
