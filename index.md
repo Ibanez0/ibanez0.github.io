@@ -44,16 +44,13 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 [tableau horaire](/operations/#timetable), [répartition des wagons](/operations/#switchlist)
 
 **[Règlement](reglement)**  
-[règles générales, instructions techniques](reglement.html)
+[règles générales, instructions techniques](reglement)
 
 **[Réseau](/reseau)**  
 [thème](/reseau), [commande](/reseau/#commande), [supervision](/reseau/#supervision)
 
 **[Photos](/photos)**  
 [chronologie](/photos), [vignettes](/photos)
-
-**[Outillage](outillage.html)**  
-[convertisseur d'échelle en ligne](convertisseur.html), [horloge accélérée (applet)](horloge.html), [calculateur de vitesse à l'échelle](calculvitesse.html)
 
 **[Commande digitale](/mrc2000)**  
 [MRC2000](/mrc2000), [conseils](/decodeurs), [67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)
