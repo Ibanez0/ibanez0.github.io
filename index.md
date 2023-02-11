@@ -22,7 +22,7 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 **[Définitions](/operations#definitions)**  
 [sites, bâtiments, trains](/operations#definitions)
 
-**[Rôles](/operations#roles)**  
+**[Rôles](/operations/#roles)**  
 [conducteur](/operations#conducteur), [chef de gare](/operations#chef_gare), [triage](/operations#chef_triage)
 
 **[Scénario](/operations#scenario)**  
