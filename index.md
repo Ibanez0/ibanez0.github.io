@@ -65,18 +65,18 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 *   `03/2022` - Mise à jour des hyperliens et quelques corrections
 *   `12/2016` - Mise à jour des hyperliens
 *   `10/2011` - Mise à jour des hyperliens
-*   `06/2002` - [Version télédéchargeable de l'horloge accélérée version 1.04](outillage.html) - ZIP, applet Java
-*   `12/2001` - [Calculateur de vitesse à l'échelle version 1.0](calculvitesse.html) - Convertisseur d'échelle version 3.0
+*   `06/2002` - Version télédéchargeable de l'horloge accélérée version 1.04 - applet Java
+*   `12/2001` - Calculateur de vitesse à l'échelle version 1.0 - Convertisseur d'échelle version 3.0
 *   `02/2001` - Déménagement en préparation, donc déplacement du réseau !
 *   `11/2000` - Moteur de recherche en ligne
-*   `10/2000` - [Horloge accélérée version 1.0 pour les simulations](horloge.html)
+*   `10/2000` - Horloge accélérée version 1.0 pour les simulations
 *   `09/2000` - Ce site est présenté dans [LOCO REVUE](http://www.locorevue.com) de septembre 2000
-*   `07/2000` - [Convertisseur d'échelle version 2.0](convertisseur.html)
+*   `07/2000` - Convertisseur d'échelle version 2.0
 *   `05/2000` - Ce site est présenté dans [RMF](http://www.rmf-magazine.com) de mai 2000
 *   `04/2000` - Ce site est classé 4ème au [3ème concours de cybermodélisme organisé par RMF](http://www.rmf-magazine.com)
 *   `03/2000` - [Montage d'un décodeur NMRA dans une 63000 ROCO](/dcc63000)
 *   `03/2000` - [Montage d'un décodeur NMRA dans une 66000 JOUEF](/dcc66000)
-*   `02/2000` - [Calcul du score des joueurs dans la nouvelle version du programme de supervision](/reseau#supervision)
+*   `02/2000` - [Calcul du score des joueurs dans la nouvelle version du programme de supervision](/reseau/#supervision)
 *   `11/1999` - [Montage d'un décodeur NMRA dans une 67000 LIMA](/dcc67000)
 *   `10/1999` - [Quelques précisions utiles concernant la commande MRC 2000](/mrc2000)
 *   `09/1999` - [Premier retour d'expérience sur la manière de choisir et installer ses décodeurs](/decodeurs)
