@@ -17,7 +17,7 @@ Je suis particulièrement intéressé par l'exploitation des réseaux modèles, 
 *   Les contraintes d'exploitation
 *   Les scores
 
-[Les définitions préalables](#les-définitions-préalables)
+[Les définitions préalables](#definitions)
 
 *   Les sites et bâtiments
 *   Les trains
@@ -92,7 +92,7 @@ Les contraintes qui doivent être respectées par les joueurs sont :
 
 Un ordinateur, connecté au réseau par le biais de capteurs, surveille les actions des joueurs à l'aide d'un logiciel particulier. Il vérifie que les contraintes d'exploitation sont respectées et attribue un score à chaque joueur. Les joueurs qui ne respectent pas toutes les contraintes obtiennent un score plus faible.
 
-## Les définitions préalables
+## Les définitions préalables {#definitions}
 
 Il est très difficile de reproduire complètement un réseau ferroviaire réel, étant donné l'échelle de réduction (ex : H0=1/87) et la place maximum généralement disponible.
 
@@ -138,7 +138,7 @@ Les trains dits "**collecteurs**" collectent puis rassemblent à la gare la plus
 
 L'idée des trains collecteurs m'est venue du fameux livre "En train avec John Allen" de Linn H. Westcott (traduit en français par Jacques Le Plat), édité par **[Pro Rail International](http://users.skynet.be/pro-rail/index.html)** (le Gorre & Daphetid Railroad).
 
-## Le rôle des joueurs
+## Le rôle des joueurs  {#roles}
 
 Un rôle est attribué à chaque joueur :
 
@@ -182,7 +182,7 @@ Les tâches du responsable de la coulisse sont les suivantes :
 *   expédier les trains (application des horaires) ;
 *   gérer le trafic automatique.
 
-## Le scénario
+## Le scénario  {#scenario}
 
 Le scénario définit les **mouvements** des trains nécessaires à l'écoulement du trafic par le réseau de la société ferroviaire.
 
@@ -215,7 +215,7 @@ Il est possible d'exploiter cette idée avec peu de moyens : le simple aller-ret
 
 Il est également possible, dans le cas d'un réseau en boucle, de faire tourner en permanence un autorail à vitesse réduite, pour simuler un trafic voyageurs minimal à horaires régulier (cette idée m'est venue d'un article intitulé "Continuous running on a point-to-point railroad" dans Model Railroad Planning 1996, un magazine annuel publié par **[Kalmbach Publishing Co.](http://www.kalmbach.com/)** - USA).
 
-## La conception du réseau pour le jeu
+## La conception du réseau pour le jeu {#conception}
 
 La réalisation d'un réseau où l'on veut simuler des opérations réalistes nécessite une conception attentive de son plan de voies, pour permettre la mise en oeuvre des concepts clés d'exploitation.
 
@@ -265,7 +265,7 @@ Le choix du thème a un impact très important sur les possibilités de jeu. Par
 *   nombre de circulations simultanées ?
 *   formalisation du jeu : quels formulaires, quel système de numérotation des véhicules, gestion des wagons ouverts pleins ou vides ?
 
-## La commande du réseau
+## La commande du réseau  {#commande}
 
 De quoi a t-on besoin pour exploiter son réseau dans de bonnes conditions de jeu ?
 
@@ -307,7 +307,7 @@ Les commandes de conduite sélective ont pour moi l'inconvénient de ne pas êtr
 
 Au contraire, la plupart des commandes digitales sont désormais basées sur le standard DCC de la **[NMRA](http://www.nmra.org/)** ce qui constitue un gage de pérennité et de diminution des prix de par le jeu de la concurrence.
 
-## La supervision et le logiciel de jeu
+## La supervision et le logiciel de jeu {#supervision}
 
 Le système de supervision impose l'utilisation d'un ordinateur et d'un logiciel. Il serait probablement possible de réaliser un système entièrement électronique mais il ne serait pas évolutif.
 
@@ -373,7 +373,7 @@ L'intelligence nécessaire pour construire des scénarios pertinents et intéres
 
 Pendant le temps que j'ai passé à expérimenter tout ceci (1996-1998), sont apparus plusieurs programmes vendus par des éditeurs spécialisés ou parfois gratuits (freewares). Le lecteur intéressé pourra consulter le Hors-Série Electronique paru en 12/98 chez **[LOCO REVUE](http://www.locorevue.com/)**, numéro accompagné d'un cédérom contenant quelques programmes de ce type en version de démonstration et les adresses de plusieurs éditeurs.
 
-## Les documents pour la simulation
+## Les documents pour la simulation {#documents}
 
 ### Tableau horaire
 
