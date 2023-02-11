@@ -138,7 +138,7 @@ Les trains dits "**collecteurs**" collectent puis rassemblent à la gare la plus
 
 L'idée des trains collecteurs m'est venue du fameux livre "En train avec John Allen" de Linn H. Westcott (traduit en français par Jacques Le Plat), édité par **[Pro Rail International](http://users.skynet.be/pro-rail/index.html)** (le Gorre & Daphetid Railroad).
 
-## Le rôle des joueurs  {#roles}
+## Le rôle des joueurs {#roles}
 
 Un rôle est attribué à chaque joueur :
 
@@ -146,7 +146,7 @@ Un rôle est attribué à chaque joueur :
 *   chef de gare ou de zone ;
 *   chef du centre de triage caché (coulisse).
 
-### Le conducteur
+### Le conducteur {#conducteur}
 
 Un conducteur est responsable d'un train de voyageurs ou de marchandises.
 
@@ -162,7 +162,7 @@ Les tâches d'un conducteur sont les suivantes :
 *   laisser sa machine au dépôt (cf. procédure) ;
 *   coordonner ses actions avec celles des autres joueurs.
 
-### Le chef de gare ou de zone
+### Le chef de gare ou de zone {#chef_gare}
 
 Le chef de gare ou de zone est responsable de tout ce qui se passe dans sa gare ou sa zone. Ses tâches sont les suivantes :
 
@@ -172,7 +172,7 @@ Le chef de gare ou de zone est responsable de tout ce qui se passe dans sa gare 
 *   gérer les locotracteurs dédiés à la répartition des wagons ;
 *   gérer la halle à marchandises.
 
-### Le chef du centre de triage caché (coulisse)
+### Le chef du centre de triage caché (coulisse) {#chef_triage}
 
 Les tâches du responsable de la coulisse sont les suivantes :
 
@@ -182,7 +182,7 @@ Les tâches du responsable de la coulisse sont les suivantes :
 *   expédier les trains (application des horaires) ;
 *   gérer le trafic automatique.
 
-## Le scénario  {#scenario}
+## Le scénario {#scenario}
 
 Le scénario définit les **mouvements** des trains nécessaires à l'écoulement du trafic par le réseau de la société ferroviaire.
 
@@ -265,7 +265,7 @@ Le choix du thème a un impact très important sur les possibilités de jeu. Par
 *   nombre de circulations simultanées ?
 *   formalisation du jeu : quels formulaires, quel système de numérotation des véhicules, gestion des wagons ouverts pleins ou vides ?
 
-## La commande du réseau  {#commande}
+## La commande du réseau {#commande}
 
 De quoi a t-on besoin pour exploiter son réseau dans de bonnes conditions de jeu ?
 
@@ -288,8 +288,6 @@ J'ai examiné principalement trois types de systèmes :
 *   les commandes digitales avec décodeur à bord des locomotives (ex : Digital-Plus de LENZ, Commander 9 ARNOLD, MRC 2000).
 
 **Tableau comparatif :**  
-   
- 
 
 | Commande classique | Commande digitale |
 |--------------------|-------------------|
