@@ -311,7 +311,7 @@ Au contraire, la plupart des commandes digitales sont désormais basées sur le 
 
 Le système de supervision impose l'utilisation d'un ordinateur et d'un logiciel. Il serait probablement possible de réaliser un système entièrement électronique mais il ne serait pas évolutif.
 
-### Le programme de supervision
+### Le programme de supervision {#prog_supervision}
 
 #### Les fonctions du programme de supervision
 
@@ -352,7 +352,7 @@ Les contacts ILS ne permettant de distinguer de manière simple qu'une seule loc
 
 (note 1) : Cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare.
 
-### Le programme de génération de scénario
+### Le programme de génération de scénario {#prog_generation}
 
 Lors de mes premières recherches en 1996, je ne trouvais quasiment pas de logiciel pour générer des scénarios de jeu qui soient indépendants de produits spécifiques tels que, par exemple, les commandes numériques avec interface ordinateur. Ayant les compétences nécessaires, j'ai donc décidé de réaliser mon propre programme pour me faciliter la mise au point de scénarios de jeu, selon des paramètres tels que :
 
@@ -375,7 +375,7 @@ Pendant le temps que j'ai passé à expérimenter tout ceci (1996-1998), sont ap
 
 ## Les documents pour la simulation {#documents}
 
-### Tableau horaire
+### Tableau horaire {#timetable}
 
 Pour commencer mes essais, j'ai conçu cette première version d'un tableau horaire simple, relatif au trafic de convois de marchandises. J'ai ajusté les horaires après les premiers essais sur mon réseau.
 
@@ -393,7 +393,7 @@ Autre point important, on ressent une certaine dilatation du temps pour tous les
 
 Dans les semaines et les mois à venir, je vais essayer d'autres horaires avec plus de variété dans les types de relations.
 
-### Liste de répartition des wagons (scénario 1)
+### Liste de répartition des wagons (scénario 1) {#switchlist}
 
 ![Liste de r'partition des wagons / Switchlist (10 Ko)](../images/switchlist.gif)
 

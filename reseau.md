@@ -77,7 +77,7 @@ L'infrastructure de mon réseau est décrite par les caractéristiques suivantes
 La commande de mon réseau
 -------------------------
 
-### Commande traditionnelle
+### Commande traditionnelle {#commande}
 
 J'ai commencé par utiliser deux commandes traditionnelles : une commande Mark II de GAUGEMASTER (modèle avec asservissement de vitesse) qui assure son office pour un prix raisonnable, une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
 
@@ -98,7 +98,7 @@ J'ai réalisé moi-même un boîtier avec un transformateur d'alimentation pour 
 
 La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas utiliser mon ordinateur pour piloter un train automatiquement.
 
-### Supervision
+### Supervision {#supervision}
 
 J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans la version actuelle, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
  

@@ -47,7 +47,7 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 [règles générales, instructions techniques](reglement.html)
 
 **[Réseau](/reseau)**  
-[thème](/reseau), [commande](/reseau#commande), [supervision](/reseau#supervision)
+[thème](/reseau), [commande](/reseau/#commande), [supervision](/reseau/#supervision)
 
 **[Photos](/photos)**  
 [chronologie](/photos), [vignettes](/photos)
