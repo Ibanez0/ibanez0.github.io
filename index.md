@@ -103,7 +103,9 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 *   **[ESU](https://www.esu.eu)** - Equipements DCC (décodeurs LokPilot, LokSound)
 *   **[LOCODUINO](https://locoduino.org)** - Arduino pour modélisme ferroviaire
 *   **[DCC-EX](https://dcc-ex.com)** - Logiciel opensource pour modélisme ferroviaire fonctionnant avec Arduino
-
+*   **[JMRI](https://www.jmri.org)** - Logiciel opensource Java Model Railroad Interface
+*   **[Engine Driver](https://enginedriver.mstevetodd.com)** - Application Android
+*   **[WiThrottle](https://www.withrottle.com)** - Application iOS
 
 **MODELISME FERROVIAIRE :**
 

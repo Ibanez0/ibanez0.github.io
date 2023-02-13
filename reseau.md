@@ -106,6 +106,8 @@ J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX
 
 Hardware :
 
+![Commande DCC EX JMRI Engine Driver](../photos/dccex1.png)
+
 J'ai réalisé une station de commande complète très simplement en assemblant :
 * une carte Arduino Mega 2560
 * une carte aditionnelle Motor Shield
@@ -114,16 +116,22 @@ J'ai réalisé une station de commande complète très simplement en assemblant 
 Software :
 
 Cette station de commande est pilotée avec :
-* un ordinateur standard (Macbook) connecté à la carte Arduino avec un cable USB (et connecté au réseau local Wifi)
-* le logiciel JMRI
-* l'application Engine Driver sur Android ou l'application WiThrottleLite sur iOS en guise de commande mobile reliée à JMRI en WiFi.
-
+* ordinateur standard (Macbook) :
+    * connecté à la carte Arduino Mega 2560 avec un cable USB
+    * connecté au réseau local Wifi
+* logiciel open source DCC-EX EX-CommandStation pour Arduino
+* logiciel open source Arduino IDE Serial Monitor (initialisation Arduino)
+* logiciel open source JMRI DecoderPro ou PanelPro (Java Model Railroad Interface)
+* pour la commande mobile de type "walk-around" :
+    * serveur JMRI WiThrottle
+    * application mobile open source Engine Driver pour Android
+    * application mobile WiThrottleLite pour iOS 
 ### Supervision {#supervision}
 
 J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans la version actuelle, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
  
 
-#### Programme de supervision
+#### Programme de supervision 
 
 ![Copie d'écran du programme de supervision](../photos/victor1.jpg)
 
