@@ -126,6 +126,8 @@ Cette station de commande est pilotée avec :
     * serveur JMRI WiThrottle
     * application mobile open source Engine Driver pour Android
     * application mobile WiThrottleLite pour iOS 
+
+
 ### Supervision {#supervision}
 
 J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans la version actuelle, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
