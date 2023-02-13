@@ -88,7 +88,9 @@ Mon réseau est découpé en trois zones électriques. Un répartiteur permet d'
 
 ### Commande digitale
 
-En 1998, j'ai acquis une centrale digitale MRC 2000 de **Model Rectifier Corporation**, ainsi que des décodeurs **ARNOLD** et **LENZ**.
+1998 : MRC 2000
+
+J'ai acquis une centrale digitale MRC 2000 de **Model Rectifier Corporation**, ainsi que des décodeurs **ARNOLD** et **LENZ**.
 
 ![Commande MRC 2000](../photos/mrc20001.jpg)
 
@@ -98,7 +100,23 @@ J'ai réalisé moi-même un boîtier avec un transformateur d'alimentation pour 
 
 La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas utiliser un ordinateur pour piloter un train automatiquement.
 
-En 2022, j'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme Arduino. Depuis maintenant plusieurs années, les décodeurs proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives. La commande MRC ne permettant de piloter qu'une seule fonction auxiliaire, un changement de technologie était nécessaire. J'ai réalisé une station de commande complète assez simplement en assemblant une carte Arduino Mega 2560, une carte Motor Shield et une alimentation 18V. Cette station est elle-même pilotée avec le logiciel JMRI depuis un ordinateur connecté à la carte Arduino avec un cable USB. Enfin, j'utilise l'application Engine Driver sur Android ou l'application WiThrottleLite sur iOS en guise de commande mobile reliée à JMRI en WiFi.
+2022 : Arduino / DCC-EX
+
+J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**. Depuis maintenant plusieurs années, les décodeurs proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives. La commande MRC ne permettant de piloter qu'une seule fonction auxiliaire, un changement de technologie était nécessaire. 
+
+Hardware :
+
+J'ai réalisé une station de commande complète très simplement en assemblant :
+* une carte Arduino Mega 2560
+* une carte aditionnelle Motor Shield
+* une alimentation 18V (5A)
+
+Software :
+
+Cette station de commande est pilotée avec :
+* un ordinateur standard (Macbook) connecté à la carte Arduino avec un cable USB (et connecté au réseau local Wifi)
+* le logiciel JMRI
+* l'application Engine Driver sur Android ou l'application WiThrottleLite sur iOS en guise de commande mobile reliée à JMRI en WiFi.
 
 ### Supervision {#supervision}
 
