@@ -11,9 +11,9 @@ Hello World!
 Modélisme ferroviaire et simulation
 ===================================
 
-Modifié le 28/03/2022 - Copyright © 1998 Michel Raulet
+Modifié le 28/03/2022 - Copyright © 1998-2023 MRA
 
-Ce site se consacre aux règles, méthodes et outils papiers ou informatiques pour l'exploitation ludique d'un réseau ferroviaire miniature
+Ce site se consacre aux règles, méthodes et outils papiers ou informatiques pour l'exploitation ludique d'un réseau ferroviaire miniature.
 
 
 **[Mon projet](/operations/#presentation)**  
@@ -50,10 +50,13 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 [thème](/reseau), [commande](/reseau/#commande), [supervision](/reseau/#supervision)
 
 **[Photos](/photos)**  
-[chronologie](/photos), [vignettes](/photos)
+[chronologie](/photos)
 
 **[Commande digitale](/mrc2000)**  
-[MRC2000](/mrc2000), [conseils](/decodeurs), [67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)
+[MRC2000](/mrc2000)
+
+**[Décodeurs](/decodeurs)**  
+[conseils](/decodeurs), [digitalisation 67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)
 
 **Introduction :**  
 Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit dans mon sous-sol un **[réseau](/reseau)** étagère sur le thème d'une ligne située en banlieue Parisienne dans les années 1960.
@@ -90,7 +93,7 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 *   **[The Layout Design Primer](http://ldsig.org)** - The Layout Design Primer is a World Wide Web Publication of the [Layout Design Special Interest Group](http://ldsig.org) of the [N.M.R.A.](https://www.nmra.org) (**N**ational **M**odel **R**ailroad **A**ssociation)
 *   **[Yosemite Valley Railroad Co.](https://www.yosemitevalleyrr.com)** - Exploitation réaliste d'un réseau, séances de jeu (résumé et photos), description des règles et formulaires, etc.
 
-**ELECTRONIQUE :**
+**ELECTRONIQUE / LOGICIEL :**
 
 *   **[Lenz GmbH DIGITAL](https://www.lenz-elektronik.de)** - Télécommande digitale et décodeurs
 *   **[Model Rectifier Corporation](https://www.modelrectifier.com)** - MRC 2000, Télécommande digitale et décodeurs
@@ -99,6 +102,8 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 *   **[GAUGEMASTER](https://www.gaugemasterretail.com)** - Commandes avec simulation d'inertie et asservissement
 *   **[ESU](https://www.esu.eu)** - Equipements DCC (décodeurs LokPilot, LokSound)
 *   **[LOCODUINO](https://locoduino.org)** - Arduino pour modélisme ferroviaire
+*   **[DCC-EX](https://dcc-ex.com)** - Logiciel opensource pour modélisme ferroviaire fonctionnant avec Arduino
+
 
 **MODELISME FERROVIAIRE :**
 
@@ -116,4 +121,4 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 
 * * *
 
-Conception et réalisation © 1998 Michel Raulet
+Conception et réalisation © 1998-2023 MRA

@@ -88,15 +88,17 @@ Mon réseau est découpé en trois zones électriques. Un répartiteur permet d'
 
 ### Commande digitale
 
-Ensuite, j'ai acquis une centrale digitale MRC 2000 de **Model Rectifier Corporation**, ainsi que des décodeurs **ARNOLD** et **LENZ**.
+En 1998, j'ai acquis une centrale digitale MRC 2000 de **Model Rectifier Corporation**, ainsi que des décodeurs **ARNOLD** et **LENZ**.
 
 ![Commande MRC 2000](../photos/mrc20001.jpg)
 
-J'ai choisi la commande [MRC 2000](http://www.modelrec.com/) principalement pour son rapport qualité/prix. J'ai acheté le pupitre avec 3 commandes, j'achèterai plus tard la commande mobile de type "walk-around". Pour le moment, j'utilise des décodeurs ARNOLD 81210 et les nouveaux décodeurs [LENZ LE103 XF](http://www.lenz.com).
+J'ai choisi la commande MRC 2000 principalement pour son rapport qualité/prix. J'ai acheté le pupitre avec 3 commandes pour commencer avec l'idée d'acheter plus tard la commande mobile de type "walk-around". A cette époque, j'ai équipé quelques unes de mes locomotives avec des décodeurs ARNOLD 81210 et des décodeurs LENZ LE103 XF.
 
 J'ai réalisé moi-même un boîtier avec un transformateur d'alimentation pour la commande MRC (boîtier bleu sur l'image). La connexion de la commande MRC est très simple : deux fils en entrée pour l'alimentation 15V et deux fils en sortie reliés aux rails. Dans le cas de la commande digitale, le répartiteur électrique présenté ci-dessus devient inutile car le sectionnement électrique du réseau n'est pas nécessaire quand on utilise une commande digitale.
 
-La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas utiliser mon ordinateur pour piloter un train automatiquement.
+La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas utiliser un ordinateur pour piloter un train automatiquement.
+
+En 2022, j'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme Arduino. Depuis maintenant plusieurs années, les décodeurs proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives. La commande MRC ne permettant de piloter qu'une seule fonction auxiliaire, un changement de technologie était nécessaire. J'ai réalisé une station de commande complète assez simplement en assemblant une carte Arduino Mega 2560, une carte Motor Shield et une alimentation 18V. Cette station est elle-même pilotée avec le logiciel JMRI depuis un ordinateur connecté à la carte Arduino avec un cable USB. Enfin, j'utilise l'application Engine Driver sur Android ou l'application WiThrottleLite sur iOS en guise de commande mobile reliée à JMRI en WiFi.
 
 ### Supervision {#supervision}
 
