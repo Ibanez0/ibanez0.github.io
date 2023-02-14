@@ -110,7 +110,7 @@ Hardware :
 
 J'ai réalisé une station de commande complète très simplement en assemblant :
 * une carte Arduino Mega 2560
-* une carte aditionnelle Motor Shield
+* une carte additionnelle Motor Shield
 * une alimentation 18V (5A)
 
 Software :
