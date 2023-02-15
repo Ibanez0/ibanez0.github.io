@@ -53,7 +53,7 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 [chronologie](/photos)
 
 **[Commande digitale](/mrc2000)**  
-[MRC2000](/mrc2000)
+[MRC2000](/mrc2000), [DCC-EX/Arduino/JMRI](/ligne1)
 
 **[Décodeurs](/decodeurs)**  
 [conseils](/decodeurs), [digitalisation 67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)
