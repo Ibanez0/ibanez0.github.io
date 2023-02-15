@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ligne 1
+title: La ligne 1
 permalink: /ligne1/
 ---
 
@@ -45,4 +45,8 @@ Cette station de commande est pilotée avec :
 
 ## Supervision {#supervision}
 
-J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans la version actuelle, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
+Des capteurs tels que des ILS peuvent être reliés à une carte Arduino.
+
+La librairie arduinoCMRI permet de réaliser un noeud C/MRI SMINI avec une carte Arduino.
+
+Reliée au Mac avec un cable USB, JMRI peut superviser les changements d'état de boutons et capteurs ILS et peut actionner des LED.
