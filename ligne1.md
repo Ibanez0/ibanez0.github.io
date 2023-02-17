@@ -42,6 +42,9 @@ Cette station de commande est pilotée avec :
     * application mobile open source Engine Driver pour Android
     * application mobile WiThrottleLite pour iOS 
 
+Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mode <D SPEED 28>.
+
+
 
 ## Supervision {#supervision}
 
