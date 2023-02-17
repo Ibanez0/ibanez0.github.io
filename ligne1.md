@@ -13,6 +13,8 @@ Présentation
 
 La ligne 1 en étagère pour simuler le triage des wagons vers les EPs.
 
+![Ligne 1](../images/ligne1.jpg)
+
 ## Commande
 
 2022 : Arduino / DCC-EX
