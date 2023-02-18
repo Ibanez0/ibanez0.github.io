@@ -4,7 +4,7 @@ title: La ligne 1
 permalink: /ligne1/
 ---
 
-Un réseau pour la simulation
+UN RESEAU FERROVIAIRE MINIATURE POUR LA SIMULATION
 
 Le réseau "la ligne _un_"
 
@@ -12,6 +12,7 @@ Présentation
 ------------
 
 La ligne 1 en étagère pour simuler le triage des wagons vers les EPs.
+Un autorail fait des allers/retours en parallèle.
 
 ![Ligne 1](../images/ligne1.jpg)
 
