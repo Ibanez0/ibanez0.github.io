@@ -6,13 +6,13 @@ permalink: /ligne1/
 
 UN RESEAU FERROVIAIRE MINIATURE POUR LA SIMULATION
 
-Le réseau "la ligne _un_"
+Après la ligne Zéro (en boucle), la ligne _un_ (en aller/retour).
 
 Présentation
 ------------
 
-La ligne 1 en étagère pour simuler le triage des wagons vers les EPs.
-Un autorail fait des allers/retours en parallèle.
+La ligne 1 en étagère pour simuler le triage des wagons vers les Enbranchements Particuliers (EP).
+Un autorail fait des allers/retours en parallèle en passant par la gare.
 
 ![Ligne 1](../images/ligne1.jpg)
 
