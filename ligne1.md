@@ -20,9 +20,9 @@ Le but du jeu est de recevoir un train et de délivrer avec un locotracteur des 
 
 Une difficulté est de capter le respect des obligations.
 Un ILS en entrée et sortie de gare comme pour le réseau de la ligne 0 ne convient pas ici.
-Il faut capturer les commandes digitales envoyées au locotracteur. Cela est possible avec les commandes tracées par JMRI.
-Il faut vérifier la bonne position des wagons.
-Cela est possible avec des QRcodes sous les wagons et de multiples détecteurs sur le réseau mais le système est complexe. Une autre option peut être la reconnaissance par caméra et IA.
+Il faut capturer les commandes digitales envoyées au locotracteur. Cela est possible avec les commandes tracées par JMRI dans les logs.
+Il faut aussi vérifier la bonne position des wagons.
+Cela serait possible avec des QRcodes sous les wagons et de multiples détecteurs sur le réseau mais le système est complexe à construire et à gérer. Une autre option pourrait être la reconnaissance par caméra et IA.
 
 
 ## Station de commande
