@@ -14,7 +14,16 @@ Présentation
 La ligne 1 en étagère pour simuler le triage des wagons vers les Enbranchements Particuliers (EP).
 Un autorail fait des allers/retours en parallèle en passant par la gare.
 
+Le but du jeu est de recevoir un train et de délivrer avec un locotracteur des wagons conformément à une feuille de répartition, en respectant les signaux intermédiaires (tels que les carrés violets), les vitesses modérées, les coups de sifflet obligatoires, les bruitages, les attelages/dételages, les phares, etc. Tout cela permet de calculer un score.
+
 ![Ligne 1](../images/ligne1.jpg)
+
+Une difficulté est de capter le respect des obligations.
+Un ILS en entrée et sortie de gare comme pour le réseau de la ligne 0 ne convient pas ici.
+Il faut capturer les commandes digitales envoyées au locotracteur. Cela est possible avec les commandes tracées par JMRI.
+Il faut vérifier la bonne position des wagons.
+Cela est possible avec des QRcodes sous les wagons et de multiples détecteurs sur le réseau mais le système est complexe. Une autre option peut être la reconnaissance par caméra et IA.
+
 
 ## Station de commande
 
