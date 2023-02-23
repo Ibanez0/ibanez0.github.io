@@ -18,12 +18,10 @@ Le but du jeu est de recevoir un train et de délivrer avec un locotracteur des 
 
 ![Ligne 1](../images/ligne1.jpg)
 
-Une difficulté est de capter le respect des obligations.
+Une difficulté est de contrôler le respect des règles.
 Un ILS en entrée et sortie de gare comme pour le réseau de la ligne 0 ne convient pas ici.
-Il faut capturer les commandes digitales envoyées au locotracteur. Cela est possible avec les commandes tracées par JMRI dans les logs.
+Il faut capturer les commandes digitales envoyées au locotracteur.
 Il faut aussi vérifier la bonne position des wagons.
-Cela serait possible avec des tags NFC sous les wagons et de multiples détecteurs sur le réseau mais le système est complexe à construire et à gérer. Une autre option pourrait être la reconnaissance par caméra et IA.
-
 
 ## Station de commande
 
@@ -53,7 +51,7 @@ Software :
 
 Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mode SPEED 28.
 
-## Pilotage / supervision 
+## Pilotage
 
 Le pilotage avec les commandes de l'API dans le Serial Monitor n'est pas conçu pour le jeu.
 J'utilise principalement le logiciel open source JRMI (Java Model Railroad Interface) avec la configuration suivante :
@@ -69,9 +67,23 @@ J'utilise principalement le logiciel open source JRMI (Java Model Railroad Inter
 JMRI gère aussi :
 * une horloge accélérée
 * des scripts d'automatisation tels que l'aller/retour d'une locomotive
-* des automatismes déclenchés par des capteurs (boutons, ILS, etc.)
-* des actions sur des composants (LED, moteurs, etc.)
+* des interfaces avec C/MRI
+* l'affichage d'un synoptique du réseau
 
 Des capteurs tels que des ILS peuvent être reliés à une carte Arduino.
 La librairie arduinoCMRI permet de réaliser un noeud C/MRI SMINI avec une carte Arduino.
-Reliée au Mac avec un cable USB, JMRI peut superviser les changements d'état de boutons et capteurs ILS et peut actionner des LED.
+Reliée au Mac avec un cable USB, JMRI peut ainsi réagir à des changements d'état de boutons et capteurs ILS et peut actionner des LED et des moteurs d'aiguillage.
+
+## Supervision
+
+Principe :
+
+Le contrôle des règles et d'un scénario peut être réalisé en observant le jeu avec une caméra positionnée pour avoir une vue d'ensemble.
+Un programme d'intelligence artificielle peut analyser des photos à intervalle régulier et repérer la position du locotracteur et des wagons. Les positions des éléments est horodatée.
+Les commandes passées par la commande DCC-EX sont également horodatées.
+l'ensemble des traces peuvent être fusionnées et triées, puis analysées pour déterminer le scénario qui a été exécuté, le bon respect des règles et la délivrance des wagons à leur bonne destination.
+
+Le programme d'intelligence artificielle est basé sur un réseau RetinaNet qui a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position. Un traitement relie la position des éléments sur la photo et la position des bâtiments et EP.
+
+Ainsi, le cablage du réseau peut rester simple et le plan des voix peut même évoluer facilement sans changer le fonctionnement général.
+
