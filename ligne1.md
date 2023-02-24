@@ -76,14 +76,17 @@ Reliée au Mac avec un cable USB, JMRI peut ainsi réagir à des changements d'�
 
 ## Supervision
 
-Principe :
+Principe : utiliser l'intelligence artificielle
 
-Le contrôle des règles et d'un scénario peut être réalisé en observant le jeu avec une caméra positionnée pour avoir une vue d'ensemble.
-Un programme d'intelligence artificielle peut analyser des photos à intervalle régulier et repérer la position du locotracteur et des wagons. Les positions des éléments est horodatée.
-Les commandes passées par la commande DCC-EX sont également horodatées.
-l'ensemble des traces peuvent être fusionnées et triées, puis analysées pour déterminer le scénario qui a été exécuté, le bon respect des règles et la délivrance des wagons à leur bonne destination.
+Le contrôle d'un scénario et du respect des règles peut être réalisé en observant le déroulement du jeu avec une caméra positionnée pour avoir une vue d'ensemble.
+Un programme d'intelligence artificielle est basé sur un réseau de neurones (de type RetinaNet avec la librairie Keras/tensorflow) qui a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
+Elle pourrait être positionnée en surplomb, de face ou dans l'axe des voies, ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter l'apprentissage du réseau de neurones.
 
-Le programme d'intelligence artificielle est basé sur un réseau RetinaNet qui a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position. Un traitement relie la position des éléments sur la photo et la position des bâtiments et EP.
+* Une webcam est pilotée en Python (voir la librairie OpenCV) pour capturer des photos à intervalle régulier (example : toutes les 5 secondes).
+* Un programme analyse chaque photo au fur et à mesure, repère la position du locotracteur et des wagons, et insère une ligne de trace horodatée dans un fichier de log.
+* Chaque commande passée par la commande DCC-EX produit une trace horodatée dans un fichier de log.
+* Les traces sont fusionnées et triées au fur et à mesure.
+* Un programme de supervision analyse les traces et calcule un score affiché au joueur.
 
-Ainsi, le cablage du réseau peut rester simple et le plan des voix peut même évoluer facilement sans changer le fonctionnement général.
+Remarque : le cablage du réseau peut rester simple et le plan des voix peut même évoluer facilement sans changer le fonctionnement général. Cela permet dans une certaine mesure de changer la structure du jeu sans impact sur la supervision et les habituels capteurs.
 
