@@ -79,22 +79,20 @@ Reliée au Mac avec un cable USB, JMRI peut ainsi réagir à des changements d'�
 Principe : utiliser l'intelligence artificielle
 
 Le contrôle d'un scénario et du respect des règles peut être réalisé en observant le déroulement du jeu avec une caméra positionnée pour avoir une vue d'ensemble.
-Un programme d'intelligence artificielle est basé sur un réseau de neurones (de type RetinaNet avec la librairie Keras/tensorflow) qui a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
+Un programme d'intelligence artificielle basé sur un réseau de neurones (de type RetinaNet avec la librairie Keras/tensorflow) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
 Elle pourrait être positionnée en surplomb, de face ou dans l'axe des voies, ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter la reconnaissance (mais cela n'est pas esthétique).
 
+Fonctionnement :
 * Une webcam capture des photos à intervalle régulier (example : toutes les 5 secondes).
 * Un programme analyse chaque photo au fur et à mesure, repère la position du locotracteur et des wagons, et insère une ligne de trace horodatée dans un fichier de log.
 * Chaque commande passée par la commande DCC-EX produit une trace horodatée dans un fichier de log.
 * Les traces sont fusionnées et triées au fur et à mesure.
 * Un programme de supervision analyse les traces et calcule un score affiché au joueur.
 
-Remarque : le cablage du réseau peut rester simple et le plan des voix peut même évoluer facilement sans changer le fonctionnement général. Cela permet dans une certaine mesure de changer la structure du jeu sans impact sur la supervision et les habituels capteurs.
+Remarque : le cablage du réseau peut rester simple et le plan des voix pourrait même évoluer facilement sans impacter le fonctionnement général. Cela permet dans une certaine mesure de changer la structure du réseau sans impact sur la supervision et le placement de capteurs.
 
-webcam :
-* openCV/Python open source
-* FFMPEG open source
-* pilotage d'un programme standard MacOS en ligne de commande
+Webcam :
+* [OpenCV](https://opencv.org) open source maintenu par Intel, une librairie Python existe
+* [FFmpeg](https://ffmpeg.org) open source, exécutable en mode commande
+* pilotage d'un programme standard MacOS en ligne de commande ?
 * programme existant prévu pour comme pour les webcams sur Internet ?
-
-
-
