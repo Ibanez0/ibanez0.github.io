@@ -27,7 +27,7 @@ Il faut aussi vérifier la bonne position des wagons.
 
 2022 : Arduino / DCC-EX
 
-J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**. Depuis maintenant plusieurs années, les décodeurs proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives. La commande MRC ne permettant de piloter qu'une seule fonction auxiliaire, un changement de technologie était nécessaire. 
+Depuis maintenant plusieurs années, les décodeurs DCC NMRA proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives qui est devenue très utilisée. La commande MRC 2000 ne permettant de piloter qu'une seule fonction auxiliaire, un autre système est nécessaire.J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**.  
 
 ![Commande DCC EX JMRI Engine Driver](../photos/dccex1.png)
 
@@ -38,7 +38,7 @@ J'ai réalisé une station de commande complète très simplement en assemblant 
 * une carte additionnelle Motor Shield
 * une alimentation 18V (5A)
 
-Cette station à une puissance de 2A par défaut (disjoncteur électronique intégré). Cela permet de piloter 2 locomotives équipées avec les vieux décodeurs tels que ARNOLD et LENZ qui consomment beaucoup de puissance.
+Cette station à une puissance de 2A par défaut (disjoncteur intégré au logiciel DCC-EX). Cela permet de piloter 2 locomotives équipées avec les vieux décodeurs tels que ARNOLD et LENZ qui consomment beaucoup de puissance.
 
 Software :
 
@@ -54,7 +54,7 @@ Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mo
 ## Pilotage
 
 Le pilotage avec les commandes de l'API dans le Serial Monitor n'est pas conçu pour le jeu.
-J'utilise principalement le logiciel open source JRMI (Java Model Railroad Interface) avec la configuration suivante :
+J'utilise principalement le logiciel open source JMRI (Java Model Railroad Interface) avec la configuration suivante :
 * ordinateur standard (Macbook) :
     * connecté à la carte Arduino Mega 2560 avec un cable USB
     * connecté au réseau local Wifi
@@ -80,13 +80,21 @@ Principe : utiliser l'intelligence artificielle
 
 Le contrôle d'un scénario et du respect des règles peut être réalisé en observant le déroulement du jeu avec une caméra positionnée pour avoir une vue d'ensemble.
 Un programme d'intelligence artificielle est basé sur un réseau de neurones (de type RetinaNet avec la librairie Keras/tensorflow) qui a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
-Elle pourrait être positionnée en surplomb, de face ou dans l'axe des voies, ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter l'apprentissage du réseau de neurones.
+Elle pourrait être positionnée en surplomb, de face ou dans l'axe des voies, ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter la reconnaissance (mais cela n'est pas esthétique).
 
-* Une webcam est pilotée en Python (voir la librairie OpenCV) pour capturer des photos à intervalle régulier (example : toutes les 5 secondes).
+* Une webcam capture des photos à intervalle régulier (example : toutes les 5 secondes).
 * Un programme analyse chaque photo au fur et à mesure, repère la position du locotracteur et des wagons, et insère une ligne de trace horodatée dans un fichier de log.
 * Chaque commande passée par la commande DCC-EX produit une trace horodatée dans un fichier de log.
 * Les traces sont fusionnées et triées au fur et à mesure.
 * Un programme de supervision analyse les traces et calcule un score affiché au joueur.
 
 Remarque : le cablage du réseau peut rester simple et le plan des voix peut même évoluer facilement sans changer le fonctionnement général. Cela permet dans une certaine mesure de changer la structure du jeu sans impact sur la supervision et les habituels capteurs.
+
+webcam :
+* openCV/Python open source
+* FFMPEG open source
+* pilotage d'un programme standard MacOS en ligne de commande
+* programme existant prévu pour comme pour les webcams sur Internet ?
+
+
 
