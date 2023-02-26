@@ -95,4 +95,10 @@ Webcam :
 * [OpenCV](https://opencv.org) open source maintenu par Intel, une librairie Python existe
 * [FFmpeg](https://ffmpeg.org) open source, exécutable en mode commande
 * pilotage d'un programme standard MacOS en ligne de commande ?
-* programme existant prévu pour comme pour les webcams sur Internet ?
+* programme prévu pour les webcams sur Internet (cf. imagesnap/macos)
+
+RetinaNet :
+
+[Keras/RetinaNet](https://keras.io/examples/vision/retinanet/) example retinanet.py sur Github
+https://medium.com/@van.evanfebrianto/how-to-train-custom-object-detection-models-using-retinanet-aeed72f5d701
+https://github.com/fizyr/keras-retinanet DEPRECATED
