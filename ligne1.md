@@ -100,5 +100,10 @@ Webcam :
 RetinaNet :
 
 [Keras/RetinaNet](https://keras.io/examples/vision/retinanet/) example retinanet.py sur Github
-https://medium.com/@van.evanfebrianto/how-to-train-custom-object-detection-models-using-retinanet-aeed72f5d701
-https://github.com/fizyr/keras-retinanet DEPRECATED
+
+[How to Train Custom Object Detection Models using RetinaNet](https://medium.com/@van.evanfebrianto/how-to-train-custom-object-detection-models-using-retinanet-aeed72f5d701) tutoriel
+
+[Keras implementation of RetinaNet](https://github.com/fizyr/keras-retinanet) DEPRECATED
+
+[Installer Tensorflow avec Anaconda sur macOS](https://datascientest.com/tensorflow-avec-anaconda-sur-macos)
+
