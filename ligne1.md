@@ -94,8 +94,7 @@ Remarque : le cablage du réseau peut rester simple et le plan des voix pourrait
 Webcam :
 * [OpenCV](https://opencv.org) open source maintenu par Intel, une librairie Python existe
 * [FFmpeg](https://ffmpeg.org) open source, exécutable en mode commande
-* pilotage d'un programme standard MacOS en ligne de commande ?
-* programme prévu pour les webcams sur Internet (cf. imagesnap/macos)
+* [imagesnap/macos](https://github.com/rharder/imagesnap) open source, mode commande (option répétition)
 
 RetinaNet :
 
