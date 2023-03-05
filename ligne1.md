@@ -92,17 +92,24 @@ Fonctionnement :
 Remarque : le cablage du réseau peut rester simple et le plan des voix pourrait même évoluer facilement sans impacter le fonctionnement général. Cela permet dans une certaine mesure de changer la structure du réseau sans impact sur la supervision et le placement de capteurs.
 
 Webcam :
+
 * [OpenCV](https://opencv.org) open source maintenu par Intel, une librairie Python existe
 * [FFmpeg](https://ffmpeg.org) open source, exécutable en mode commande
 * [imagesnap/macos](https://github.com/rharder/imagesnap) open source, mode commande (option répétition)
 
 RetinaNet :
 
-[Keras/RetinaNet](https://keras.io/examples/vision/retinanet/) example retinanet.py sur Github
+* [Exemple Keras/RetinaNet](https://keras.io/examples/vision/retinanet/) Notebook. Example retinanet.py sur Github
+* [retinanet.py / Github](https://github.com/keras-team/keras-io/blob/master/examples/vision/retinanet.py) Contient le code exemple complet par l'équipe Keras, inclut des fonctions de traitement d'image (flipping, resizing).
+* [Tutoriel de Jasper Brown](https://github.com/jaspereb/Retinanet-Tutorial) Complet et détaillé
+* [How to Train Custom Object Detection Models using RetinaNet](https://medium.com/@van.evanfebrianto/how-to-train-custom-object-detection-models-using-retinanet-aeed72f5d701) Tutoriel Evan Febrianto, les hyperparamètres ne sont pas donnés
 
-[How to Train Custom Object Detection Models using RetinaNet](https://medium.com/@van.evanfebrianto/how-to-train-custom-object-detection-models-using-retinanet-aeed72f5d701) tutoriel
+Outils IA :
 
-[Keras implementation of RetinaNet](https://github.com/fizyr/keras-retinanet) DEPRECATED
+* [Software Installation (Mac on Apple Metal M1)](https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/tensorflow-install-mac-metal-jan-2023.ipynb) Miniconda, Python, Tensorflow, Jupyter
+* [Keras implementation of RetinaNet / Github](https://github.com/fizyr/keras-retinanet) La référence (This repository is deprecated in favor of the torchvision module. This project should work with keras 2.4 and tensorflow 2.3.0, newer versions might break support)
+* [LabelImg / Github](https://github.com/heartexlabs/labelImg)
 
-[Installer Tensorflow avec Anaconda sur macOS](https://datascientest.com/tensorflow-avec-anaconda-sur-macos)
+
+
 
