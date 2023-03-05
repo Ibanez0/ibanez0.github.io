@@ -106,7 +106,7 @@ RetinaNet :
 
 Outils IA :
 
-* [Software Installation (Mac on Apple Metal M1)](https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/tensorflow-install-mac-metal-jan-2023.ipynb) Miniconda, Python, Tensorflow, Jupyter
+* [Software Installation (Mac on Apple Metal M1)](https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/tensorflow-install-mac-metal-jan-2023.ipynb) Miniconda, Python, Tensorflow, Jupyter, tutoriel de Jeff Heaton
 * [Keras implementation of RetinaNet / Github](https://github.com/fizyr/keras-retinanet) La référence (This repository is deprecated in favor of the torchvision module. This project should work with keras 2.4 and tensorflow 2.3.0, newer versions might break support)
 * [LabelImg / Github](https://github.com/heartexlabs/labelImg)
 
