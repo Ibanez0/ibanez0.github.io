@@ -79,7 +79,7 @@ Reliée au Mac avec un cable USB, JMRI peut ainsi réagir à des changements d'�
 Principe : utiliser l'intelligence artificielle
 
 Le contrôle d'un scénario et du respect des règles peut être réalisé en observant le déroulement du jeu avec une caméra positionnée pour avoir une vue d'ensemble.
-Un programme d'intelligence artificielle basé sur un réseau de neurones (de type RetinaNet avec la librairie Keras/tensorflow) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
+Un programme d'intelligence artificielle basé sur un réseau de neurones (dand la catégorie "Object Detector" de type RetinaNet ou YOLOX avec un framework type Keras/tensorflow) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
 Elle pourrait être positionnée en surplomb, de face ou dans l'axe des voies, ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter la reconnaissance (mais cela n'est pas esthétique).
 
 Fonctionnement :
