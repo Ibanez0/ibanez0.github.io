@@ -79,13 +79,13 @@ Reliée au Mac avec un cable USB, JMRI peut ainsi réagir à des changements d'�
 Principe : utiliser l'intelligence artificielle
 
 Le contrôle d'un scénario et du respect des règles peut être réalisé en observant le déroulement du jeu avec une caméra positionnée pour avoir une vue d'ensemble.
-Un programme d'intelligence artificielle basé sur un réseau de neurones (dand la catégorie "Object Detector" de type RetinaNet ou YOLOX avec un framework type Keras/tensorflow) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
+Un programme d'intelligence artificielle basé sur un réseau de neurones de type "Object Detector" (Yolo v8 ou RetinaNet) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
 Elle pourrait être positionnée en surplomb, de face ou dans l'axe des voies, ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter la reconnaissance (mais cela n'est pas esthétique).
 
 Fonctionnement :
-* Caméra : capture image (une webcam capture des photos à intervalle régulier, par example : toutes les 5 secondes)
+* Caméra : une webcam capture des photos à intervalle régulier (toutes les 5 secondes)
 * Normalisation image
-* Inférence YOLO v8 : liste des objets détectés
+* Inférence "Object Detector" : liste des objets détectés
 * Détermination de la position des objets sur le réseau modèle (bounding boxes)
 * Génération de la log horodatée des positions
 * Fusion avec la log horodatée des commandes DCC capturées par JMRI
@@ -95,7 +95,6 @@ Fonctionnement :
 * Calcul du score
 * Affichage dans JMRI (qui affiche l’horloge, gère le script aller/retour)
 
+(*) entre deux photos, certains objets peuvent temporairement disparaitre en fonction de la reconnaissance par l’IA : il est nécessaire de considérer plusieurs cycles pour compenser.
+
 Remarque : le cablage du réseau peut rester simple et le plan des voix pourrait même évoluer facilement sans impacter le fonctionnement général. Cela permet dans une certaine mesure de changer la structure du réseau sans impact sur la supervision et le placement de capteurs.
-
-
-
