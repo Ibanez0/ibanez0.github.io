@@ -18,15 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Simulation
-email: 
+title: Trains et Simulation
+email: anonymous@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Ce site se consacre aux règles, méthodes et outils papiers ou informatiques
   pour l'exploitation ludique d'un réseau ferroviaire miniature.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username: 
+twitter_username: anonymous
+github_username: anonymous
 
 # Build settings
 theme: minima
