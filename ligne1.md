@@ -27,7 +27,7 @@ Il faut aussi vérifier la bonne position des wagons.
 
 2022 : Arduino / DCC-EX
 
-Depuis maintenant plusieurs années, les décodeurs DCC NMRA proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives qui est devenue très utilisée. La commande MRC 2000 ne permettant de piloter qu'une seule fonction auxiliaire, un autre système est nécessaire.J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**.  
+Depuis maintenant plusieurs années, les décodeurs DCC NMRA proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives qui est devenue très utilisée. La commande MRC 2000 ne permettant de piloter qu'une seule fonction auxiliaire, un autre système est nécessaire. J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**.  
 
 ![Commande DCC EX JMRI Engine Driver](../photos/dccex1.png)
 
@@ -43,7 +43,7 @@ Cette station à une puissance de 2A par défaut (disjoncteur intégré au logic
 Software :
 
 * ordinateur standard (Macbook) :
-    * connecté à la carte Arduino Mega 2560 avec un cable USB
+    * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
 * logiciel open source DCC-EX EX-CommandStation pour Arduino (C++)
 * logiciel open source IDE Arduino :
     * initialisation de la carte Arduino
@@ -56,7 +56,7 @@ Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mo
 Le pilotage avec les commandes de l'API dans le Serial Monitor n'est pas conçu pour le jeu.
 J'utilise principalement le logiciel open source JMRI (Java Model Railroad Interface) avec la configuration suivante :
 * ordinateur standard (Macbook) :
-    * connecté à la carte Arduino Mega 2560 avec un cable USB
+    * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
     * connecté au réseau local Wifi
 * logiciel JMRI DecoderPro ou PanelPro
 * pour la commande mobile de type "walk-around" en Wifi :
@@ -80,7 +80,7 @@ Principe : utiliser l'intelligence artificielle
 
 Le contrôle d'un scénario et du respect des règles peut être réalisé en observant le déroulement du jeu avec une caméra positionnée pour avoir une vue d'ensemble.
 Un programme d'intelligence artificielle basé sur un réseau de neurones de type "Object Detector" (Yolo v8 ou RetinaNet) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
-Elle pourrait être positionnée en surplomb, de face ou dans l'axe des voies (ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter la reconnaissance mais cela n'est pas esthétique).
+Elle peut être positionnée en surplomb, de face ou dans l'axe des voies (ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter la reconnaissance mais cela n'est pas esthétique).
 
 Fonctionnement :
 * Caméra : une webcam capture des photos à intervalle régulier (toutes les 5 secondes)
