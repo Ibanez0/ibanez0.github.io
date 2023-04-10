@@ -6,7 +6,7 @@ permalink: /ligne1/
 
 UN RESEAU FERROVIAIRE MINIATURE POUR LA SIMULATION
 
-Après la ligne Zéro (en boucle), la ligne _un_ (en aller/retour).
+Après la ligne Zéro (en boucle), la ligne **Un** (en aller/retour).
 
 Présentation
 ------------
@@ -97,6 +97,6 @@ Fonctionnement :
 
 (*) entre deux photos, certains objets peuvent temporairement disparaitre en fonction de la reconnaissance par l’IA : il est nécessaire de considérer plusieurs cycles pour compenser.
 
-Pour l'apprentissage du réseau de neurones, il est probablement plus simple que la caméra soit positionnée de face pour éviter d'avoir des perspectives en 3D, dans la mesure ou le jeu de données (images d'entrainement) contient une reconnaissance en 2D vue de face avec des bounding boxes étiquettées rectangulaires en 2D.
+Pour l'apprentissage du réseau de neurones, il est plus simple que la caméra soit positionnée de face pour éviter d'avoir des perspectives en 3D, dans la mesure ou le jeu de données (images d'entrainement) contient une reconnaissance en 2D vue de face avec des _bounding boxes_ étiquettées rectangulaires en 2D.
 
 Remarque : notons que le cablage du réseau peut rester simple et le plan des voies pourrait même évoluer sans impacter le fonctionnement général. Dans une certaine mesure, cela permet de changer la structure du réseau sans impact sur la supervision et le placement de capteurs.
