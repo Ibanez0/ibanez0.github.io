@@ -65,6 +65,7 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 
 [![Logo (4 Ko)](../images/logo4.gif)](/reseau)
 
+*   `04/2023` - Présentation de la ligne 1 avec DCC-EX/JMRI
 *   `03/2022` - Mise à jour des hyperliens et quelques corrections
 *   `12/2016` - Mise à jour des hyperliens
 *   `10/2011` - Mise à jour des hyperliens
