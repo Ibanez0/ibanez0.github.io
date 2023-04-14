@@ -19,7 +19,7 @@ Selon ma propre expérience, le coût du décodeur se déduit principalement du 
 
 Deux exemples :
 
-*   La 63951 ROCO est une très bonne machine, avec un gros moteur doux et silencieux, mais en revanche il ne reste que la cabine pour placer un petit décodeur.
+*   La 63951 ROCO (version sortie en 1995) est une très bonne machine, avec un gros moteur doux et silencieux, mais en revanche il ne reste que la cabine pour placer un petit décodeur.
 *   La 66487 JOUEF (version sortie en 1996) offre très peu de place disponible sous sa carrosserie, sauf au dessus des bogies entre le carter de pignon et la carrosserie, mais la hauteur disponible est réduite.
 
   
