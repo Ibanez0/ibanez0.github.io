@@ -19,8 +19,8 @@ Mon réseau traverse quelques départements et une seule gare est effectivement 
 La partie reproduite est une ligne à voie unique. Il aurait été plus crédible que ce soit une ligne double mais pour des raisons financières, d'espace et de temps, j'ai préféré me limiter pour le moment à une voie unique.  
 Il n'y a pas de caténaire, donc pas de locomotive électrique.  
 Le matériel de traction est principalement Diesel français, mais il arrive parfois que l'on voit passer des locomotives à vapeur.  
-Il existe un trafic de [trains réguliers](operations.html#trains_reguliers) de voyageurs et un trafic de marchandises légères. La ligne est jalonnée d'embranchements particuliers vers de petites industries ou des entreprôts.  
-Il existe à chaque extrémité une gare importante et au milieu de la ligne deux gares assez importantes pour y justifier un arrêt prolongé des trains, ainsi que la récupération des wagons ramassés par les [trains collecteurs](operations.html#trains_collecteurs). Les autres gares sont plutôt des gares de passage possédant toutefois des voies de garage et des voies d'évitement.
+Il existe un trafic de [trains réguliers](/operations/#definitions) de voyageurs et un trafic de marchandises légères. La ligne est jalonnée d'embranchements particuliers vers de petites industries ou des entreprôts.  
+Il existe à chaque extrémité une gare importante et au milieu de la ligne deux gares assez importantes pour y justifier un arrêt prolongé des trains, ainsi que la récupération des wagons ramassés par les [trains collecteurs](/operations/#definitions). Les autres gares sont plutôt des gares de passage possédant toutefois des voies de garage et des voies d'évitement.
 
 Le thème que j'ai choisi se caractérise donc ainsi :
 
