@@ -19,8 +19,8 @@ Selon ma propre expérience, le coût du décodeur se déduit principalement du 
 
 Deux exemples :
 
-*   La 63000 ROCO (version récente) est une très bonne machine, avec un gros moteur doux et silencieux, mais en revanche il ne reste que la cabine pour placer un petit décodeur.
-*   La 66000 JOUEF (version récente) offre très peu de place disponible sous sa carrosserie, sauf au dessus des bogies entre le carter de pignon et la carrosserie, mais la hauteur disponible est réduite.
+*   La 63951 ROCO est une très bonne machine, avec un gros moteur doux et silencieux, mais en revanche il ne reste que la cabine pour placer un petit décodeur.
+*   La 66487 JOUEF (version sortie en 1996) offre très peu de place disponible sous sa carrosserie, sauf au dessus des bogies entre le carter de pignon et la carrosserie, mais la hauteur disponible est réduite.
 
   
 Il est plus rassurant de choisir un décodeur muni de toutes les protections, surtout pour le premier montage, car il resistera mieux en cas de court-circuit ou de surcharge.  
