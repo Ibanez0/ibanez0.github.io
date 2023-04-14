@@ -27,7 +27,7 @@ Il est plus rassurant de choisir un décodeur muni de toutes les protections, su
 Les fonctions d'accélération et de freinage progressif sont indispensables, elles contribuent au réalisme des manoeuvres et ajoute de l'intérêt à la conduite.
 
 L'asservissement est un plus, il permet des ralentis extrêmes ce qui est particulièrement intéressant pour les manoeuvres mais le coût des décodeurs avec asservissement est plus élevé.  
-Toutefois, il faut noter que certaines machines peuvent se passer de l'asservissement, je prendrai comme exemple la 67000 LIMA qui possède un moteur assez gros et performant pour permettre des manoeuvres à vitesse très réduite avec un décodeur sans fonction d'asservissement. Cela s'explique aussi par le fait que la technologie numérique améliore le fonctionnement des machines parce que le courant traction est rectangulaire (ce qui permet d'avoir un meilleur couple).
+Toutefois, il faut noter que certaines machines peuvent se passer de l'asservissement, je prendrai comme exemple la 67020 LIMA (version sortie en 1994) qui possède un moteur assez gros et performant pour permettre des manoeuvres à vitesse très réduite avec un décodeur sans fonction d'asservissement. Cela s'explique aussi par le fait que la technologie numérique améliore le fonctionnement des machines parce que le courant traction est rectangulaire (ce qui permet d'avoir un meilleur couple).
 
 Comment installer son décodeur à bord ?
 ---------------------------------------
