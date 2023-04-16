@@ -102,12 +102,11 @@ La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas 
 
 ### Supervision {#supervision}
 
-J'utilise un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans la version actuelle, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
+J'ai utilisé un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle. La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans cette version, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
  
+![Photo du PC de supervision](../photos/victor1.jpg)
 
 #### Programme de supervision 
-
-![Copie d'écran du programme de supervision](../photos/victor1.jpg)
 
 Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :
 *   la gare virtuelle courante
@@ -123,6 +122,8 @@ La commande du programme de supervision s'effectue principalement à l'aide des 
 *   F2 : **Raz**, permet de recommencer le scénario courant au départ
 *   F3 : **Sauvegarde**, un historique peut être sauvegardé sur disque à tout moment et imprimé par la suite
 *   F4 : **Fuel**, permet de simuler un ravitaillement en ajoutant du carburant
+
+![Copie d'écran du programme de supervision](../images/horloge51.gif)
 
 #### Scénarios
 
