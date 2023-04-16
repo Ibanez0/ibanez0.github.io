@@ -108,18 +108,18 @@ J'ai utilisé un vieux PC 8086 avec des contacts ILS reliés directement sur le 
 ![Photo du PC de supervision](../photos/victor1.jpg)
 
 
-La loco du train supervisé est équipée d'un petit aimant permettant d'activer les contacts ILS. Dans cette version, un contact ILS est disposé en entrée de la gare, un autre en sortie.  
+La loco du train supervisé ou un wagon est équipé d'un petit aimant permettant d'activer les contacts ILS. Dans cette version de la ligne zéro, un contact ILS est disposé en entrée de la gare (East), un autre en sortie (West).
  
 
 #### Programme de supervision 
 
 Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :
-*   la gare virtuelle courante
+*   la gare virtuelle courante (entrée, sortie)
 *   l'heure de passage et l'écart entre le tableau horaire et l'heure de passage constatée
-*   la vitesse moyenne
-*   la distance parcourue depuis la gare de départ du scénario
-*   la quantité de carburant restante
 *   le **SCORE** courant (en points déjà obtenus)
+*   la vitesse moyenne
+*   la quantité de carburant restante (en litres)
+*   la distance parcourue depuis la gare de départ du scénario
 
 
 ![Copie d'écran du programme de supervision](../images/horloge51.gif)
@@ -129,8 +129,9 @@ La commande du programme de supervision s'effectue principalement à l'aide des 
 
 *   F1 : **Pause**, permet éventuellement de stopper momentanément l'horloge accélérée
 *   F2 : **Raz**, permet de recommencer le scénario courant au départ
-*   F3 : **Sauvegarde**, un historique peut être sauvegardé sur disque à tout moment et imprimé par la suite
-*   F4 : **Fuel**, permet de simuler un ravitaillement en ajoutant du carburant
+*   F3 : **Enregistrer**, un historique peut être sauvegardé sur disque à tout moment et imprimé par la suite
+*   F4 : **Fuel**, permet de simuler un ravitaillement en ajoutant du carburant (ici 500 litres)
+*   F5 : **Variables**, permet d'afficher les paramètres de simulation
 
 #### Scénarios
 
