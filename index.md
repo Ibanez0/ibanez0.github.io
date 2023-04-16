@@ -11,7 +11,7 @@ Hello World!
 Modélisme ferroviaire et simulation
 ===================================
 
-Modifié le 10/04/2023 - Copyright © 1998-2023 MRA
+Modifié le 15/03/2023 - Copyright © 1998-2023 MRA
 
 Ce site se consacre aux règles, méthodes et outils papiers ou informatiques pour l'exploitation ludique d'un réseau ferroviaire miniature.
 
