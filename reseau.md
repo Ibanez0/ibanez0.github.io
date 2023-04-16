@@ -108,7 +108,7 @@ J'ai utilisé un vieux PC 8086 avec des contacts ILS reliés directement sur le 
 ![Photo du PC de supervision](../photos/victor1.jpg)
 
 
-La loco du train supervisé ou un wagon est équipé d'un petit aimant permettant d'activer les contacts ILS. Dans cette version de la ligne zéro, un contact ILS est disposé en entrée de la gare (East), un autre en sortie (West).
+La loco du train supervisé ou un wagon est équipé d'un petit aimant permettant d'activer les contacts ILS. Dans cette version de la ligne _zéro_, un contact ILS est disposé en entrée de la gare (Est), un autre en sortie (Ouest).
  
 
 #### Programme de supervision 
@@ -130,12 +130,12 @@ La commande du programme de supervision s'effectue principalement à l'aide des 
 *   F1 : **Pause**, permet éventuellement de stopper momentanément l'horloge accélérée
 *   F2 : **Raz**, permet de recommencer le scénario courant au départ
 *   F3 : **Enregistrer**, un historique peut être sauvegardé sur disque à tout moment et imprimé par la suite
-*   F4 : **Fuel**, permet de simuler un ravitaillement en ajoutant du carburant (ici 500 litres)
+*   F4 : **Fuel**, permet de simuler un ravitaillement en ajoutant du carburant
 *   F5 : **Variables**, permet d'afficher les paramètres de simulation
 
 #### Scénarios
 
-Plusieurs scénarios différents peuvent être exécutés par le programme. Au début d'une scéance de jeu, le scénario est chargé par le programme de supervision. Ce scénario liste toutes les gares à traverser, le sens du parcours (Est,Ouest), les horaires de passage, la distance entre chaque gare, la vitesse maximale autorisée sur tout le parcours, la quantité de carburant au départ et la quantité de carburant chargée à chaque ravitaillement (simulé par une touche fonction du programme).
+Plusieurs scénarios différents peuvent être exécutés par le programme. Au début d'une scéance de jeu, le scénario est chargé par le programme de supervision. Ce scénario liste toutes les gares à traverser, le sens du parcours (Est,Ouest), les horaires de passage, la distance entre chaque gare, la vitesse maximale autorisée sur tout le parcours, la quantité de carburant au départ et la quantité de carburant chargée à chaque ravitaillement (simulé par la touche fonction F4 du programme).
 
 #### Calcul du score
 
@@ -144,6 +144,6 @@ Plusieurs scénarios différents peuvent être exécutés par le programme. Au d
 *   **Vitesse maximum autorisée** : le dépassement de la vitesse maximum autorisée sur la ligne retire 5 points à chaque contrôle de la vitesse du train, c'est-à-dire en entrée et en sortie de gare. Ainsi, le fait de "trainer" au début du scénario et "accélérer" ensuite pour rattraper son retard peut être une stratégie pénalisante si cela entraîne le dépassement de la vitesse maximum.
 *   **Carburant** : enfin, il ne faut pas tomber en panne sèche !
 
-Cet algorithme de calcul du score constitue un premier essai, il devra être amélioré. Déjà, le jeu est intéressant car la valeur courante du score permet d'ajuster le comportement du conducteur dans le but de ne pas avoir de pénalité trop importante, en tout cas supérieure au gain obtenu à chaque passage en gare. A titre indicatif, avec mon [scénario n°1](/operations/#documents), le meilleur score que j'ai obtenu est de 118.
+Cet algorithme de calcul du score constitue un premier essai, il doit être amélioré. Déjà, le jeu est intéressant car la valeur courante du score permet d'ajuster le comportement du conducteur dans le but de ne pas avoir de pénalité trop importante, en tout cas supérieure au gain obtenu à chaque passage en gare. A titre indicatif, avec mon [scénario n°1](/operations/#documents), le meilleur score que j'ai obtenu est de 118.
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
