@@ -89,8 +89,8 @@ Fonctionnement :
 * Détermination de la position des objets sur le réseau modèle (bounding boxes)
 * Génération de la log horodatée des positions
 * Fusion avec la log horodatée des commandes DCC capturées par JMRI
-* Mise en cohérence ave l’historique *
-* Calcul des trajets et manoeuvres réalisées
+* Mise en cohérence avec l’historique *
+* Calcul des trajets et manoeuvres réalisés
 * Calcul du respect des contraintes
 * Calcul du score
 * Affichage dans JMRI (qui affiche l’horloge, gère le script aller/retour)
