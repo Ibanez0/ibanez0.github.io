@@ -14,7 +14,9 @@ Modélisme ferroviaire et simulation
 Modifié le 15/03/2023 - Copyright © 1998-2023 MRA
 
 Ce site se consacre aux règles, méthodes et outils papiers ou informatiques pour l'exploitation ludique d'un réseau ferroviaire miniature.
+Consultez ces pages qui exposent quelques idées sur un concept de jeu interactif avec un réseau ferroviaire miniature.
 
+[![Logo (4 Ko)](../images/logo4.gif)](/reseau)
 
 **[Mon projet](/operations/#presentation)**  
 [jeu, opérations, scores](/operations/#presentation)
@@ -58,12 +60,42 @@ Ce site se consacre aux règles, méthodes et outils papiers ou informatiques po
 **[Décodeurs](/decodeurs)**  
 [conseils](/decodeurs), [digitalisation 67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)
 
-**Introduction :**  
-Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit dans mon sous-sol un **[réseau](/reseau)** étagère sur le thème d'une ligne située en banlieue Parisienne dans les années 1960.
 
-**Consultez ces pages qui exposent quelques idées sur un concept de jeu interactif avec un réseau ferroviaire miniature.**
+* * *
 
-[![Logo (4 Ko)](../images/logo4.gif)](/reseau)
+
+**Ressources :**
+
+**MODELISME FERROVIAIRE :**
+
+*   **[RAIL MINIATURE FLASH](https://www.rmf-magazine.com)** - Revue Française de modélisme
+*   **[LOCO REVUE](https://trains.lrpresse.com)** - Revue Française de modélisme
+*   **[MODEL RAILROADER](https://www.kalmbach.com)** - Revue Américaine de modélisme
+
+**REGLES DU JEU ET EXPLOITATION :**
+
+*   **[The Layout Design Primer](http://ldsig.org)** - The Layout Design Primer is a World Wide Web Publication of the [Layout Design Special Interest Group](http://ldsig.org) of the [N.M.R.A.](https://www.nmra.org) (**N**ational **M**odel **R**ailroad **A**ssociation)
+*   **[Yosemite Valley Railroad Co.](https://www.yosemitevalleyrr.com)** - Exploitation réaliste d'un réseau, séances de jeu (résumé et photos), description des règles et formulaires, etc.
+*   **[New York Central System](https://www.nycvd.org)** - Op Sessions, règles, formulaires, etc.
+
+**ELECTRONIQUE / LOGICIEL :**
+
+*   **[Lenz GmbH DIGITAL](https://www.lenz-elektronik.de)** - Télécommande digitale et décodeurs
+*   **[Model Rectifier Corporation](https://www.modelrectifier.com)** - MRC 2000, Télécommande digitale et décodeurs
+*   **[CONRAD](https://www.conrad.fr)** - Vente par correspondance de composants et de cartes électroniques
+*   **[GAUGEMASTER](https://www.gaugemasterretail.com)** - Commandes avec simulation d'inertie et asservissement
+*   **[ESU](https://www.esu.eu)** - Equipements DCC (décodeurs LokPilot, LokSound)
+*   **[LOCODUINO](https://locoduino.org)** - Arduino pour modélisme ferroviaire
+*   **[DCC-EX](https://dcc-ex.com)** - Logiciel opensource pour modélisme ferroviaire fonctionnant avec Arduino
+*   **[JMRI](https://www.jmri.org)** - Logiciel opensource Java Model Railroad Interface
+*   **[Engine Driver](https://enginedriver.mstevetodd.com)** - Application Android
+*   **[WiThrottle](https://www.withrottle.com)** - Application iOS
+
+
+* * *
+
+
+**Historique :**
 
 *   `04/2023` - Présentation de la ligne 1 avec DCC-EX/JMRI
 *   `03/2022` - Mise à jour des hyperliens et quelques corrections
@@ -84,43 +116,6 @@ Une de mes passions est le [modélisme ferroviaire](/operations). J'ai construit
 *   `11/1999` - [Montage d'un décodeur NMRA dans une 67000 LIMA](/dcc67000)
 *   `10/1999` - [Quelques précisions utiles concernant la commande MRC 2000](/mrc2000)
 *   `09/1999` - [Premier retour d'expérience sur la manière de choisir et installer ses décodeurs](/decodeurs)
-
-* * *
-
-**Liens vers d'autres serveurs :**
-
-**REGLES DU JEU ET EXPLOITATION :**
-
-*   **[The Layout Design Primer](http://ldsig.org)** - The Layout Design Primer is a World Wide Web Publication of the [Layout Design Special Interest Group](http://ldsig.org) of the [N.M.R.A.](https://www.nmra.org) (**N**ational **M**odel **R**ailroad **A**ssociation)
-*   **[Yosemite Valley Railroad Co.](https://www.yosemitevalleyrr.com)** - Exploitation réaliste d'un réseau, séances de jeu (résumé et photos), description des règles et formulaires, etc.
-
-**ELECTRONIQUE / LOGICIEL :**
-
-*   **[Lenz GmbH DIGITAL](https://www.lenz-elektronik.de)** - Télécommande digitale et décodeurs
-*   **[Model Rectifier Corporation](https://www.modelrectifier.com)** - MRC 2000, Télécommande digitale et décodeurs
-*   **[Electrome](https://jclelectrome.fr)** - Fourniture de cartes électroniques pour l'interfaçage avec un PC
-*   **[CONRAD](https://www.conrad.fr)** - Vente par correspondance de composants et de cartes électroniques
-*   **[GAUGEMASTER](https://www.gaugemasterretail.com)** - Commandes avec simulation d'inertie et asservissement
-*   **[ESU](https://www.esu.eu)** - Equipements DCC (décodeurs LokPilot, LokSound)
-*   **[LOCODUINO](https://locoduino.org)** - Arduino pour modélisme ferroviaire
-*   **[DCC-EX](https://dcc-ex.com)** - Logiciel opensource pour modélisme ferroviaire fonctionnant avec Arduino
-*   **[JMRI](https://www.jmri.org)** - Logiciel opensource Java Model Railroad Interface
-*   **[Engine Driver](https://enginedriver.mstevetodd.com)** - Application Android
-*   **[WiThrottle](https://www.withrottle.com)** - Application iOS
-
-**MODELISME FERROVIAIRE :**
-
-*   **[RAIL MINIATURE FLASH](https://www.rmf-magazine.com)** - Revue Française de modélisme
-*   **[LOCO REVUE](https://trains.lrpresse.com)** - Revue Française de modélisme
-*   **[MODEL RAILROADER](https://www.kalmbach.com)** - Revue Américaine de modélisme
-
-[![Cliquez ici pour aller sur le site de RMF](../images/bouton-rmf99.gif)](https://www.rmf-magazine.com)
-
-[![Cliquez ici pour aller sur le site de LOCO REVUE](../images/locorevuepres.gif)](https://trains.lrpresse.com)
-
-**Site présenté dans [RMF](https://www.rmf-magazine.com) n°423 (mai 2000), dans [RMF](https://www.rmf-magazine.com) n°430 (janvier 2001)**  
-**et dans [LOCO REVUE](https://trains.lrpresse.com) n°639 (septembre 2000)**  
-  
 
 * * *
 
