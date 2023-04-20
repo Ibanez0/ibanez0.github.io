@@ -333,10 +333,16 @@ Le programme de supervision est chargé de :
 
 **La solution matérielle permettant de réaliser un programme de supervision avec les fonctions décrites précédemment consiste en :**
 
+En 1998 :
+
 *   un ordinateur PC avec un port parallèle et un port série (ex : mon vieux 8086) ;
-*   un boîtier d'interface que je compte réaliser moi-même (ex : modèle avec 4 entrées et 8 sorties à brancher sur le port parallèle du PC, je recommande à ce propos un boîtier du commerce (ex : modèle ORD102 prêt à l'emploi de la société **[ELECTROME](http://www.electrome.fr/)** avec 8 entrées isolées et 8 sorties sur relais à brancher sur le port série du PC, environ 230 Euros TTC) ;
+*   un boîtier d'interface que je compte réaliser moi-même (ex : modèle avec 4 entrées et 8 sorties à brancher sur le port parallèle du PC, je recommande à ce propos un boîtier du commerce (ex : modèle ORD102 prêt à l'emploi de la société **[ELECTROME](http://www.jclelectrome.fr/)** avec 8 entrées isolées et 8 sorties sur relais à brancher sur le port série du PC, environ 230 Euros TTC) ;
 *   quelques contacts ILS disposés aux endroits stratégiques du réseau et en entrée/sortie de la gare (remarque : une seule locomotive peut alors être facilement contrôlée) ;
 *   l'allumage et l'extinction progressive de la lumière, en douceur, peut être réalisée par un module électronique (ex : kit K2657 de Velleman-kit environ 25 Euros TTC).
+
+En 2020 :
+
+Les circuits électroniques et les automatismes peuvent être réalisés facilement avec Arduino ou Rasberry Pi par exemple.
 
 **Quelques précisions :**
 

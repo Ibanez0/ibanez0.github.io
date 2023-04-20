@@ -64,18 +64,24 @@ Consultez ces pages qui exposent quelques idées sur un concept de jeu interacti
 * * *
 
 
-**Liens vers d'autres serveurs :**
+**Ressources :**
+
+**MODELISME FERROVIAIRE :**
+
+*   **[RAIL MINIATURE FLASH](https://www.rmf-magazine.com)** - Revue Française de modélisme
+*   **[LOCO REVUE](https://trains.lrpresse.com)** - Revue Française de modélisme
+*   **[MODEL RAILROADER](https://www.kalmbach.com)** - Revue Américaine de modélisme
 
 **REGLES DU JEU ET EXPLOITATION :**
 
 *   **[The Layout Design Primer](http://ldsig.org)** - The Layout Design Primer is a World Wide Web Publication of the [Layout Design Special Interest Group](http://ldsig.org) of the [N.M.R.A.](https://www.nmra.org) (**N**ational **M**odel **R**ailroad **A**ssociation)
 *   **[Yosemite Valley Railroad Co.](https://www.yosemitevalleyrr.com)** - Exploitation réaliste d'un réseau, séances de jeu (résumé et photos), description des règles et formulaires, etc.
+*   **[New York Central System](https://www.nycvd.org)** - Op Sessions, règles, formulaires, etc.
 
 **ELECTRONIQUE / LOGICIEL :**
 
 *   **[Lenz GmbH DIGITAL](https://www.lenz-elektronik.de)** - Télécommande digitale et décodeurs
 *   **[Model Rectifier Corporation](https://www.modelrectifier.com)** - MRC 2000, Télécommande digitale et décodeurs
-*   **[Electrome](https://jclelectrome.fr)** - Fourniture de cartes électroniques pour l'interfaçage avec un PC
 *   **[CONRAD](https://www.conrad.fr)** - Vente par correspondance de composants et de cartes électroniques
 *   **[GAUGEMASTER](https://www.gaugemasterretail.com)** - Commandes avec simulation d'inertie et asservissement
 *   **[ESU](https://www.esu.eu)** - Equipements DCC (décodeurs LokPilot, LokSound)
@@ -84,12 +90,6 @@ Consultez ces pages qui exposent quelques idées sur un concept de jeu interacti
 *   **[JMRI](https://www.jmri.org)** - Logiciel opensource Java Model Railroad Interface
 *   **[Engine Driver](https://enginedriver.mstevetodd.com)** - Application Android
 *   **[WiThrottle](https://www.withrottle.com)** - Application iOS
-
-**MODELISME FERROVIAIRE :**
-
-*   **[RAIL MINIATURE FLASH](https://www.rmf-magazine.com)** - Revue Française de modélisme
-*   **[LOCO REVUE](https://trains.lrpresse.com)** - Revue Française de modélisme
-*   **[MODEL RAILROADER](https://www.kalmbach.com)** - Revue Américaine de modélisme
 
 
 * * *
