@@ -63,6 +63,7 @@ Consultez ces pages qui exposent quelques idées sur un concept de jeu interacti
 
 * * *
 
+
 **Liens vers d'autres serveurs :**
 
 **REGLES DU JEU ET EXPLOITATION :**
@@ -89,8 +90,12 @@ Consultez ces pages qui exposent quelques idées sur un concept de jeu interacti
 *   **[RAIL MINIATURE FLASH](https://www.rmf-magazine.com)** - Revue Française de modélisme
 *   **[LOCO REVUE](https://trains.lrpresse.com)** - Revue Française de modélisme
 *   **[MODEL RAILROADER](https://www.kalmbach.com)** - Revue Américaine de modélisme
-  
+
+
 * * *
+
+
+**Historique :**
 
 *   `04/2023` - Présentation de la ligne 1 avec DCC-EX/JMRI
 *   `03/2022` - Mise à jour des hyperliens et quelques corrections
