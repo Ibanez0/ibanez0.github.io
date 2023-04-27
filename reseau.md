@@ -79,7 +79,7 @@ La commande de mon réseau
 
 ### Commande traditionnelle {#commande}
 
-J'ai commencé par utiliser deux commandes traditionnelles : une commande Mark II de GAUGEMASTER (modèle avec asservissement de vitesse) qui assure son office pour un prix raisonnable, une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
+J'ai commencé par utiliser deux commandes traditionnelles : une commande GMC-UF de GAUGEMASTER achetée en 1990 et toujours en vente, qui assure son office pour un prix raisonnable (modèle avec asservissement de vitesse très efficace notamment pour les vitesses réduites), une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
 
 ![](../images/synoptique_multiplexeur.jpg)
 
