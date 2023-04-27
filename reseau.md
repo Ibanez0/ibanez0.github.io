@@ -79,11 +79,11 @@ La commande de mon réseau
 
 ### Commande traditionnelle {#commande}
 
-J'ai commencé par utiliser deux commandes traditionnelles : une commande GMC-UF de GAUGEMASTER achetée en 1990 et toujours en vente, qui assure son office pour un prix raisonnable (modèle avec asservissement de vitesse très efficace notamment pour les vitesses réduites), une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
+J'ai commencé par utiliser deux commandes analogiques traditionnelles : d'abord une commande GMC-UF de GAUGEMASTER achetée en 1990 (et toujours en vente en 2023), c'est un modèle avec asservissement de vitesse très efficace notamment pour les vitesses réduites, ensuite une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
 
 ![](../images/synoptique_multiplexeur.jpg)
 
-Mon réseau est découpé en trois zones électriques. Un répartiteur permet d'affecter une zone à une commande : il est constitué d'un pupitre muni en façade de commutateurs rotatifs positionnés par rapport au synoptique du réseau (à tout moment, chaque zone ne peut être commandée que par une seule commande).  
+La ligne _zéro_ est découpée en trois zones électriques. Un répartiteur permet d'affecter une zone à une commande : il est constitué d'un pupitre muni en façade de commutateurs rotatifs positionnés par rapport au synoptique du réseau (à tout moment, chaque zone ne peut être commandée que par une seule commande).  
  
 
 ### Commande digitale
@@ -102,7 +102,7 @@ La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas 
 
 ### Supervision {#supervision}
 
-J'ai utilisé un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle.
+A l'époque, j'ai utilisé un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle.
 
 
 ![Photo du PC de supervision](../photos/victor1.jpg)
