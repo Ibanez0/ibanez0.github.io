@@ -79,14 +79,14 @@ Les contraintes qui doivent être respectées par les joueurs sont :
 *   signaux (sémaphore, ralentissement, etc.) ;
 *   horaires de passage et d'arrivée ;
 *   vitesses imposées, que ce soit par les panneaux ou signaux, ou la vitesse maximale autorisée des locos et wagons ;
-*   consommations\*\* (charbon, eau, fuel) ;
+*   consommations (charbon, eau, fuel) ;
 *   pannes simulées ou incidents ;
 *   contraintes d'infrastructure (ex : charge maximum des trains) ;
 *   procédures d'organisation (ex : remisage des locos) ;
 *   coordination entre joueurs ;
 *   etc.
 
-\*\* L'idée du contrôle des consommations m'est venue du fameux livre **[En train avec John Allen de Linn H. Westcott (traduit en français par Jacques Le Plat)](http://users.skynet.be/pro-rail/_private/sor/frsormain11.htm)**, édité par **[Pro Rail International](http://users.skynet.be/pro-rail/index.html)** (le Gorre & Daphetid Railroad).
+L'idée du contrôle des consommations m'est venue du fameux livre "En train avec John Allen" de Linn H. Westcott (traduit en français par Jacques Le Plat), édité par **[Pro Rail International](http://www.ferbach.be/frames_fr/frlivresmain2.htm)** (le Gorre & Daphetid Railroad).
 
 ### Les scores
 
@@ -136,7 +136,7 @@ Les trains dits "**réguliers**" relient les gares et sont du type :
 
 Les trains dits "**collecteurs**" collectent puis rassemblent à la gare la plus proche tous les wagons des usines environnantes qui doivent être expédiés vers l'extérieur.
 
-L'idée des trains collecteurs m'est venue du fameux livre "En train avec John Allen" de Linn H. Westcott (traduit en français par Jacques Le Plat), édité par **[Pro Rail International](http://users.skynet.be/pro-rail/index.html)** (le Gorre & Daphetid Railroad).
+L'idée des trains collecteurs m'est venue du fameux livre "En train avec John Allen" de Linn H. Westcott (traduit en français par Jacques Le Plat), édité par **[Pro Rail International](http://www.ferbach.be/frames_fr/frlivresmain2.htm)** (le Gorre & Daphetid Railroad).
 
 ## Le rôle des joueurs {#roles}
 
