@@ -403,4 +403,4 @@ J'utilise une désignation des wagons qui permet de les repérer facilement par 
 
 Pour ce formulaire, je me suis inspiré du formulaire de type _Switchlist_ présenté par Jack Burgess pour son [Yosemite Valley Railroad](http://www.yosemitevalleyrr.com), ainsi que des informations des formulaires proposés par le logiciel Ship It! Car Cards Version 1.0 from Albion Software. Je l'ai réalisé avec un tableur standard.
 
-Dans les semaines et les mois à venir, je vais essayer d'autres scénarios en y ajoutant des mouvements à réaliser dans les gares. Avec mon nouveau système Digital, Je vais essayer de faire évoluer simultanément un train dans chaque sens, ou un train collecteur avec un train régulier.
+Je vais essayer d'autres scénarios en y ajoutant des mouvements à réaliser dans les gares. Avec la commande digitale, je peux faire évoluer simultanément un train dans chaque sens, ou un train collecteur avec un train régulier.
