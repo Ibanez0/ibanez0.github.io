@@ -285,7 +285,7 @@ J'ai examiné principalement trois types de systèmes :
 
 *   les commandes traditionnelles (transfo classique) ;
 *   les commandes de conduite sélective (ex : CS 90, JAO) ;
-*   les commandes digitales avec décodeur à bord des locomotives (ex : Digital-Plus de LENZ, Commander 9 ARNOLD, MRC 2000).
+*   les commandes digitales avec décodeur à bord des locomotives (ex : Digital-Plus de LENZ).
 
 **Tableau comparatif :**  
 
