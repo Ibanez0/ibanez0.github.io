@@ -346,13 +346,11 @@ Les circuits électroniques et les automatismes peuvent être réalisés facilem
 
 **Quelques précisions :**
 
-Cette solution de supervision offre l'avantage d'être indépendante du système d'alimentation qui peut être classique ou numérique : actuellement, j'utilise soit deux commandes classiques, soit une commande **[MRC](http://www.modelrec.com/)** 2000 (voir **[LOCO REVUE](http://www.locorevue.com/)** n°620 12/98, voir également le Hors-Série Electronique paru en 12/98 pour une étude comparative de plusieurs systèmes d'alimentation numériques).
-
-Pour moi, cette solution offre l'avantage de me permettre d'utiliser mon vieux 8086 en MS DOS 3.2 alors que l'adoption d'un système numérique m'obligerait à utiliser au moins un 486 (toutefois, le boîtier ORD102 peut également être connecté à mon PENTIUM). Évidemment, avec un vieux PC, je ne peux pas réaliser un programme Windows et je suis obligé de réaliser une interface en mode monochrome.
+Cette solution de supervision offre l'avantage d'être indépendante du système d'alimentation qui peut être classique ou numérique.
 
 Dans mon cas, il faut noter que le réseau est constitué d'une voie unique de longueur assez limitée (12 mètres en boucle) et d'une gare unique. Je souhaite pourtant réaliser des scénarios passant par plusieurs gares. J'ai donc adopté le principe que l'unique gare réelle peut représenter plusieurs gares fictives. Tout scénario passant virtuellement par plusieurs gares boucle par l'unique gare réelle existante sur le réseau. Pour aider les joueurs, l'ordinateur affiche alors le nom de la gare courante, les joueurs ne doivent pas tenir compte du nom inscrit sur le bâtiment de la gare réelle (là encore, l'ordinateur apporte une aide).
 
-Les contacts ILS ne permettant de distinguer de manière simple qu'une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (voir [note 1](#note1)). Toutefois, le système reste évolutif car il faut noter que l'utilisation d'un système de reconnaissance de type code à barre (voir **[LOCO REVUE](http://www.locorevue.com/)** n°604 06/97 et n°605 07-08/97) à la place des ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
+Les contacts ILS ne permettant de distinguer de manière simple qu'une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (voir note 1). Toutefois, le système reste évolutif car il faut noter que l'utilisation d'un système de reconnaissance de type code à barre à la place des ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
 
 (note 1) : Cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare.
 
@@ -372,10 +370,6 @@ En 1997, j'ai effectivement réalisé un prototype de programme de génération 
 Maintenant, **j'utilise un tableur pour mettre en forme un [tableau horaire général (_timetable_)](#timetable) et des [listes de répartition des wagons (_switch list_)](#switchlist) pour chaque scénario.**
 
 L'intelligence nécessaire pour construire des scénarios pertinents et intéressants avec de nombreux paramètres possibles est difficile à mettre dans un programme de calcul automatique. La réalisation d'un programme personnalisé n'est pas rentable si le nombre de scénarios à réaliser est potentiellement faible. L'utilisation d'un programme existant apporterait un plus à condition qu'il soit suffisamment générique pour s'adapter aux nombreux cas possibles et donc ainsi aux cas qui nous préoccupent. Finalement, l'utilisation d'un tableur constitue peut-être un bon compromis en permettant de réaliser certains calculs (somme des durées, longueurs, poids, calcul de moyennes, etc.) qui facilitent le travail du concepteur et en permettant une mise en page totalement personnalisée.
-
-**Références :**
-
-Pendant le temps que j'ai passé à expérimenter tout ceci (1996-1998), sont apparus plusieurs programmes vendus par des éditeurs spécialisés ou parfois gratuits (freewares). Le lecteur intéressé pourra consulter le Hors-Série Electronique paru en 12/98 chez **[LOCO REVUE](http://www.locorevue.com/)**, numéro accompagné d'un cédérom contenant quelques programmes de ce type en version de démonstration et les adresses de plusieurs éditeurs.
 
 ## Les documents pour la simulation {#documents}
 
@@ -399,7 +393,7 @@ Dans les semaines et les mois à venir, je vais essayer d'autres horaires avec p
 
 ### Liste de répartition des wagons (scénario 1) {#switchlist}
 
-![Liste de r'partition des wagons / Switchlist (10 Ko)](../images/switchlist.gif)
+![Liste de répartition des wagons / Switchlist (10 Ko)](../images/switchlist.gif)
 
 Pour un même tableau horaire, il est possible de réaliser plusieurs scénarios en fonction des wagons et des mouvements concernés. J'ai commencé modestement, avec un scénario simple n'incluant que quelques wagons. De plus, ce sont des couverts ou des citernes, donc la gestion de leur chargement n'est pas à faire dans ce scénario.
 
