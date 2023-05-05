@@ -307,7 +307,7 @@ Au contraire, la plupart des commandes digitales sont désormais basées sur le 
 
 ## La supervision et le logiciel de jeu {#supervision}
 
-Le système de supervision impose l'utilisation d'un ordinateur et d'un logiciel. Il est également possible de réaliser un système entièrement électronique, par exemple avec des cartes Arduino ou Rasberry Pi, mais il n'est pas aussi facilement évolutif.
+Le système de supervision impose l'utilisation d'un ordinateur et d'un logiciel. Il est également possible de réaliser un système entièrement électronique, par exemple avec des cartes Arduino ou Raspberry Pi, mais il n'est pas aussi facilement évolutif.
 
 ### Le programme de supervision {#prog_supervision}
 
@@ -331,18 +331,19 @@ Le programme de supervision est chargé de :
 
 #### Le matériel électronique et informatique
 
-**La solution matérielle permettant de réaliser un programme de supervision avec les fonctions décrites précédemment consiste en :**
+**La solution matérielle permettant de réaliser un système de supervision avec les fonctions décrites précédemment consiste en :**
 
 En 1998 :
 
 *   un ordinateur PC avec un port parallèle et un port série (ex : mon vieux 8086) ;
-*   un boîtier d'interface que je compte réaliser moi-même (ex : modèle avec 4 entrées et 8 sorties à brancher sur le port parallèle du PC, je recommande à ce propos un boîtier du commerce (ex : modèle ORD102 prêt à l'emploi de la société **[ELECTROME](http://www.jclelectrome.fr/)** avec 8 entrées isolées et 8 sorties sur relais à brancher sur le port série du PC, environ 230 Euros TTC) ;
+*   un boîtier d'interface avec entrées isolées et sorties sur relais à brancher sur le port série ou parallèle du PC (ex : modèle ORD102 prêt à l'emploi de la société [ELECTROME](http://www.jclelectrome.fr/)) ;
 *   quelques contacts ILS disposés aux endroits stratégiques du réseau et en entrée/sortie de la gare (remarque : une seule locomotive peut alors être facilement contrôlée) ;
 *   l'allumage et l'extinction progressive de la lumière, en douceur, peut être réalisée par un module électronique (ex : kit K2657 de Velleman-kit environ 25 Euros TTC).
 
 En 2020 :
 
-Les circuits électroniques et les automatismes peuvent être réalisés facilement avec Arduino ou Rasberry Pi par exemple.
+* un ordinateur PC avec ports USB et/ou WiFi ;
+* des circuits électroniques d'interface peuvent être réalisés facilement avec Arduino (ou Raspberry Pi) par exemple ;
 
 **Quelques précisions :**
 
@@ -350,9 +351,7 @@ Cette solution de supervision offre l'avantage d'être indépendante du système
 
 Dans mon cas, il faut noter que le réseau est constitué d'une voie unique de longueur assez limitée (12 mètres en boucle) et d'une gare unique. Je souhaite pourtant réaliser des scénarios passant par plusieurs gares. J'ai donc adopté le principe que l'unique gare réelle peut représenter plusieurs gares fictives. Tout scénario passant virtuellement par plusieurs gares boucle par l'unique gare réelle existante sur le réseau. Pour aider les joueurs, l'ordinateur affiche alors le nom de la gare courante, les joueurs ne doivent pas tenir compte du nom inscrit sur le bâtiment de la gare réelle (là encore, l'ordinateur apporte une aide).
 
-Les contacts ILS ne permettant de distinguer de manière simple qu'une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (voir note 1). Toutefois, le système reste évolutif car il faut noter que l'utilisation d'un système de reconnaissance de type code à barre à la place des ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
-
-(note 1) : Cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare.
+Les contacts ILS ne permettant de distinguer de manière simple qu'une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare). Toutefois, le système reste évolutif car il faut noter que l'utilisation d'un système de reconnaissance de type code à barre à la place des ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
 
 ### Le programme de génération de scénario {#prog_generation}
 
