@@ -291,7 +291,7 @@ J'ai examiné principalement trois types de systèmes :
 
 | Commande classique | Commande digitale |
 |--------------------|-------------------|
-| Il faut assembler des systèmes disparates parfois incompatibles, exemple : la commande Mark II est incompatible avec le générateur 50 khz car tout composant électrique (bobine de découplage) intercalé dans le câblage perturbe le fonctionnement de l'asservissement de cette commande. | Une seule centrale "équivaut" à plusieurs transformateurs classiques déjà sophistiqués (avec des décodeurs à simulation d'inertie et asservissement) et intègre de plus la fonction d'éclairage constant. Il faut installer un décodeur dans chaque locomotive. |
+| Il faut assembler des systèmes disparates parfois incompatibles, exemple : la commande GAUGEMASTER GMC-UF est incompatible avec le générateur 50 khz car tout composant électrique (bobine de découplage) intercalé dans le câblage perturbe le fonctionnement de l'asservissement de cette commande. | Une seule centrale "équivaut" à plusieurs transformateurs classiques déjà sophistiqués (avec des décodeurs à simulation d'inertie et asservissement) et intègre de plus la fonction d'éclairage constant. Il faut installer un décodeur dans chaque locomotive. |
 | Le câblage devient rapidement complexe avec tous les problèmes associés (de nombreux modélistes ont déjà exprimé les difficultés rencontrées et les solutions possibles). | Le câblage est réduit au minimum par conception du système digital. |
 | Pendant une séance de jeu, l'exploitation des zones électriques nécessite presque un opérateur dédié si on veut éviter les courts-circuits ou les mauvaises surprises. Par exemple, pris dans l'action, il n'est pas rare de voir un train s'arrêter brutalement en changeant de zone électrique à cause d'une mauvaise affectation de la commande de l'opérateur.| Il n'y a pas de zone électrique, donc pas d'exploitation associée. |
 | Sur un réseau assez petit, il est impossible de faire se suivre deux trains : cela nécessite alors un vrai bloc système ou une commande sélective par exemple. Il est impossible de gérer à la main la vitesse des trains en même temps que l'affectation des commandes aux zones électriques (en particulier quand les zones sont courtes), sans compter les autres actions à mener (commande des aiguilles, préparation des manoeuvres, etc.). | Il est facile de se faire suivre plusieurs trains, chacun ayant sa commande de vitesse. |
@@ -299,15 +299,15 @@ J'ai examiné principalement trois types de systèmes :
 
 Du point de vue de l'exploitation, la solution de commande classique limite les possibilités et complique le jeu pour les opérateurs. 
 
-Au titre des avantages, le prix d'une commande traditionnelle reste faible, en tout cas il est encore assez inférieur à celui d'une commande digitale. En outre, les locomotives n'ont pas besoin d'être modifiées (par exemple, être équipées de décodeurs). L'utilisation de l'éclairage constant reste tout de même un problème car il n'est pas si facile que ça à mettre en oeuvre.
+Au titre des avantages, le prix d'une commande traditionnelle reste faible, en tout cas il est encore assez inférieur à celui d'une commande digitale prête à l'emploi. En outre, les locomotives n'ont pas besoin d'être modifiées (par exemple, être équipées de décodeurs). L'utilisation de l'éclairage constant reste tout de même un problème car il n'est pas si facile que ça à mettre en oeuvre.
 
 Les commandes de conduite sélective ont pour moi l'inconvénient de ne pas être fondées sur une norme standardisée reconnue par les constructeurs. Leur prix reste assez élevé.
 
-Au contraire, la plupart des commandes digitales sont désormais basées sur le standard DCC de la **[NMRA](http://www.nmra.org/)** ce qui constitue un gage de pérennité et de diminution des prix de par le jeu de la concurrence.
+Au contraire, la plupart des commandes digitales sont désormais basées sur le standard DCC de la **[NMRA](http://www.nmra.org/)** ce qui constitue un gage de pérennité et de diminution des prix de par le jeu de la concurrence. Pour les passionnés d'électronique et d'informatique, il est possible de construire une commande DCC à partir de composants open source pour le dizième du prix d'une commande du marché.
 
 ## La supervision et le logiciel de jeu {#supervision}
 
-Le système de supervision impose l'utilisation d'un ordinateur et d'un logiciel. Il serait probablement possible de réaliser un système entièrement électronique mais il ne serait pas évolutif.
+Le système de supervision impose l'utilisation d'un ordinateur et d'un logiciel. Il est également possible de réaliser un système entièrement électronique, par exemple avec des cartes Arduino ou Rasberry Pi, mais il n'est pas aussi facilement évolutif.
 
 ### Le programme de supervision {#prog_supervision}
 
