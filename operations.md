@@ -237,7 +237,7 @@ Trois exemples :
 
 ### Zones cachées (accessibilité) ?
 
-Il faut éviter les zones inaccessibles pour pouvoir intervenir partout sur le réseau, en cas de déraillement, en cas d'encrassement des voies nécessitant des intervention manuelles.
+Il faut éviter les zones inaccessibles pour pouvoir intervenir partout sur le réseau, en cas de déraillement, en cas d'encrassement des voies nécessitant des interventions manuelles.
 
 ### Pont tournant ou triangle de voies ?
 
