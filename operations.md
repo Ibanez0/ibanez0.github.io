@@ -343,7 +343,7 @@ En 1998 :
 En 2020 :
 
 * un ordinateur PC avec ports USB et/ou WiFi ;
-* des circuits électroniques d'interface peuvent être réalisés facilement avec Arduino (ou Raspberry Pi) par exemple ;
+* des circuits électroniques d'interface peuvent être réalisés facilement avec Arduino (ou Raspberry Pi) par exemple.
 
 **Quelques précisions :**
 
