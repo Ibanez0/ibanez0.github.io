@@ -23,6 +23,11 @@ Un ILS en entrée et sortie de gare comme pour le réseau de la ligne 0 ne convi
 Il faut capturer les commandes digitales envoyées au locotracteur.
 Il faut aussi vérifier la bonne position des wagons.
 
+Remarque :
+Les signaux lumineux doivent être visibles du joueur en toute circonstance pour qu'il puisse les respecter.
+Si l'orientation de la voie (et donc des signaux) ne le permet pas, il faut prévoir une répétition des signaux sur un TCO.
+
+
 ## Station de commande
 
 2022 : Arduino / DCC-EX
