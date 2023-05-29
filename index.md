@@ -69,7 +69,7 @@ Consultez ces pages qui exposent quelques idées sur un concept de jeu interacti
 **MODELISME FERROVIAIRE :**
 
 *   **[RAIL MINIATURE FLASH](https://www.rmf-magazine.com)** - Revue Française de modélisme
-*   **[LOCO REVUE](https://trains.lrpresse.com)** - Revue Française de modélisme
+*   **[LOCO REVUE PRESSE](https://trains.lrpresse.com)** - Revue Française de modélisme (Loco-Revue, Voie Libre, Clés pour le train miniature, Ferrovissime, Maquettes en carton)
 *   **[MODEL RAILROADER](https://www.kalmbach.com)** - Revue Américaine de modélisme
 
 **REGLES DU JEU ET EXPLOITATION :**
