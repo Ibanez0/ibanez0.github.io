@@ -374,9 +374,11 @@ L'intelligence nécessaire pour construire des scénarios pertinents et intéres
 
 ### Tableau horaire {#timetable}
 
+Les tableaux horaires décrivent les parcours des trains avec les horaires associés (en fonction du calendrier). Ils décrivent la liste des gares travsersées entre les gares terminus, les heures de départ de d'arrivée, les durées d'arrêt aux correspondances, les distances parcourues, etc.
+
 Pour commencer mes essais, j'ai conçu cette première version d'un tableau horaire simple, relatif au trafic de convois de marchandises. J'ai ajusté les horaires après les premiers essais sur mon réseau.
 
-Les horaires sont liés à l'utilisation de mon horloge accélérée (d'un facteur 12), et à la mesure des distances représentées par le réseau, compte-tenu de l'échelle de réduction au 1/87 et au facteur d'accélération. Pour mémoire, avec ces deux paramètres, un mètre réel de voie du réseau représente environ un kilomètre fictif. Le scénario commence et se termine à la gare cachée. La distance entre deux gares s'avère être de 12 kms correspondant à la distance parcourue à l'échelle compte tenu du facteur d'accélération (12 mètres représentent environ 12 kms). Mon programme de supervision sur PC, enregistre chaque passage du train à l'entrée de la gare et calcule sa distance parcourue et sa vitesse moyenne sur le parcours. Les vitesses entre deux gares constatées lors de mes premiers essais varient entre 40 Km/heure et 60 Km/heure à l'échelle. Il est également nécessaire d'étalonner la commande du train pour que le conducteur sache quelle est sa vitesse à chaque cran du bouton de commande.
+Les horaires sont liés à l'utilisation de mon horloge accélérée (d'un facteur 12) et à la mesure des distances représentées par le réseau, compte-tenu de l'échelle de réduction au 1/87 et du facteur d'accélération. Pour mémoire, avec ces deux paramètres, un mètre réel de voie du réseau représente environ un kilomètre fictif. Le scénario commence et se termine dans la gare de triage en coulisse. La distance entre deux gares s'avère être de 12 Km correspondant à la distance parcourue à l'échelle compte tenu du facteur d'accélération (12 mètres représentent environ 12 Km). Mon programme de supervision sur PC, enregistre chaque passage du train à l'entrée de la gare et calcule sa distance parcourue et sa vitesse moyenne sur le parcours. Les vitesses entre deux gares constatées lors de mes premiers essais varient entre 40 Km/heure et 60 Km/heure à l'échelle. Il est également nécessaire d'étalonner la commande du train pour que le conducteur sache quelle est sa vitesse à chaque cran du bouton de commande.
 
 Pour ce premier tableau, je me suis inspiré du formulaire de type _Timetable_ présenté par Jack Burgess pour son [Yosemite Valley Railroad](http://www.yosemitevalleyrr.com). Je l'ai réalisé avec un tableur standard.
 
@@ -388,9 +390,13 @@ J'ai pu déjà constater qu'il n'est pas si facile de tenir l'horaire car tout �
 
 Autre point important, on ressent une certaine dilatation du temps pour tous les mouvements qui doivent être effectués en gare car là on doit réaliser les manoeuvres sur une échelle de temps non accélérée (on ne peut pas déplacer les wagons à toute vitesse) et on constate sur le tableau horaire des durées de une à deux heures pour manoeuvrer seulement quelques wagons.
 
-Dans les semaines et les mois à venir, je vais essayer d'autres horaires avec plus de variété dans les types de relations.
+A l'avenir je vais essayer d'autres horaires avec plus de variété dans les types de relations.
 
 ### Liste de répartition des wagons (scénario 1) {#switchlist}
+
+Les listes de répartition des wagons indiquent les mouvements de wagons de marchandises a réaliser pour répondre aux besoins des clients.
+Les wagons, vides ou remplis, sont déplacés d'un endroit à un autre qui sont par example une entreprise ou une zone de triage.
+Une telle liste de répartition précise la date d'exécution, le tableau horaire utilisé, et pour chaque wagon à déplacer : son identifiant, son lieu de départ, son lieu d'arrivée.
 
 ![Liste de répartition des wagons / Switchlist (10 Ko)](../images/switchlist.gif)
 
@@ -402,4 +408,4 @@ J'utilise une désignation des wagons qui permet de les repérer facilement par 
 
 Pour ce formulaire, je me suis inspiré du formulaire de type _Switchlist_ présenté par Jack Burgess pour son [Yosemite Valley Railroad](http://www.yosemitevalleyrr.com), ainsi que des informations des formulaires proposés par le logiciel Ship It! Car Cards Version 1.0 from Albion Software. Je l'ai réalisé avec un tableur standard.
 
-Je vais essayer d'autres scénarios en y ajoutant des mouvements à réaliser dans les gares. Avec la commande digitale, je peux faire évoluer simultanément un train dans chaque sens, ou un train collecteur avec un train régulier.
+Je vais essayer d'autres scénarios en y ajoutant des mouvements à réaliser dans ou entre les gares. Avec la commande digitale, je peux faire évoluer simultanément un train dans chaque sens, ou bien un train collecteur avec un train régulier.
