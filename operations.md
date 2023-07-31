@@ -374,7 +374,7 @@ L'intelligence nécessaire pour construire des scénarios pertinents et intéres
 
 ### Tableau horaire {#timetable}
 
-Les tableaux horaires décrivent les parcours des trains avec les horaires associés (en fonction du calendrier). Ils décrivent la liste des gares travsersées entre les gares terminus, les heures de départ et d'arrivée, les durées d'arrêt aux correspondances, les distances parcourues, etc.
+Les tableaux horaires décrivent les trajets des trains avec les horaires associés. En fonction des jours de la semaine et plus généralement du calendrier, ils décrivent sous la forme d'une matrice la liste des gares traversées par chaque trajet, les heures de départ et d'arrivée, les durées d'arrêt aux correspondances, les distances parcourues, etc.
 
 Pour commencer mes essais, j'ai conçu cette première version d'un tableau horaire simple, relatif au trafic de convois de marchandises. J'ai ajusté les horaires après les premiers essais sur mon réseau.
 
