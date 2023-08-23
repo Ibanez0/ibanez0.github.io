@@ -47,7 +47,7 @@ Cette station à une puissance de 2A par défaut (disjoncteur intégré au logic
 
 Software :
 
-* ordinateur standard (Macbook) :
+* ordinateur standard (PC ou Mac) :
     * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
 * logiciel open source DCC-EX EX-CommandStation pour Arduino (C++)
 * logiciel open source IDE Arduino :
@@ -60,7 +60,7 @@ Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mo
 
 Le pilotage avec les commandes de l'API dans le Serial Monitor n'est pas conçu pour le jeu.
 J'utilise principalement le logiciel open source JMRI (Java Model Railroad Interface) avec la configuration suivante :
-* ordinateur standard (Macbook) :
+* ordinateur standard (PC ou Mac) :
     * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
     * connecté au réseau local Wifi
 * logiciel JMRI DecoderPro ou PanelPro
