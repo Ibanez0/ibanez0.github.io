@@ -26,7 +26,7 @@ Définitions
 
 **TRAIN REGULIER** : train inscrit au tableau normal des horaires (les trains collecteurs peuvent être inscrits au tableau des horaires).
 
-**TRAIN EXCEPTIONNEL** : train non inscrit au tableau normal des horaires, décidé par le chef de ligne pour écouler un trafic exceptionnel (les trains collecteurs peuvent être execptionnels).
+**TRAIN EXCEPTIONNEL** : train non inscrit au tableau normal des horaires, décidé par le chef de ligne pour écouler un trafic exceptionnel (les trains collecteurs peuvent être exceptionnels).
 
 **TABLEAU DES HORAIRES** : tableau régissant le mouvement des trains réguliers, dans le respect des règles. Il contient le planning de circulation des trains avec les instructions particulières qui leur sont attachées.
 
@@ -51,7 +51,7 @@ La voie principale doit toujours rester libre. Les trains peuvent s'y arrêter m
 
 Les wagons préparés dans les gares pour être ramassés (par les trains réguliers ou exceptionnels) doivent être garés sur une voie de garage. Les wagons sont laissés dans les gares sur la voie d'évitement ou sur une voie de garage. S'ils sont laissés sur la voie d'évitement, ils doivent être déplacés rapidement sur une voie de garage à l'aide d'un engin tracteur affecté à la gare.
 
-Dans chaque zone, les aiguilles doivent toujours autoriser le passage direct d'un train sauf si une man'uvre est effectuée en utilisant la voie principale. Dans ce cas, les man'uvres doivent être effectuées rapidement.
+Dans chaque zone, les aiguilles doivent toujours autoriser le passage direct d'un train sauf si une manoeuvre est effectuée en utilisant la voie principale. Dans ce cas, les manoeuvres doivent être effectuées rapidement.
 
 Les conducteurs doivent tenir compte de l'inertie de leur train, qui rend les démarrages progressifs et rallonge les distances d'arrêt.
 
