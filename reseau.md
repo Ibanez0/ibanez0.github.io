@@ -148,25 +148,25 @@ Cet algorithme de calcul du score constitue un premier essai, il doit être amé
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
 
-### Supervision 2025
+### Supervision 2025 - YARS
 
-Comme expliqué pour la ligne **Un**, j'utilise maintenant la même solution pour la ligne Zéro :
-- centrale de pilotage DCC++EX Command Station avec carte Arduino Mega 2560
-- logiciel JMRI PanelPro (avec son serveur wiThrottle et son serveur API/Web)
+Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise maintenant la même solution technologique pour la ligne Zéro :
+- centrale de pilotage DCC++EX Command Station avec carte Arduino Mega 2560 (et son MotorShield)
+- logiciel JMRI PanelPro (avec son serveur wiThrottle et son serveur API/Web) avec Macintosh
 - application mobile wiThrottle pour iOS
 
 J'ai développé une interface wiThrottle (en Python) pour commander les locomotives par programme.
-En partant de la version historique de 1998, j'ai reproduit mon logiciel de supervision avec ces technologies. L'horloge accélérée (12) ainsi que le synoptique son gérés et affichés par JMRI.
+En partant de la version historique du programme de 1998, j'ai reproduit mon programme de supervision (appelé désormais YARS) avec ces technologies. Les commandes sont opérées en mode Terminal et les passages en gare sont affichés de manière similaire mais dans un navigateur servi par un serveur Web interne au programme. L'horloge accélérée (x12) ainsi qu'un synoptique sont gérés et affichés par JMRI.
 
-Les règles doivent être respectées, le score est calculé ainsi :
+Les règles doivent être respectées, le score est calculé ainsi (version de mars 2025) :
 
-* **Parcours** : chaque entrée en gare rapporte 5 points, de même chaque sortie.
-* **Respect des horaires** : au delà d'un écart de 2 minutes (tolérance) chaque minute d'avance ou de retard retire 1 point.
-* **Vitesse maximum autorisée** : chaque km/h dépassant la vitesse moyenne limite autorisée entre 2 gares retire 1 point.
+* **Parcours** : chaque entrée en gare rapporte 5 points, de même chaque sortie, il faut aller au bout du parcours.
+* **Respect des horaires** : au-delà d'un écart de 2 minutes (tolérance) chaque minute d'avance ou de retard fait perdre 1 point, aussi bien en entrée qu'en sortie de gare.
+* **Vitesse maximum autorisée** : chaque km/h dépassant la vitesse moyenne limite autorisée par le scénario entre 2 gares fait perdre 1 point en entrée de gare (pas en sortie).
 * **Conduite** :
     * Feux allumés : +100 points
-    * Feux éteints par la suite : les 100 points sont perdus
-    * Klaxon (F2) en entrant dans la gare : +10 points à chaque fois
-* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé.
+    * Feux éteints par la suite : les 100 points sont perdus, il n'est pas possible de gagner plusieurs fois 100 points en allumant puis en éteignant les feux de la locomotive.
+    * Klaxon (F2) en entrant dans la gare : +10 points à chaque coup de klaxon.
+* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé. Il n'est pas possible de ravitailler en roulant, la locomotive doit être à l'arrêt en gare (sachant que l'arrêt en plein ligne est interdit).
 
-Mon meilleur score est 230 points avec le scénario n°1 habituel de Gare du Lion à Melan.
+Mon meilleur score est 230 points avec le scénario n°1 allant de Gare du Lion à Melan.
