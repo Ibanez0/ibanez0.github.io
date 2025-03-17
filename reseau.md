@@ -148,12 +148,16 @@ Cet algorithme de calcul du score constitue un premier essai, il doit être amé
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
 
-### Supervision 2025 - YARS
+### Supervision 2025
 
-Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise maintenant la même solution technologique pour la ligne Zéro :
-- centrale de pilotage DCC++EX Command Station avec carte Arduino Mega 2560 (et son MotorShield)
-- logiciel JMRI PanelPro (avec son serveur wiThrottle et son serveur API/Web) avec Macintosh
-- application mobile wiThrottle pour iOS
+Yet Another Railroad Simulator (YARS)
+
+Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise désormais la même solution technologique pour la ligne Zéro :
+- Centrale de pilotage DCC++EX EX-CommandStation avec carte Arduino Mega 2560 (et une carte additionnelle Motor Shield)
+- Alimentation 18V (5A)
+- Module détecteur de présence par consommation de courant 5556 de Stock87
+- Logiciel JMRI PanelPro (avec son serveur wiThrottle et son serveur Web pour API) avec un ordinateur MacOS
+- Application mobile wiThrottle pour iOS
 
 J'ai développé une interface wiThrottle (en Python) pour commander les locomotives par programme.
 En partant de la version historique du programme de 1998, j'ai reproduit mon programme de supervision (appelé désormais YARS) avec ces technologies. Les commandes sont opérées en mode Terminal et les passages en gare sont affichés de manière similaire mais dans un navigateur servi par un serveur Web interne au programme. L'horloge accélérée (x12) ainsi qu'un synoptique sont gérés et affichés par JMRI.
@@ -167,6 +171,6 @@ Les règles doivent être respectées, le score est calculé ainsi (version de m
     * Feux allumés : +100 points
     * Feux éteints par la suite : les 100 points sont perdus, il n'est pas possible de gagner plusieurs fois 100 points en allumant puis en éteignant les feux de la locomotive.
     * Klaxon (F2) en entrant dans la gare : +10 points à chaque coup de klaxon.
-* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé. Il n'est pas possible de ravitailler en roulant, la locomotive doit être à l'arrêt en gare (sachant que l'arrêt en plein ligne est interdit).
+* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé. Il n'est pas possible de ravitailler en roulant, la locomotive doit être à l'arrêt en gare (sachant que l'arrêt en pleine ligne est interdit).
 
 Mon meilleur score est 230 points avec le scénario n°1 allant de Gare du Lion à Melan.
