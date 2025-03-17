@@ -147,3 +147,27 @@ Plusieurs scénarios différents peuvent être exécutés par le programme. Au d
 Cet algorithme de calcul du score constitue un premier essai, il doit être amélioré. Déjà, le jeu est intéressant car la valeur courante du score permet d'ajuster le comportement du conducteur dans le but de ne pas avoir de pénalité trop importante, en tout cas supérieure au gain obtenu à chaque passage en gare. A titre indicatif, avec mon [scénario n°1](/operations/#documents), le meilleur score que j'ai obtenu est de 118.
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
+
+### Supervision 2025
+
+Comme expliqué pour la ligne 1, j'utilise maintenant :
+- centrale de commande DCC++EX Command Station avec carte Arduino Mega 2560
+- logiciel JMRI PanelPro (avec son serveur wiThrottle et serveur Web)
+- application mobile wiThrottle pour iOS
+
+J'ai développé une interface wiThrottle (en Python) pour commander les locomotives par programme.
+En partant de la version historique de 1998, j'ai reproduit mon logiciel de supervision. L'horloge accélérée est affichée par JMRI.
+
+Le score est calculé ainsi :
+
+* Respect du parcours : chaque entrée en gare rapporte 5 points, de même chaque sortie.
+* Respect des horaires : au delà d'un écart de 2 minutes (tolérance) chaque minute d'avance ou de retard retire 1 point.
+* Respect des limites de vitesse : chaque km/h dépassant la vitesse moyenne limite autorisée entre 2 gares retire 1 point.
+* Respect des consignes :
+    * Feux allumés : +100 points
+    * Feux éteints par la suite : les 100 points sont perdus
+    * Klaxon (F2) en entrant dans la gare : +10 points à chaque fois
+
+Une panne de fuel est éliminatoire et le scénario est automatiquement terminé.
+
+Mon meilleur score est 230 points avec le scénario n°1 habituel de Gare du Lion à Melan.
