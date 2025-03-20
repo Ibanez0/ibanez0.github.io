@@ -4,11 +4,11 @@ title: Réseau
 permalink: /reseau/
 ---
 
-Un réseau pour la simulation : Le réseau "la ligne _zéro_"
+Un réseau pour la simulation : "la ligne _Zéro_"
 
 ![](../images/logo4.gif)
 
-La ligne zéro (1996-2000)
+La ligne Zéro (1996-2000)
 -------------------------
 
 Mon **réseau imaginaire** représente une ligne SNCF reliant la capitale aux villes de la banlieue dans la partie SUD-EST dans les années 1960-1970, d'une longueur approximative de 150 kilomètres.
@@ -146,7 +146,7 @@ Cet algorithme de calcul du score constitue un premier essai, il doit être amé
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
 
-La miniligne zéro (2023-2025)
+La miniligne Zéro (2023-2025)
 -----------------------------
 
 Un plateau de 1m20 x 0m85 avec un simple ovale et une seule voie de garage qui reprend et améliore toutes les idées du réseau de 2000.
