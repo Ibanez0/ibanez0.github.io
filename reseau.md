@@ -8,8 +8,12 @@ Un réseau pour la simulation : "la ligne _Zéro_"
 
 ![](../images/logo4.gif)
 
-La ligne Zéro (1996-2000)
--------------------------
+[La ligne Zéro (1996-2000)](#zero)
+[La ligne miniZéro (depuis 2022)](#minizero)
+
+En 1996, j'avais la place pour créer un réseau constitué de 7 modules et d'une coulisse permettant de réaliser une boucle, d'ou le nom de cette ligne : la ligne Zéro. Durant 5 années, j'ai pu tester mes idées concernant la simulation des opérations sous la forme d'un jeu. Après avoir déménagé en 2000, je n'avais plus assez de place pour remonter ce réseau et il a finalement été démantelé. En 2022, j'ai décidé de poursuivre quitte à utiliser un réseau beaucoup plus petit et la ligne miniZéro est alors apparue.
+
+## La ligne Zéro (1996-2000) {#zero}
 
 Mon **réseau imaginaire** représente une ligne SNCF reliant la capitale aux villes de la banlieue dans la partie SUD-EST dans les années 1960-1970, d'une longueur approximative de 150 kilomètres.
 
@@ -146,8 +150,7 @@ Cet algorithme de calcul du score constitue un premier essai, il doit être amé
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
 
-La miniligne Zéro (2023-2025)
------------------------------
+## La ligne miniZéro (2022-2025) {#minizero}
 
 Un plateau de 1m20 x 0m85 avec un simple ovale et une seule voie de garage qui reprend et améliore toutes les idées du réseau de 2000.
 Il est facilement déplaçable pour jouer n'importe où et faire des démonstrations.
@@ -155,7 +158,7 @@ Les mêmes scénarios de jeu précédents sont utilisables. La généralisation 
 
 ### Commande digitale
 
-Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise désormais la même solution technologique pour la ligne Zéro :
+Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise désormais la même solution technologique pour la ligne miniZéro :
 - Centrale de pilotage DCC++EX EX-CommandStation avec carte Arduino Mega 2560 (et une carte additionnelle Motor Shield)
 - Alimentation 18V (5A)
 - Module détecteur de présence par consommation de courant 5556 de Stock87
