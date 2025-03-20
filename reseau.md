@@ -146,8 +146,8 @@ Cet algorithme de calcul du score constitue un premier essai, il doit être amé
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
 
-La mini ligne zéro (2023-2025)
-------------------------------
+La miniligne zéro (2023-2025)
+-----------------------------
 
 Un plateau de 1m20 x 0m85 avec un simple ovale et une seule voie de garage qui reprend et améliore toutes les idées du réseau de 2000.
 Il est facilement déplaçable pour jouer n'importe où et faire des démonstrations.
