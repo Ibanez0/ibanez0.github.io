@@ -4,14 +4,12 @@ title: Réseau
 permalink: /reseau/
 ---
 
-Un réseau pour la simulation
+Un réseau pour la simulation : Le réseau "la ligne _zéro_"
 
 ![](../images/logo4.gif)
 
-Le réseau "la ligne _zéro_"
-
-Présentation
-------------
+La ligne zéro (1996-2000)
+-------------------------
 
 Mon **réseau imaginaire** représente une ligne SNCF reliant la capitale aux villes de la banlieue dans la partie SUD-EST dans les années 1960-1970, d'une longueur approximative de 150 kilomètres.
 
@@ -148,21 +146,38 @@ Cet algorithme de calcul du score constitue un premier essai, il doit être amé
 
 J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
 
-### Supervision 2025
+La mini ligne zéro (2023-2025)
+------------------------------
 
-Yet Another Railroad Simulator (YARS)
+Un plateau de 1m20 x 0m85 avec un simple ovale et une seule voie de garage qui reprend et améliore toutes les idées du réseau de 2000.
+Il est facilement déplaçable pour jouer n'importe où et faire des démonstrations.
+Les mêmes scénarios de jeu précédents sont utilisables. La généralisation du DCC permet toutefois de nombreuses améliorations !
+
+### Commande digitale
 
 Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise désormais la même solution technologique pour la ligne Zéro :
 - Centrale de pilotage DCC++EX EX-CommandStation avec carte Arduino Mega 2560 (et une carte additionnelle Motor Shield)
 - Alimentation 18V (5A)
 - Module détecteur de présence par consommation de courant 5556 de Stock87
-- Logiciel JMRI PanelPro (avec son serveur wiThrottle et son serveur Web pour API) avec un ordinateur MacOS
+- Logiciel JMRI PanelPro (y-inclus son serveur wiThrottle et son serveur Web pour API) avec un ordinateur (MacOS, Windows ou Linux)
 - Application mobile wiThrottle pour iOS
+- Application mobile EngineDriver pour Android
 
-J'ai développé une interface wiThrottle (en Python) pour commander les locomotives par programme.
-En partant de la version historique du programme de 1998, j'ai reproduit mon programme de supervision (appelé désormais YARS) avec ces technologies. Les commandes sont opérées en mode Terminal et les passages en gare sont affichés de manière similaire mais dans un navigateur servi par un serveur Web interne au programme. L'horloge accélérée (x12) ainsi qu'un synoptique sont gérés et affichés par JMRI.
+### Programme de supervision
 
-Les règles doivent être respectées, le score est calculé ainsi (version de mars 2025) :
+Yet Another Railroad Simulator (YARS)
+
+Mon nouveau programme s'interface avec JMRI de manière à le compléter fonctionnellement.
+J'ai développé une interface wiThrottle réutilisable (en Python) pour commander les locomotives par programme.
+En partant de la version historique de mon programme de 1998, j'ai reproduit ce programme de supervision (appelé désormais YARS) avec ces technologies. Les commandes sont opérées en mode Terminal et les passages en gare sont affichés de manière similaire mais dans un navigateur servi par un serveur Web interne au programme. L'horloge accélérée (x12) ainsi qu'un synoptique sont gérés et affichés par JMRI.
+
+#### Scénarios
+
+De multiples scénarios sont possibles et sont décrits chacun par un fichier décrivant la liste des gares à parcourir, les horaires de passage, la vitesse maximum autorisée sur la ligne, etc.
+
+#### Calcul du score
+
+Les règles du jeu doivent être respectées, le score est calculé ainsi (version de mars 2025) :
 
 * **Parcours** : chaque entrée en gare rapporte 5 points, de même chaque sortie, il faut aller au bout du parcours.
 * **Respect des horaires** : au-delà d'un écart de 2 minutes (tolérance) chaque minute d'avance ou de retard fait perdre 1 point, aussi bien en entrée qu'en sortie de gare.
@@ -171,6 +186,6 @@ Les règles doivent être respectées, le score est calculé ainsi (version de m
     * Feux allumés : +100 points
     * Feux éteints par la suite : les 100 points sont perdus, il n'est pas possible de gagner plusieurs fois 100 points en allumant puis en éteignant les feux de la locomotive.
     * Klaxon (F2) en entrant dans la gare : +10 points à chaque coup de klaxon.
-* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé. Il n'est pas possible de ravitailler en roulant, la locomotive doit être à l'arrêt en gare (sachant que l'arrêt en pleine ligne est interdit).
+* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé (la locomotive s'arrête toute seule). Il n'est pas possible de ravitailler en roulant, la locomotive doit être à l'arrêt en gare (sachant que l'arrêt en pleine ligne est interdit).
 
 Mon meilleur score est 230 points avec le scénario n°1 allant de Gare du Lion à Melan.
