@@ -175,7 +175,7 @@ Mon nouveau programme s'interface avec JMRI de manière à le compléter fonctio
 J'ai développé une interface wiThrottle réutilisable (en Python) pour commander les locomotives par programme.
 En partant de la version historique de mon programme de 1998, j'ai reproduit ce programme de supervision (appelé désormais YARS) avec ces technologies. Les commandes sont opérées en mode Terminal et les passages en gare sont affichés de manière similaire mais dans un navigateur servi par un serveur Web interne au programme. L'horloge accélérée (x12) ainsi qu'un synoptique sont gérés et affichés par JMRI.
 
-![Copie d'écran du programme de supervision avec JMRI](../images/yars.jpg)
+![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)
 
 #### Scénarios
 
