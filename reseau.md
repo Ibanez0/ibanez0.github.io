@@ -157,6 +157,8 @@ Un plateau de 1m20 x 0m85 avec un simple ovale et une seule voie de garage qui r
 Il est facilement déplaçable pour jouer n'importe où et faire des démonstrations.
 Les mêmes scénarios de jeu précédents sont utilisables. La généralisation du DCC permet toutefois de nombreuses améliorations !
 
+![La ligne miniZéro en 2025](../photos/minizero01.jpeg)
+
 ### Commande digitale
 
 Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise désormais la même solution technologique pour la ligne miniZéro :
