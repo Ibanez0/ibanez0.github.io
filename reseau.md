@@ -173,9 +173,12 @@ Comme expliqué dans la présentation récente consacrée au projet de la ligne 
 
 Yet Another Railroad Simulator (YARS)
 
-Mon nouveau programme s'interface avec JMRI de manière à le compléter fonctionnellement.
-J'ai développé une interface wiThrottle réutilisable (en Python) pour commander les locomotives par programme.
-En partant de la version historique de mon programme de 1998, j'ai reproduit ce programme de supervision (appelé désormais YARS) avec ces technologies. Les commandes sont opérées en mode Terminal et les passages en gare sont affichés de manière similaire mais dans un navigateur servi par un serveur Web interne au programme. L'horloge accélérée (x12) ainsi qu'un synoptique sont gérés et affichés par JMRI.
+Sans rien perdre des concepts de la version historique de 1998, j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
+Actuellement, YARS s'interface avec le logiciel de pilotage JMRI (Java Model Railroad Interface) de manière à le compléter fonctionnellement. JMRI offre l'avantage de s'interfacer lui-même avec les principales centrales DCC du marché. 
+De plus, il offre également à son niveau une interface et un protocole de communication permettant le pilotage des locomotives et accessoires avec divers moyens de télécommande et notamment des applications sur smartphones et tablettes.
+En utilisant cette interface, j'ai développé facilement mon propre module au sein de YARS pour commander les locomotives dans les situations de jeu ou cela est utile.
+En complément, JMRI affiche facilement l'indispensable horloge accélérée ainsi qu'un synoptique et/ou un tableau de contrôle du réseau.
+YARS disposant de son propre serveur web intégré, il peut afficher en temps-réel les informations utiles au déroulement du jeu dans un navigateur standard, sur un ou même plusieurs écrans simultanément.
 
 ![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)
 
