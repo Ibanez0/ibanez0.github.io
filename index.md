@@ -48,14 +48,14 @@ Consultez ces pages qui exposent quelques idées sur un concept de jeu interacti
 **[Règlement](reglement)**  
 [règles générales, instructions techniques](reglement)
 
-**[Réseau](/reseau)**  
+**[Réseaux](/reseau)**  
 [thème](/reseau), [commande](/reseau/#commande), [supervision](/reseau/#supervision)
 
 **[Photos](/photos)**  
 [chronologie](/photos)
 
 **[Commande digitale](/mrc2000)**  
-[MRC2000](/mrc2000), [DCC-EX/JMRI](/ligne1)
+[MRC2000](/mrc2000), [DCC-EX/JMRI](/reseau/#dccex)
 
 **[Décodeurs](/decodeurs)**  
 [conseils](/decodeurs), [digitalisation 67000](/dcc67000), [66000](/dcc66000), [63000](/dcc63000)

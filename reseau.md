@@ -12,6 +12,8 @@ Un réseau pour la simulation : "la ligne _Zéro_"
 
 [La ligne miniZéro (depuis 2022)](#minizero)
 
+[La ligne Un (projet)](#un)
+
 En 1996, j'avais la place pour créer un réseau constitué de 7 modules et d'une coulisse permettant de réaliser une boucle, d'ou le nom de cette ligne : la ligne Zéro. Durant 5 années, j'ai pu tester mes idées concernant la simulation des opérations sous la forme d'un jeu. Après avoir déménagé en 2000, je n'avais plus assez de place pour remonter ce réseau et il a finalement été démantelé. En 2022, j'ai décidé de poursuivre quitte à utiliser un réseau beaucoup plus petit et la ligne miniZéro est alors apparue.
 
 ## La ligne Zéro (1996-2000) {#zero}
@@ -157,17 +159,60 @@ Un plateau de 1m20 x 0m85 avec un simple ovale et une seule voie de garage qui r
 Il est facilement déplaçable pour jouer n'importe où et faire des démonstrations.
 Les mêmes scénarios de jeu précédents sont utilisables. La généralisation du DCC permet toutefois de nombreuses améliorations !
 
+
 ![La ligne miniZéro en 2025](../photos/minizero01.jpeg)
 
-### Commande digitale
 
-Comme expliqué dans la présentation récente consacrée au projet de la ligne **Un**, j'utilise désormais la même solution technologique pour la ligne miniZéro :
-- Centrale de pilotage DCC++EX EX-CommandStation avec carte Arduino Mega 2560 (et une carte additionnelle Motor Shield)
-- Alimentation 18V (5A)
-- Module détecteur de présence par consommation de courant 5556 de Stock87
-- Logiciel JMRI PanelPro (y-inclus son serveur wiThrottle et son serveur Web pour API) avec un ordinateur (MacOS, Windows ou Linux)
-- Application mobile wiThrottle pour iOS
-- Application mobile EngineDriver pour Android
+### Station de commande {#dccex}
+
+2022 : Arduino / DCC-EX
+
+Depuis maintenant plusieurs années, les décodeurs DCC NMRA proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives qui est devenue très utilisée. La commande MRC 2000 ne permettant de piloter qu'une seule fonction auxiliaire, un autre système est nécessaire. J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**.  
+
+
+Hardware :
+
+J'ai réalisé une station de commande complète très simplement en assemblant :
+* une carte Arduino Mega 2560
+* une carte additionnelle Motor Shield
+* une alimentation 18V (5A)
+
+Cette station à une puissance de 2A par défaut (disjoncteur intégré au logiciel DCC-EX). Cela permet de piloter 2 locomotives équipées avec les vieux décodeurs tels que ARNOLD et LENZ qui consomment beaucoup de puissance.
+
+Software :
+
+* ordinateur standard (PC ou Mac) :
+    * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
+* logiciel open source DCC-EX EX-CommandStation pour Arduino (C++)
+* logiciel open source IDE Arduino :
+    * initialisation de la carte Arduino
+    * Serial Monitor pour piloter la station en utilisant l'API
+
+Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mode SPEED 28.
+
+### Pilotage
+
+Le pilotage avec les commandes de l'API dans le Serial Monitor n'est pas conçu pour le jeu.
+J'utilise principalement le logiciel open source JMRI (Java Model Railroad Interface) avec la configuration suivante :
+* ordinateur standard (PC ou Mac) :
+    * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
+    * connecté au réseau local Wifi
+* logiciel JMRI DecoderPro ou PanelPro
+* pour la commande mobile de type "walk-around" en Wifi :
+    * serveur JMRI WiThrottle
+    * application mobile open source Engine Driver pour Android
+    * application mobile WiThrottleLite pour iOS 
+
+JMRI gère aussi :
+* une horloge accélérée
+* des scripts d'automatisation tels que l'aller/retour d'une locomotive
+* des interfaces avec C/MRI
+* l'affichage d'un synoptique du réseau
+* des interfaces technique pour l'intégrer avec d'autres logiciels
+
+Des capteurs tels que des ILS ou des détecteurs de présence par consommation de courant (j'utilise des 5556 de Stock87) peuvent être reliés à une carte Arduino.
+Pour des réseaux qui le nécessitent, la librairie arduinoCMRI permet de réaliser un noeud C/MRI SMINI avec une carte Arduino.
+Reliée au Mac avec un cable USB, JMRI peut ainsi réagir à des changements d'état de boutons et détecteurs et peut actionner des LED et des moteurs d'aiguillage.
 
 ### Programme de supervision
 
@@ -178,9 +223,11 @@ Actuellement, YARS s'interface avec le logiciel de pilotage JMRI (Java Model Rai
 De plus, il offre également à son niveau une interface et un protocole de communication permettant le pilotage des locomotives et accessoires avec divers moyens de télécommande et notamment des applications sur smartphones et tablettes.
 En utilisant cette interface, j'ai développé facilement mon propre module au sein de YARS pour commander les locomotives dans les situations de jeu ou cela est utile.
 En complément, JMRI affiche facilement l'indispensable horloge accélérée ainsi qu'un synoptique et/ou un tableau de contrôle du réseau.
-YARS disposant de son propre serveur web intégré, il peut afficher en temps-réel les informations utiles au déroulement du jeu dans un navigateur standard, sur un ou même plusieurs écrans simultanément.
+YARS disposant de son propre serveur web intégré, il peut afficher en temps-réel les informations utiles au déroulement du jeu dans un navigateur standard, sur un voire plusieurs écrans simultanément.
+
 
 ![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)
+
 
 #### Scénarios
 
@@ -200,3 +247,24 @@ Les règles du jeu doivent être respectées, le score est calculé ainsi (versi
 * **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé (la locomotive s'arrête toute seule). Il n'est pas possible de ravitailler en roulant, la locomotive doit être à l'arrêt en gare (sachant que l'arrêt en pleine ligne est interdit).
 
 Mon meilleur score est 230 points avec le scénario n°1 allant de Gare du Lion à Melan.
+
+## La ligne Un (projet) {#un}
+
+Après la ligne Zéro (en boucle), la ligne **Un** (en aller/retour).
+
+La ligne 1 en étagère pour simuler le triage des wagons vers les Enbranchements Particuliers (EP).
+Un autorail fait des allers/retours en parallèle en passant par la gare.
+
+Le but du jeu est de recevoir un train et de délivrer avec un locotracteur des wagons conformément à une feuille de répartition, en respectant les signaux intermédiaires (tels que les carrés violets), les vitesses modérées, les coups de sifflet obligatoires, les bruitages, les attelages/dételages, les phares, etc. Tout cela permet de calculer un score.
+
+![Ligne 1](../images/ligne1.jpg)
+
+Une difficulté est de contrôler le respect des règles.
+Il faut capturer les commandes digitales envoyées au locotracteur.
+Il faut aussi vérifier la bonne position des wagons.
+
+Remarque :
+Les signaux lumineux doivent être visibles du joueur en toute circonstance pour qu'il puisse les respecter.
+Si l'orientation de la voie (et donc des signaux) ne le permet pas, il faut prévoir une répétition des signaux sur un TCO.
+
+Ce projet constituera une extension de la ligne miniZéro en permettant une activité de déserte et triage des wagons de marchandises à l'extérieur de la boucle. De belles heures de jeu en perspective, à suivre...
