@@ -203,22 +203,22 @@ J'utilise principalement le logiciel open source JMRI (Java Model Railroad Inter
     * application mobile open source Engine Driver pour Android
     * application mobile WiThrottleLite pour iOS 
 
-JMRI gère aussi :
+JMRI permet la gestion complète d'un réseau depuis la programmation des décodeurs DCC jusqu'au pilotage des itinéraires, en passant par les cantons, les signaux, les aiguillages, etc.
+Il gère notamment ici pour mes besoins :
 * une horloge accélérée
 * des scripts d'automatisation tels que l'aller/retour d'une locomotive
-* des interfaces avec C/MRI
-* l'affichage d'un synoptique du réseau
-* des interfaces technique pour l'intégrer avec d'autres logiciels
+* des interfaces natives avec DCC-EX et C/MRI
+* des panneaux de contrôle et synoptiques du réseau
+* des interfaces techniques (APIs) pour l'intégrer avec d'autres logiciels
 
-Des capteurs tels que des ILS ou des détecteurs de présence par consommation de courant (j'utilise des 5556 de Stock87) peuvent être reliés à une carte Arduino.
-Pour des réseaux qui le nécessitent, la librairie arduinoCMRI permet de réaliser un noeud C/MRI SMINI avec une carte Arduino.
-Reliée au Mac avec un cable USB, JMRI peut ainsi réagir à des changements d'état de boutons et détecteurs et peut actionner des LED et des moteurs d'aiguillage.
+Des capteurs tels que des ILS ou des détecteurs de présence par consommation de courant (j'utilise des détecteurs 5556 de Stock87) peuvent être reliés à une carte Arduino. Pour des réseaux qui le nécessitent, la librairie arduinoCMRI permet de réaliser un noeud C/MRI SMINI avec une carte Arduino. Reliée au PC avec un cable USB, JMRI peut ainsi réagir à des changements d'état de boutons et détecteurs et peut actionner des LED et des moteurs d'aiguillage.
 
 ### Programme de supervision
 
 Yet Another Railroad Simulator (YARS)
 
 Sans rien perdre des concepts de la version historique de 1998, j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
+
 Actuellement, YARS s'interface avec le logiciel de pilotage JMRI (Java Model Railroad Interface) de manière à le compléter fonctionnellement. JMRI offre l'avantage de s'interfacer lui-même avec les principales centrales DCC du marché. 
 De plus, il offre également à son niveau une interface et un protocole de communication permettant le pilotage des locomotives et accessoires avec divers moyens de télécommande et notamment des applications sur smartphones et tablettes.
 En utilisant cette interface, j'ai développé facilement mon propre module au sein de YARS pour commander les locomotives dans les situations de jeu ou cela est utile.
@@ -267,4 +267,4 @@ Remarque :
 Les signaux lumineux doivent être visibles du joueur en toute circonstance pour qu'il puisse les respecter.
 Si l'orientation de la voie (et donc des signaux) ne le permet pas, il faut prévoir une répétition des signaux sur un TCO.
 
-Ce projet constituera une extension de la ligne miniZéro en permettant une activité de déserte et triage des wagons de marchandises à l'extérieur de la boucle. De belles heures de jeu en perspective, à suivre...
+Ce projet constituera une extension de la ligne miniZéro en permettant une activité de desserte et triage des wagons de marchandises à l'extérieur de la boucle. De belles heures de jeu en perspective, à suivre...
