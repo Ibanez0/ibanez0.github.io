@@ -6,7 +6,7 @@ permalink: /reseau/
 
 Un réseau pour la simulation : "la ligne _Zéro_"
 
-![](../images/logo5-300.jpeg)
+![](../images/logo5-100.jpeg)
 
 [La ligne Zéro (1996-2000)](#zero)
 
