@@ -6,7 +6,7 @@ permalink: /reglement/
 
 Règlement standard de la ligne _zéro_  
 
-![](../images/logo4.gif)
+![](../images/logo6.png)
 
 Règles d'exploitation (version 1.0)
 
