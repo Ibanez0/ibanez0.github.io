@@ -46,6 +46,8 @@ urlimg: 'https://phlow.github.io/feeling-responsive/images/'
 # Logo size is 600x80 pixels
 logo: "logo.png"
 
+# Build settings
+remote_theme: Phlow/feeling-responsive
 # Plugins
 plugins:
     - jekyll-asciidoc
